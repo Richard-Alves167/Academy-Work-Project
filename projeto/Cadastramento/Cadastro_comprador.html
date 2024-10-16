@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Cadastro de compradores</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <div id="navegador">
+        <nav>
+            <ul>
+                <li><a href="../Home/index.html">Home</a></li>
+                <hr>
+                <li><a href="../Cadastramento/Cadastro_comprador.html">Cadastro comprador</a></li>
+                <hr>
+                <li><a href="../Cadastramento/Compradores_cadastrados.html">Compradores Cadastrados</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+
+    <article>
+        <div id="inicioarticle">
+            <p>Cadastro dos compradores em contas</p>
+        </div>
+
+        <fieldset>
+
+            <label>Nome do comprador</label>
+        <input type="text" id="nome_comprador">
+<br><br>
+            <label>E-mail</label>
+        <input type="email" id="email_comprador">
+<br><br>
+            <label>Senha</label>
+        <input type="password" id="senha_comprador">
+<br><br>
+            <label>Telefone</label>
+        <input type="text" id="telefone_comprador">
+<br><br>
+            <label>Endereço/CEP</label>
+        <input type="text" id="endereco_comprador">
+
+            <div>
+
+                <p>Preferência de qual nível da linha da puericultura envolvida</p>
+                    <input type="checkbox" value="puericultura_classe_1" name="pueri_classe" />
+                    <label>Classe I</label>
+                
+                    <input type="checkbox" value="puericultura_classe_2" name="pueri_classe" />
+                    <label>Classe II</label>
+
+                    <input type="checkbox" value="puericultura_classe_3" name="pueri_classe" />
+                    <label>Classe III</label>
+
+            </div>
+
+            <br>
+
+            <input type="button" value="Cadastrar" onclick="cadastrar()">
+
+            <br><br><br>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Email</td>
+                        <td>Senha</td>
+                        <td>Telefone</td>
+                        <td>Endereço</td>
+                        <td>Preferencia de Classe Puericultura</td>
+                    </tr>
+                </thead>
+
+                <tbody id="colocar_cadastro">
+                </tbody>
+
+            </table>
+
+    </article>
+
+</main>
+
+    <script src="pegar_comprador.js"></script>
+    <script src="adicionar_compradores.js"></script>
+</body>
+</html>
