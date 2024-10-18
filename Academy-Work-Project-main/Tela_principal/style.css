@@ -1,0 +1,122 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+body {
+    margin: 0px
+}
+
+header {
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    border: 2px black solid;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: -webkit-center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 30px;
+    margin: auto
+}
+
+nav ul li {
+    align-content: center;
+}
+
+nav ul hr {
+    height: 30px;
+    border: white 1px solid;
+}
+
+nav ul a{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    list-style: none;
+    transition: 1s;
+}
+
+nav ul a:hover{
+    color: #ff0008;
+    transform: scale(1.2);
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+    background-color: blanchedalmond;
+}
+
+#apresentacao {
+    display: flex;
+}
+
+.icon {
+    width: 60px;
+}
+
+.icontext {
+    font-size: 50px;
+}
+
+#foto {
+    width: 50%;
+}
+
+#foto img {
+    border-radius: 100%;
+}
+
+#perfil {
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    border: rgb(0, 0, 0) solid 2px;
+}
+
+#apresentacao_texto {
+    width: 50%;
+    font-size: 20px;
+}
+
+#contato div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#contato {
+    display: flex;
+    gap: 20px;
+}
+
+#inicioarticle {
+    margin-top: 50px;
+    height: 100px;
+    background-color: rgb(73, 170, 170);
+    border: black 2px solid;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+#corpoarticle {
+    margin-top: 15px;
+    margin-inline: 30px;
+    padding-bottom: 30px;
+}
