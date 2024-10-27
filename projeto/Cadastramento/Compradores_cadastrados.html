@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="./css/cadastrados.css" rel="stylesheet">
+    <link href="./css/Navigation.css" rel="stylesheet">
     <title>Compradores Cadastrados</title>
 </head>
 <body>   
     <header>
+        <div id="marca">
+            <p>BabyToys</p>
+        </div>
+    </header>
+
+    <div id="navegador">
         <nav>
             <ul>
                 <li><a href="../Home/index.html">Home</a></li>
-                <hr>
                 <li><a href="../Cadastramento/Cadastro_comprador.html">Cadastro Comprador</a></li>
+                <li id="atual"><a href="../Cadastramento/Compradores_cadastrados.html">Compradores Cadastrados</a></li>
             </ul>
         </nav>
-    </header>
-
+    </div>
 
     <main>
 
-    <article>
         <div id="inicioarticle">
             <h1>Compradores Cadastrados</h1>
         </div>
@@ -35,13 +40,12 @@
                     <li>e</li>
                 </ul>
         </div>
-
-    </article>
+    
 
 </main>
 
 
-<script src="pegar_comprador.js"></script>
-<script src="adicionar_compradores.js"></script>
+<script src="./javascript/pegar_comprador.js"></script>
+<script src="./javascript/adicionar_compradores.js"></script>
 </body>
 </html>

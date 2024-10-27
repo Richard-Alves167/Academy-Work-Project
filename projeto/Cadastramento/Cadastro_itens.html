@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="./css/Cadastro_itens.css" rel="stylesheet">
+    <link href="./css/Navigation.css" rel="stylesheet">
     <title>Cadastro de itens</title>
 </head>
 <body>
     <header>
-
+        <div id="marca">
+            <p>BabyToys</p>
+        </div>
     </header>
 
     <div id="navegador">
         <nav>
             <ul>
                 <li><a href="../Home/index.html">Home</a></li>
-                <hr>
-                <li><a href="../Cadastramento/Cadastro_itens.html">Cadastro Itens</a></li>
-                <hr>
+                <li id="atual"><a href="../Cadastramento/Cadastro_itens.html">Cadastro Itens</a></li>
                 <li><a href="../Cadastramento/Itens_cadastrados.html">Ítens Cadastrados</a></li>
             </ul>
         </nav>
@@ -26,89 +27,83 @@
 
     <main>
 
-    <article>
-        <div id="inicioarticle">
-            <p>Cadastro dos ítens da loja</p>
-        </div>
-
-        <fieldset>
-
-                <label>Nome</label>
-            <input type="text" id="nome_itens">
-
-            <br><br>
-
-                <label>Preço: R$</label>
-            <input type="number" id="preco_itens">
-
-            <div>
-
-                <p>Tipo de artigo</p>
-
-            <select>
-                <option name="tipo_artigo" value="Saúde">Saúde</option>
-                <option name="tipo_artigo" value="Segurança">Segurança</option>
-                <option name="tipo_artigo" value="Entretenimento">Entretenimento</option>
-            </select>
-
+            <div id="inicio">
+                <p>Cadastro dos ítens da loja</p>
             </div>
 
-            <div>
-                    <p>Nível de puericultura</p>
-                <label>Nível I</label>
-                <input type="radio" name="nivel" value="puericultura_nivel_1">
-                <label>Nível II</label>
-                <input type="radio" name="nivel" value="puericultura_nivel_2">
-                <label>Nível III</label>
-                <input type="radio" name="nivel" value="puericultura_nivel_3">
+            <div id="cadastrar">
+
+                        <label>Nome</label> <br>
+                    <input class="input_text" type="text" id="nome_itens">
+
+                    <br><br>
+
+                        <label>Preço:</label> <br>
+                    <input class="input_text" type="number" id="preco_itens">
+
+                    <div>
+
+                        <p>Tipo de artigo</p>
+
+                    <select>
+                        <option name="tipo_artigo" value="Saúde">Saúde</option>
+                        <option name="tipo_artigo" value="Segurança">Segurança</option>
+                        <option name="tipo_artigo" value="Entretenimento">Entretenimento</option>
+                    </select>
+
+                    </div>
+
+                    <div>
+                            <p>Nível de puericultura</p>
+                        <label>Nível I</label>
+                        <input type="radio" name="nivel" value="puericultura_nivel_1">
+                        <label>Nível II</label>
+                        <input type="radio" name="nivel" value="puericultura_nivel_2">
+                        <label>Nível III</label>
+                        <input type="radio" name="nivel" value="puericultura_nivel_3">
+                    </div>
+
+                    <div>
+                        <p>Nacional/internacional</p>
+                        <select>
+                            <option name="nacionalidade" value="Nacional">Nacional</option>
+                            <option name="nacionalidade" value="Internacional">Internacional</option>
+                        </select>
+                    </div>
+
+                <br>
+
+                <input id="button" type="button" value="Cadastrar" onclick="cadastrar()">
+            
             </div>
-
-            <div>
-
-                    <p>Nacional/internacional</p>
-
-                <select>
-                    <option name="nacionalidade" value="Nacional">Nacional</option>
-                    <option name="nacionalidade" value="Internacional">Internacional</option>
-                </select>
-
-            </div>
-
-        <br>
-
-        <input type="button" value="Cadastrar" onclick="cadastrar()">
 
         
-        <br><br><br>
+        <div id="campo_cadastrados">
 
-        <table>
-            <thead>
-                <tr>
-                    <td>Nome</td>
-                    <td>Preço</td>
-                    <td>Tipo de Artigo</td>
-                    <td>Nível de puericultura</td>
-                    <td>Endereço</td>
-                    <td>Nacional/internacional</td>
-                </tr>
-            </thead>
+                <div id="cadastrados">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nome</td>
+                            <td>Preço</td>
+                            <td>Tipo de Artigo</td>
+                            <td>Nível de puericultura</td>
+                            <td>Endereço</td>
+                            <td>Nacional/internacional</td>
+                        </tr>
+                    </thead>
 
-            <tbody id="colocar_cadastro">
-            </tbody>
+                    <tbody id="colocar_cadastro">
+                    </tbody>
+                </table>
 
-    </fieldset>
+        </div>
+        
 
-
-
-            
-    </fieldset>
-
-    </article>
-
-</main>
+    </main>
 
 
-<script src="pegar_itens.js"></script>
-<script src="adicionar_itens.js"></script>
+<script src="./javascript/pegar_itens.js"></script>
+<script src="./javascript/adicionar_itens.js"></script>
 </body>
 </html>

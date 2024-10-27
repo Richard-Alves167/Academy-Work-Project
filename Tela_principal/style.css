@@ -75,6 +75,10 @@ main {
     width: 50%;
 }
 
+#foto img {
+    border-radius: 100%;
+}
+
 #perfil {
     width: 300px;
     margin: auto;
@@ -86,6 +90,17 @@ main {
 #apresentacao_texto {
     width: 50%;
     font-size: 20px;
+}
+
+#contato div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#contato {
+    display: flex;
+    gap: 20px;
 }
 
 #inicioarticle {
@@ -103,4 +118,5 @@ main {
 #corpoarticle {
     margin-top: 15px;
     margin-inline: 30px;
+    padding-bottom: 30px;
 }

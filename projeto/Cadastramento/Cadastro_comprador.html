@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="./css/Cadastro_comprador.css" rel="stylesheet">
+    <link href="./css/Navigation.css" rel="stylesheet">
     <title>Cadastro de compradores</title>
 </head>
 <body>
     <header>
-
+        <div id="marca">
+            <p>BabyToys</p>
+        </div>
     </header>
 
     <div id="navegador">
         <nav>
             <ul>
                 <li><a href="../Home/index.html">Home</a></li>
-                <hr>
-                <li><a href="../Cadastramento/Cadastro_comprador.html">Cadastro comprador</a></li>
-                <hr>
+                <li id="atual"><a href="../Cadastramento/Cadastro_comprador.html">Cadastro Comprador</a></li>
                 <li><a href="../Cadastramento/Compradores_cadastrados.html">Compradores Cadastrados</a></li>
             </ul>
         </nav>
@@ -25,48 +26,53 @@
 
     <main>
 
-    <article>
-        <div id="inicioarticle">
+        <div id="inicio">
             <p>Cadastro dos compradores em contas</p>
         </div>
 
-        <fieldset>
+        <div id="cadastrar">
 
-            <label>Nome do comprador</label>
-        <input type="text" id="nome_comprador">
-<br><br>
-            <label>E-mail</label>
-        <input type="email" id="email_comprador">
-<br><br>
-            <label>Senha</label>
-        <input type="password" id="senha_comprador">
-<br><br>
-            <label>Telefone</label>
-        <input type="text" id="telefone_comprador">
-<br><br>
-            <label>Endereço/CEP</label>
-        <input type="text" id="endereco_comprador">
+                <label>Nome do comprador</label><br>
+                    <input class="input_text" type="text" id="nome_comprador">
+                    <br><br>
 
-            <div>
+                <label>E-mail</label><br>
+                    <input class="input_text" type="email" id="email_comprador">
+                    <br><br>
 
-                <p>Preferência de qual nível da linha da puericultura envolvida</p>
+                <label>Senha</label><br>
+                    <input class="input_text" type="password" id="senha_comprador">
+                    <br><br>
+
+                <label>Telefone</label><br>
+                    <input class="input_text" type="text" id="telefone_comprador">
+                    <br><br>
+
+                <label>Endereço/CEP</label><br>
+                    <input class="input_text" type="text" id="endereco_comprador">
+
+   
+                <div>
+                    <p>Preferência de qual nível da linha da puericultura envolvida</p>
+                    
                     <input type="checkbox" value="puericultura_classe_1" name="pueri_classe" />
                     <label>Classe I</label>
-                
+                    
                     <input type="checkbox" value="puericultura_classe_2" name="pueri_classe" />
                     <label>Classe II</label>
 
                     <input type="checkbox" value="puericultura_classe_3" name="pueri_classe" />
                     <label>Classe III</label>
 
-            </div>
+                </div>
 
-            <br>
+                <br>
 
-            <input type="button" value="Cadastrar" onclick="cadastrar()">
+                <input id="button" type="button" value="Cadastrar" onclick="cadastrar()">
 
-            <br><br><br>
+        </div>
 
+        <div id="campo_cadastrados">
             <table>
                 <thead>
                     <tr>
@@ -83,12 +89,11 @@
                 </tbody>
 
             </table>
+        </div>
 
-    </article>
+    </main>
 
-</main>
-
-    <script src="pegar_comprador.js"></script>
-    <script src="adicionar_compradores.js"></script>
+    <script src="./javascript/pegar_comprador.js"></script>
+    <script src="./javascript/adicionar_compradores.js"></script>
 </body>
 </html>

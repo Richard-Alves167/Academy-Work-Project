@@ -1,25 +1,57 @@
 html {
     width: 100%;
     height: 100%;
-    background-color: gray;
+    background-color: #a09b8c;
 }
 
 body {
     margin: 0px
 }
 
+@font-face {
+    font-family: fraseinicial;
+    src: url(./fontes/babytitle.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(./fontes/text_light.ttf);
+}
+
+@font-face {
+    font-family: texto_navigation;
+    src: url(./fontes/text_bold.ttf);
+}
+
 header {
-    height: 80px;
-    background-color: rgb(73, 170, 170);
+    height: 70px;
+    background-color: #98dfee;
     align-content: center;
-    border: 2px black solid;
+}
+
+header p {
+    font-size: 35px;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    margin-left: 40px;
+    font-family: fraseinicial;
 }
 
 #navegador {
-    height: 60px;
-    background-color: rgb(73, 170, 170);
+    height: 50px;
+    background-color: #45afa8;
+    display: flex;
     align-content: center;
-    border: 2px black solid;
+    justify-content: flex-end;
+    padding-right: 30px;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+ul #atual {
+    background-color: rgba(121, 121, 121, 0.493);
+    border-radius: 10px;
 }
 
 nav {
@@ -27,19 +59,21 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: -webkit-center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav ul{
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 60px;
     font-size: 30px;
-    margin: auto
+    margin: auto;
+    height: 100%;
 }
 
 nav ul li {
     align-content: center;
+    padding: 10px;
 }
 
 nav ul hr {
@@ -49,7 +83,7 @@ nav ul hr {
 
 nav ul a{
     font-size: 30px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     list-style: none;
     transition: 1s;
@@ -81,4 +115,6 @@ main {
 #corpoarticle {
     margin-top: 15px;
     margin-inline: 30px;
+    padding-bottom: 30px;
+    font-family: texto;
 }
