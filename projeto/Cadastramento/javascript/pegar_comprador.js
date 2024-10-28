@@ -6,23 +6,12 @@ function cadastrar() {
     const senha_comprador = document.getElementById("senha_comprador").value
     const telefone_comprador = document.getElementById("telefone_comprador").value
     const endereco_comprador = document.getElementById("endereco_comprador").value
-    const classe_puericultura = document.getElementsByName("pueri_classe").value
+    const classe_puericultura = document.querySelector('input[name="pueri_classe"]:checked').value
 
-    if (nome_comprador == "" || email_comprador == "" ||senha_comprador == "" || telefone_comprador == "" || endereco_comprador == "" || classe_puericultura == "") {
-
-    } else {
-
+    if (nome_comprador != "" || email_comprador != "" ||senha_comprador != "" || telefone_comprador != "" || endereco_comprador != "" || classe_puericultura != "") {
     let lista = document.getElementById("colocar_cadastro")
-    // let listagem = document.querySelector("#colocar_comprador")
 
-    
     let novotr = document.createElement("tr")
-
-    // let nome = document.createElement("td")
-    // let email = document.createElement("td")
-    // let senha = document.createElement("td")
-    // let telefone = document.createElement("td")
-    // let endereco = document.createElement("td")
 
     novotr.innerHTML = `
     <td>${nome_comprador}</td>
@@ -32,7 +21,7 @@ function cadastrar() {
     <td>${endereco_comprador}</td>
     <td>${classe_puericultura}</td>
     `
-
+    
     lista.appendChild(novotr)
 
     document.getElementById("nome_comprador").value = null
