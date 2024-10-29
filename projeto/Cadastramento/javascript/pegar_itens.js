@@ -1,4 +1,32 @@
-let novatag = document.createElement("li")
+let lista = document.getElementById("itens_cadastrados")     
+let produtos = []
+
+const armazenamentoCadastro = localStorage.getItem("produtosLocal")
+
+if (armazenamentoCadastro !== null) {
+    produtos = JSON.parse(armazenamentoCadastro)
+}
+
+function rederizarProdutos() {
+    lista.innerHTML = ""
+
+    produtos.forEach(object => {
+        let novoCard = document.createElement("li")
+    
+        novoCard.innerHTML = `
+        <li class="card">
+        <div class="itens_cadastrados">
+        <img class="iten_imagem" src="${object.imagem}">
+        <div class="iten_nome">${object.nome}</div>
+        <div class="iten_preco">
+        <span class="cifrao">R$</span>${object.preco}
+        </div>
+        </div>
+        </li>
+        `
+        lista.appendChild(novoCard)
+    });
+}
 
 function cadastrar() {
     const iten = {
@@ -10,23 +38,16 @@ function cadastrar() {
     localidade: document.getElementById("seletor_nacionalidade").children[document.getElementById("seletor_nacionalidade").selectedIndex].textContent,
     }
 
-    let lista = document.getElementById("itens_cadastrados")
-    
-    let novotr = document.createElement("li")
+    produtos.push(iten)
 
-    lista.appendChild(novotr)
-
-    novotr.innerHTML = `
-    <li class="card">
-    <div class="itens_cadastrados">
-    <img class="iten_imagem" src="${iten.imagem}">
-    <div class="iten_nome">${iten.nome}</div>
-    <div class="iten_preco"><span class="cifrao">R$</span>${iten.preco}</div>
-    </div>
-    </li>
-    `
+    localStorage.setItem("produtosLocal", JSON.stringify(produtos))
 
     document.getElementById("nome_itens").value = null
     document.getElementById("preco_itens").value = null
     document.getElementById("imagem_itens").value = null
+
+    rederizarProdutos()
 }
+
+rederizarProdutos()
+

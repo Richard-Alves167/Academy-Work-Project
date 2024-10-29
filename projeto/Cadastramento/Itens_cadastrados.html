@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/cadastrados.css" rel="stylesheet">
     <link href="./css/Navigation.css" rel="stylesheet">
+    <link href="./css/CardItens.css" rel="stylesheet">
     <title>Home</title>
+    <link rel="shortcut icon" href="./imagens/lojaIcone.jpg" type="image/png">
 </head>
 <body>   
     <header>
@@ -27,24 +29,30 @@
     <main>
 
         <div id="inicioarticle">
-            <h1>Itens Cadastrados</h1>
+            <h1>-Itens Cadastrados-</h1>
         </div>
 
         <div id="corpocadastrados">
-
-            <ul>
-                <li>a</li>
-                <li>b</li>
-                <li>c</li>
-                <li>d</li>
-                <li>e</li>
-            </ul>
-
+            <table>
+                <thead>
+                    <tr>
+                        <td>Remover</td>
+                        <td>Nome</td>
+                        <td>Preço</td>
+                        <td>Tipo de artigo</td>
+                        <td>Nível de puericultura</td>
+                        <td>Localidade</td>
+                    </tr>
+                </thead>
+                <tbody id="tabelaCadastrados">
+                </tbody>
+            </table>
         </div>
+
 
 </main>
 
     <script src="./javascript/pegar_itens.js"></script>
-    <script src="./javascript/adicionar_itens.js"></script>
+    <script src="./javascript/tabela_itens_cadastrados.js"></script>
 </body>
 </html>

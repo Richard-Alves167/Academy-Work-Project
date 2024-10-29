@@ -113,59 +113,8 @@
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 80vw;
+    width: 87vw;
     background-color: beige;
     border-radius: 100px;
-    flex-basis: 100%;
-}
-
-#itens_cadastrados {
-    display: flex;
-    list-style: none;
-    margin-inline: 50px;
-    word-break: normal;
-}
-
-.card {
-    height: 320px;
-    width: 240px;
-    background-color: rgb(252, 199, 199);
-    border-radius: 30px;
-    padding-top: 5px;
-    margin-inline: 30px;
-}
-
-.iten_imagem {
-    height: 210px;
-    width: 210px;
-    display: flex;
-    margin-inline: auto;
-    align-items: center;
-    margin-top: 10px;
-    background-color: rgb(86, 83, 83);
-    border-radius: 20px;
-}
-
-.iten_nome {
-    margin-top: 8px;
-    margin-inline: 25px;
-    font-size: 17px;
-    font-weight: 400;
-    color: rgb(97, 97, 97);
-    font-family: textItens;
-}
-
-.iten_preco {
-    margin-inline: 25px;
-    font-size: 20px;
-    font-weight: 1000;
-    color: rgb(0, 0, 0);
-    display: flex;
-    position: relative;
-    bottom: -5px;
-}
-
-.cifrao {
-    font-size: 14px;
-    color: rgb(0, 0, 0);
+    flex-wrap: wrap;
 }

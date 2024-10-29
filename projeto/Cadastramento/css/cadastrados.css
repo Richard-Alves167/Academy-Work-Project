@@ -1,29 +1,54 @@
+@font-face {
+    font-family: titulo;
+    src: url(../fontes/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face {
+    font-family: textLigth;
+    src: url(../fontes/text_light.ttf);
+}
+
+@font-face {
+    font-family: textInput;
+    src: url(../fontes/EdgecuttingLiteMedium.ttf);
+}
+
+@font-face {
+    font-family: textItens;
+    src: url(../fontes/LiberationSans-Regular.ttf);
+}
+
+* {
+    font-family: textLigth;
+}
+
 main {
-    width: 700px;
+    width: 80vw;
     margin: auto;
     background-color: blanchedalmond;
 }
 
 #inicioarticle {
     margin-top: 50px;
-    height: 100px;
     background-color: rgb(73, 170, 170);
+    height: 110px;
     border: black 2px solid;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
+    font-family: texto;
+    padding: auto;
 }
 
 #corpoarticle {
-    margin-top: 15px;
-    margin-inline: 30px;
+    margin: 0px;
 }
 
 #corpocadastrados {
-    margin-top: 15px;
-    margin-inline: 30px;
+    margin: 30px;
+    padding-bottom: 30px;
 }
 
 table {
@@ -46,4 +71,19 @@ td {
     border: 1px black solid;
     margin-left: 10px;
     height: 30px;
+    justify-content: center;
+    text-align-last: center;
+    align-items: center;
+}
+
+.tabelaBotao {
+    width: 40px;
+    height: 20px;
+    border-radius: 20%;
+    justify-self: center;
+    background-color: red;
+    color: white;
+    font-family: textItens;
+    text-align-last: center;
+    align-items: center;
 }
