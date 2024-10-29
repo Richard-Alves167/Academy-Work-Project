@@ -39,6 +39,18 @@ header p {
     font-family: fraseinicial;
 }
 
+#logo_B {
+    font-size: 35px;
+    font-family: fraseinicial;
+    color: rgb(228, 209, 122);
+}
+
+#logo_T {
+    font-size: 35px;
+    font-family: fraseinicial;
+    color: #ff6c70;
+}
+
 #navegador {
     height: 50px;
     background-color: #45afa8;

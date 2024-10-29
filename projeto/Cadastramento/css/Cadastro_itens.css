@@ -3,6 +3,25 @@
     src: url(../fontes/Louis\ George\ Cafe\ Bold.ttf);
 }
 
+@font-face {
+    font-family: textLigth;
+    src: url(../fontes/text_light.ttf);
+}
+
+@font-face {
+    font-family: textInput;
+    src: url(../fontes/EdgecuttingLiteMedium.ttf);
+}
+
+@font-face {
+    font-family: textItens;
+    src: url(../fontes/LiberationSans-Regular.ttf);
+}
+
+* {
+    font-family: textLigth;
+}
+
 #inicio {
     width: 500px;
     border-top-left-radius: 10px;
@@ -23,7 +42,7 @@
 #inicio p {
     margin: auto;
     font-family: titulo;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #cadastrar {
@@ -38,9 +57,39 @@
     border-top: none;
 }
 
+.input_title {
+    font-family: textInput;
+    margin-left: 10px;
+    word-spacing: 0px;
+    font-size: 25px;
+}
+
 .input_text {
     width: 100%;
     font-size: 18px;
+    background-color: rgba(217, 217, 217, 0.825);
+    border: none;
+    border-bottom: black solid 4px;
+    border-top-right-radius: 20px;
+}
+
+.select_style{
+    font-size: 20px;
+    font-family: textItens;
+    background-color: rgba(217, 217, 217, 0.825);
+    border: black solid 3px;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+.radio_title_style {
+    font-size: 20px;
+}
+
+.radio_style {
+    height: 15px;
+    background-color: gray;
+    color: red;
 }
 
 #button {
@@ -50,40 +99,73 @@
     height: 50px;
     font-size: 25px;
     border-radius: 100px;
+    border: black solid 3px;
 }
 
 #button:hover {
     background-color: rgb(255, 123, 145);
     color: white;
+    border: rgb(255, 255, 255) solid 5px;
 }
 
-#campo_cadastrados {
-    margin-top: 100px;
-    border-radius: 15px;
-    width: 700px;
+#itens {
+    justify-content: center;
     margin: auto;
-    background-color: blanchedalmond;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80vw;
+    background-color: beige;
+    border-radius: 100px;
+    flex-basis: 100%;
 }
 
-table {
-    border: 1px black solid;
-    border-collapse: collapse;
-    width: 100%;
-    background-color: rgb(249, 255, 255);
+#itens_cadastrados {
+    display: flex;
+    list-style: none;
+    margin-inline: 50px;
+    word-break: normal;
 }
 
-thead {
-    text-align: center;
-    background-color: aqua;
+.card {
+    height: 320px;
+    width: 240px;
+    background-color: rgb(252, 199, 199);
+    border-radius: 30px;
+    padding-top: 5px;
+    margin-inline: 30px;
 }
 
-tr {
-    border: 1px black solid;
+.iten_imagem {
+    height: 210px;
+    width: 210px;
+    display: flex;
+    margin-inline: auto;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgb(86, 83, 83);
+    border-radius: 20px;
 }
 
-td {
-    border: 1px black solid;
-    margin-left: 10px;
-    height: 30px;
+.iten_nome {
+    margin-top: 8px;
+    margin-inline: 25px;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(97, 97, 97);
+    font-family: textItens;
+}
+
+.iten_preco {
+    margin-inline: 25px;
+    font-size: 20px;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+    bottom: -5px;
+}
+
+.cifrao {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
 }

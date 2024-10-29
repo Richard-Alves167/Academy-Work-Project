@@ -2,6 +2,26 @@
     font-family: titulo;
     src: url(../fontes/Louis\ George\ Cafe\ Bold.ttf);
 }
+
+@font-face {
+    font-family: textLigth;
+    src: url(../fontes/text_light.ttf);
+}
+
+@font-face {
+    font-family: textInput;
+    src: url(../fontes/EdgecuttingLiteMedium.ttf);
+}
+
+@font-face {
+    font-family: textItens;
+    src: url(../fontes/LiberationSans-Regular.ttf);
+}
+
+* {
+    font-family: textLigth;
+}
+
 #inicio {
     width: 500px;
     border-top-left-radius: 10px;
@@ -38,9 +58,39 @@
     border-top: none;
 }
 
+.input_title {
+    font-family: textInput;
+    margin-left: 10px;
+    word-spacing: 0px;
+    font-size: 22px;
+}
+
 .input_text {
     width: 100%;
     font-size: 18px;
+    background-color: rgba(217, 217, 217, 0.825);
+    border: none;
+    border-bottom: black solid 4px;
+    border-top-right-radius: 20px;
+}
+
+.select_style{
+    font-size: 20px;
+    font-family: textItens;
+    background-color: rgba(217, 217, 217, 0.825);
+    border: black solid 3px;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+.radio_title_style {
+    font-size: 20px;
+}
+
+.radio_style {
+    height: 15px;
+    background-color: gray;
+    color: red;
 }
 
 #button {
