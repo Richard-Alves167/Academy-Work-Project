@@ -31,12 +31,24 @@ header {
 }
 
 header p {
-    font-size: 35px;
+    font-size: 25px;
     justify-content: left;
     align-items: center;
     margin: auto;
     margin-left: 40px;
     font-family: fraseinicial;
+}
+
+#logo_B {
+    font-size: 40px;
+    font-family: fraseinicial;
+    color: rgb(228, 209, 122);
+}
+
+#logo_T {
+    font-size: 40px;
+    font-family: fraseinicial;
+    color: #ff6c70;
 }
 
 #inicio {
@@ -60,18 +72,6 @@ header p {
     margin: auto;
     font-family: titulo;
     font-size: 35px;
-}
-
-#logo_B {
-    font-size: 35px;
-    font-family: fraseinicial;
-    color: rgb(228, 209, 122);
-}
-
-#logo_T {
-    font-size: 35px;
-    font-family: fraseinicial;
-    color: #ff6c70;
 }
 
 #navegador {

@@ -1,0 +1,117 @@
+#topo_promocoes {
+    margin: auto;
+    margin-top: 30px;
+    padding: 0;
+    height: 28vw;
+    width: 80%;
+    background-color: #a09b8c;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.conteudoCarrossel {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.conteudoCarrossel input {
+    display: none;
+}
+
+.imagemCarrossel {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.imagemCarrossel img {
+    width: 100%;
+    height: 28vw;
+}
+
+.manualCarrossel, .autoCarrossel {
+    position: absolute;
+    width: 80%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.manualCarrossel .manualBotao, .autoCarrossel div {
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.manualCarrossel .manualBotao:not(:last-child), .autoCarrossel div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.manualCarrossel .manualBotao, .autoCarrossel div {
+    position: relative;
+    top: -10vw;
+    transition: 0s;
+    background-color: #a09b8c3b;
+}
+.manualCarrossel .manualBotao:hover {
+    background-color: rgb(46, 199, 186);
+}
+
+#radio1:checked ~ .autoCarrossel .autoRadio1 {
+    background-color: #ff6c70;
+}
+
+#radio2:checked ~ .autoCarrossel .autoRadio2 {
+    background-color: #ff6c70;
+}
+
+#radio3:checked ~ .autoCarrossel .autoRadio3 {
+    background-color: #ff6c70;
+}
+
+#radio4:checked ~ .autoCarrossel .autoRadio4 {
+    background-color: #ff6c70;
+}
+
+#radio1:checked ~ .carrosselImagem1 {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .carrosselImagem1 {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .carrosselImagem1 {
+ margin-left: -50%;
+}
+
+#radio4:checked ~ .carrosselImagem1 {
+ margin-left: -75%;
+}
+
+/* #topo_promocoes button {
+    width: 20px;
+    height: 150px;
+    background-color: rgba(255, 0, 0, 0.336);
+    border: none;
+    color: azure;
+    border-radius: 10%;
+    align-self: center;
+}
+
+#buttonLeft{
+    left: initial;
+    right: -10px;
+    position: relative;
+}
+
+#buttonRigh{
+    right: initial;
+    right: -10px;
+    position: relative; 
+} */

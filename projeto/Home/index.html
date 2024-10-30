@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/style.css" rel="stylesheet">
     <link href="../Home/css/Navigation.css" rel="stylesheet">
+    <link href="./css/carrosselPromocoes.css" rel="stylesheet">
     <link href="../Cadastramento/css/CardItens.css" rel="stylesheet">
 
     <title>Home</title>
@@ -35,12 +36,45 @@
 <main>
 
     <section id="topo_promocoes">
-        <button id="buttomLeft">&lt;</button>
-        <img src="./imagens/luggage-1799224_1920.jpg" alt="">
-        <img src="./imagens/child-2916844_1920.jpg" alt="">
-        <img src="./imagens/baby-84552_1920.jpg" alt=""><img src="" alt="">
-        <img src="./imagens/adult-1807500_1920.jpg" alt="">
-        <button id="buttomRight">&gt;</button>
+        <div class="conteudoCarrossel">
+            <input type="radio" name="botaoRadioCarrossel" id="radio1">
+            <input type="radio" name="botaoRadioCarrossel" id="radio2">
+            <input type="radio" name="botaoRadioCarrossel" id="radio3">
+            <input type="radio" name="botaoRadioCarrossel" id="radio4">
+
+            <!-- <button id="buttomLeft">&lt;</button> -->
+            <div class="imagemCarrossel carrosselImagem1" primeiroCarrossel>
+                <img src="./imagens/luggage-1799224_1920.jpg" alt="slide 1">
+            </div>
+
+            <div class="imagemCarrossel">
+                <img src="./imagens/child-2916844_1920.jpg" alt="slide 2">
+            </div>
+
+            <div class="imagemCarrossel">
+                <img src="./imagens/baby-84552_1920.jpg" alt="slide 3">
+            </div>
+            
+            <div class="imagemCarrossel">
+            <img src="./imagens/adult-1807500_1920.jpg" alt="slide 4">
+            </div>
+            <!-- <button id="buttomRight">&gt;</button> -->
+
+            <div class="autoCarrossel">
+                <div class="autoRadio1"></div>
+                <div class="autoRadio2"></div>
+                <div class="autoRadio3"></div>
+                <div class="autoRadio4"></div>
+            </div>
+
+            <div class="manualCarrossel">
+                <label for="radio1" class="manualBotao"></label>
+                <label for="radio2" class="manualBotao"></label>
+                <label for="radio3" class="manualBotao"></label>
+                <label for="radio4" class="manualBotao"></label>
+            </div>
+
+        </div>
     </section>
 
     <section id="itens_desconto">
@@ -73,5 +107,6 @@
 
 
     <script src="script.js"></script>
+    <script src="javascript/carrosselImagens.js"></script>
 </body>
 </html>

@@ -23,6 +23,10 @@ body {
     src: url(../fontes/text_bold.ttf);
 }
 
+*{
+    font-family: texto;
+}
+
 header {
     height: 70px;
     background-color: #98dfee;
@@ -85,7 +89,6 @@ nav ul{
 
 nav ul li {
     align-content: center;
-    padding: 10px;
 }
 
 nav ul hr {
@@ -116,52 +119,6 @@ nav ul a:hover{
     justify-content: center;
     font-size: 30px;
     color: white;
-}
-
-#topo_promocoes {
-    margin-top: 30px;
-    height: 30vw;
-    width: 80%;
-    background-color: #a09b8c;
-    justify-self: center;
-    display: flex;
-    justify-content: space-between;
-    background-image: url(https://cdn.pixabay.com/photo/2018/08/09/20/49/stuffed-toy-3595453_640.jpg),
-    url(https://img.freepik.com/vetores-gratis/fundo-de-brinquedos-de-natal-de-design-plano_23-2148788244.jpg),
-    url(https://d3a0dcqzwu0eh0.cloudfront.net/images/350_qilckvipktynuhh03kdw.gif),
-    url(https://lunetas.com.br/wp-content/uploads/2017/03/declaracoes-de-amor-musicadas.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#topo_promocoes img {
-    display: none;
-}
-
-#topo_promocoes button {
-    width: 30px;
-    height: 150px;
-    background-color: red;
-    color: azure;
-    border-radius: 10%;
-    align-self: center;
-}
-
-#buttonLeft{
-    left: initial;
-    right: -10px;
-    position: relative;
-}
-
-#buttonRigh{
-    right: initial;
-    right: -10px;
-    position: relative; 
-}
-
-#topo_promocoes img {
-    height: 30vw;
-    width: 100%;
 }
 
 #itens_desconto {
@@ -219,5 +176,5 @@ footer {
     background-color: #45afa8;
     color: aliceblue;
     height: 300px;
-    width: 100vw;
+    width: 100%;
 }
