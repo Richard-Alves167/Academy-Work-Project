@@ -129,6 +129,36 @@ nav ul a:hover{
     justify-self: center;
 }
 
+#produtosDesconto {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+}
+
+.linhaDeItens {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+}
+
+.buttom {
+    width: 50px;
+    height: 50px;
+    border: black 2px solid;
+    border-radius: 100%;
+}
+
+#buttomLeftDescontos {
+    position: relative;
+    bottom: -200px;
+}
+
+#buttomLeftDescontos {
+    position: relative;
+    left: 0;
+
+}
+
 #novidades {
     margin-top: 80px;
     height: 30vw;
