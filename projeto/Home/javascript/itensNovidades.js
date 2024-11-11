@@ -7,10 +7,23 @@ if (armazenamentoNovidadesItens != null) {
     arrayNovidades = JSON.parse(armazenamentoNovidadesItens)
 }
 
+function produtosNovos(array) {
+    let arrayDeItens = []
+    for (let i = 0; i < array.length - 1; i++) {
+       if (i>array.length - 7) {
+         arrayDeItens.push(array[i])
+       } 
+    }
+    return arrayDeItens
+}
+const arraySecaoNovidades = produtosNovos(arrayNovidades)
+
+console.log(arraySecaoNovidades)
+
 function rederizarSecaoNovidades() {
     secaoNovidades.innerHTML = ""
 
-    arrayNovidades.forEach(object => {
+    arraySecaoNovidades.forEach(object => {
         let novoCard = document.createElement("li")
     
         novoCard.innerHTML = `

@@ -27,86 +27,10 @@ body {
     font-family: texto;
 }
 
-header {
-    height: 70px;
-    background-color: #98dfee;
-    align-content: center;
-}
-
-header p {
-    font-size: 35px;
-    justify-content: left;
-    align-items: center;
-    margin: auto;
-    margin-left: 40px;
-    font-family: fraseinicial;
-}
-
-#logo_B {
-    font-size: 35px;
-    font-family: fraseinicial;
-    color: rgb(228, 209, 122);
-}
-
-#logo_T {
-    font-size: 35px;
-    font-family: fraseinicial;
-    color: #ff6c70;
-}
-
-#navegador {
-    height: 50px;
-    background-color: #45afa8;
-    display: flex;
-    align-content: center;
-    justify-content: flex-end;
-    padding-right: 30px;
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
-}
-
-ul #atual {
-    background-color: rgba(121, 121, 121, 0.493);
-    border-radius: 10px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: -webkit-center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-nav ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    font-size: 30px;
-    margin: auto;
-    height: 100%;
-}
-
-nav ul li {
-    align-content: center;
-}
-
-nav ul hr {
-    height: 30px;
-    border: white 1px solid;
-}
-
-nav ul a{
-    font-size: 30px;
-    color: rgb(255, 255, 255);
+#marca a {
     text-decoration: none;
-    list-style: none;
-    transition: 1s;
-}
-
-nav ul a:hover{
-    color: #ff6c70;
-    transform: scale(1.2);
+    font-family: fraseinicial;
+    color: black;
 }
 
 #inicioarticle {
@@ -121,12 +45,52 @@ nav ul a:hover{
     color: white;
 }
 
+.secaoDisplay {
+    display: flex;
+    align-items: center;
+}
+
+.secaoTexto {
+    position: absolute;
+    align-self: baseline;
+    margin-left: 30px;
+    font-size: 26px;
+}
+
+.linhaDeItens {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    margin-top: 85px;
+}
+
+.buttomLeftSecao {
+    width: 50px;
+    height: 50px;
+    border: black 2px solid;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.buttomRightSecao {
+    width: 50px;
+    height: 50px;
+    border: black 2px solid;
+    border-radius: 100%;
+    position: absolute;
+    right: 10.5%;
+    cursor: pointer;
+}
+
 #itens_desconto {
     margin-top: 80px;
-    height: 30vw;
+    height: 500px;
     width: 80%;
     background-color: #a09b8c;
     justify-self: center;
+    place-content: center;
 }
 
 #produtosDesconto {
@@ -135,33 +99,20 @@ nav ul a:hover{
     overflow: hidden;
 }
 
-.linhaDeItens {
+.desconto {
+    color: rgba(112, 112, 112, 0.614);
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+.iten_preco_desconto {
     display: flex;
-    list-style: none;
-    overflow: hidden;
-}
-
-.buttom {
-    width: 50px;
-    height: 50px;
-    border: black 2px solid;
-    border-radius: 100%;
-}
-
-#buttomLeftDescontos {
-    position: relative;
-    bottom: -200px;
-}
-
-#buttomLeftDescontos {
-    position: relative;
-    left: 0;
-
+    flex-direction: column;
 }
 
 #novidades {
     margin-top: 80px;
-    height: 30vw;
+    height: 500px;
     width: 80%;
     background-color: #a09b8c;
     justify-self: center;
@@ -169,7 +120,7 @@ nav ul a:hover{
 
 #itens_nacionais {
     margin-top: 80px;
-    height: 30vw;
+    height: 500px;
     width: 80%;
     background-color: #a09b8c;
     justify-self: center;
@@ -177,7 +128,7 @@ nav ul a:hover{
 
 #itens_saude {
     margin-top: 80px;
-    height: 30vw;
+    height: 500px;
     width: 80%;
     background-color: #a09b8c;
     justify-self: center;
@@ -185,7 +136,7 @@ nav ul a:hover{
 
 #itens_seguranca {
     margin-top: 80px;
-    height: 30vw;
+    height: 500px;
     width: 80%;
     background-color: #a09b8c;
     justify-self: center;
@@ -193,7 +144,7 @@ nav ul a:hover{
 
 #itens_entretenimento {
     margin-top: 80px;
-    height: 30vw;
+    height: 500px;
     width: 80%;
     background-color: #a09b8c;
     justify-self: center;
@@ -205,6 +156,61 @@ footer {
     margin-top: 80px;
     background-color: #45afa8;
     color: aliceblue;
-    height: 300px;
+    height: 420px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+footer section {
+    width: 15%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer section h3 {
+    font-size: 25px;
+    margin: 10px;
+    margin-inline: 0px;
+}
+
+footer section p {
+    font-size: 12px;
+}
+
+footer section ul{
+    list-style: none;
+    padding: 0px;
+}
+
+footer section ul li{
+    display: flex;
+    margin-top: 6px;
+    gap: 10px;
+}
+
+footer section ul a{
+    display: flex;
+    gap: 10px;
+}
+
+#marca {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: fraseinicial;
+    font-size: 24px;
+    color: black;
+}
+
+#sobreNos {
+    font-size: 13px;
+}
+
+.iconeRedeSocial {
+    width: 30px;
+    height: 30px;
 }

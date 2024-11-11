@@ -7,10 +7,16 @@ if (armazenamentoFreteGratisItens != null) {
     arrayFreteGratis = JSON.parse(armazenamentoFreteGratisItens)
 }
 
+const arraySecaoFreteGratis = arrayFreteGratis.filter((object) => 
+    object.localidade == "Nacional"
+)
+
+console.log(arraySecaoFreteGratis)
+
 function rederizarSecaoFreteGratis() {
     secaoFreteGratis.innerHTML = ""
 
-    arrayFreteGratis.forEach(object => {
+    arraySecaoFreteGratis.forEach(object => {
         let novoCard = document.createElement("li")
     
         novoCard.innerHTML = `

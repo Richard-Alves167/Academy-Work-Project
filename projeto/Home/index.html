@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Cadastramento/css/CardItens.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <link href="../Home/css/Navigation.css" rel="stylesheet">
     <link href="./css/carrosselPromocoes.css" rel="stylesheet">
-    <link href="../Cadastramento/css/CardItens.css" rel="stylesheet">
 
     <title>Home</title>
     <link rel="shortcut icon" href="./imagens/lojaIcone.jpg" type="image/png">
@@ -15,19 +15,23 @@
 <body>   
     <header>
         <div id="marca">
-            <p><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</p>
+            <p><a href="../Home/index.html"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</a></p>
         </div>
         <div id="user_login">
-            
+            <p>Login</p>
+            <p>Carrinho</p>
         </div>
     </header>
 
     <div id="navegador">
         <nav>
             <ul>
-                <li id="atual"><a href="../Home/index.html">Home</a></li>
-                <li><a href="../Cadastramento/Cadastro_comprador.html">Cadastro comprador</a></li>
-                <li><a href="../Cadastramento/Cadastro_itens.html">Cadastro Ítens</a></li>
+                <li id="cadastros">Cadastros
+                    <div id="clickCadastro">
+                <a href="../Cadastramento/Cadastro_comprador.html">Comprador</a>
+                <a href="../Cadastramento/Cadastro_itens.html">Ítens</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </div>
@@ -77,55 +81,95 @@
         </div>
     </section>
 
-    <section id="itens_desconto">
-            <h1>Descontos diários</h1>
-        <button id="buttomLeftDescontos" class="buttom">&lt</button>
+    <section class="secaoDisplay" id="itens_desconto">
+           <h1 class="secaoTexto">Descontos do Dia para você aproveitar</h1>
             <ul id="produtosDesconto" class="linhaDeItens">
             </ul>
-        <button id="buttomRightDescontos" class="buttom">&gt</button>
     </section>
 
-    <section id="novidades">
-            <h1>Novos produtos essa semana</h1>
-            <button id="buttomLeftNovidades" class="buttom">&lt</button>
+    <section class="secaoDisplay" id="novidades">
+           <h1 class="secaoTexto">Novos produtos essa semana</h1>
+        <button class="buttomLeftSecao">&lt</button>
             <ul id="produtosNovidades" class="linhaDeItens">
             </ul>
-        <button id="buttomRightNovidades" class="buttom">&gt</button>
+        <button class="buttomRightSecao">&gt</button>
     </section>
 
-    <section id="itens_nacionais">
-        <h1>Frete grátis</h1>
-            <button id="buttomLeftFreteGratis" class="buttom">&lt</button>
+    <section class="secaoDisplay" id="itens_nacionais">
+        <h1 class="secaoTexto">Frete grátis</h1>
+        <button class="buttomLeftSecao">&lt</button>
             <ul id="produtosFreteGratis" class="linhaDeItens">
             </ul>
-        <button id="buttomRightFreteGratis" class="buttom">&gt</button>
+        <button class="buttomRightSecao">&gt</button>
     </section>
 
-    <section id="itens_saude">
-        <h1>Produtos para o cuidado de seu bebê</h1>
-            <button id="buttomLeftSaude" class="buttom">&lt</button>
+    <section class="secaoDisplay" id="itens_saude">
+        <h1 class="secaoTexto">Produtos para o cuidado de seu bebê</h1>
+        <button class="buttomLeftSecao">&lt</button>
             <ul id="produtosSaude" class="linhaDeItens">
             </ul>
-        <button id="buttomRightSaude" class="buttom">&gt</button>
+        <button class="buttomRightSecao">&gt</button>
     </section>
 
-    <section id="itens_seguranca">
-        <h1>Produtos para a segurança de seu bebê</h1>
-            <button id="buttomLeftSeguranca" class="buttom">&lt</button>
+    <section class="secaoDisplay" id="itens_seguranca">
+        <h1 class="secaoTexto">Produtos para a segurança de seu bebê</h1>
+        <button class="buttomLeftSecao">&lt</button>
             <ul id="produtosSeguranca" class="linhaDeItens">
             </ul>
-        <button id="buttomRightSeguranca" class="buttom">&gt</button>
+        <button class="buttomRightSecao">&gt</button>
     </section>
 
-    <section id="itens_entretenimento">
-        <h1>Produtos para a diversão de seu bebê</h1>
-            <button id="buttomLeftEntretenimento" class="buttom">&lt</button>
+    <section class="secaoDisplay" id="itens_entretenimento">
+        <h1 class="secaoTexto">Produtos para a diversão de seu bebê</h1>
+        <button class="buttomLeftSecao">&lt</button>
             <ul id="produtosEntretenimento" class="linhaDeItens">
             </ul>
-        <button id="buttomRightEntretenimento" class="buttom">&gt</button>
+        <button class="buttomRightSecao">&gt</button>
     </section>
 
-    <footer></footer>
+    <footer>
+        <section>
+                <p id="marca"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</p>
+
+            <p id="sobreNos">Somos uma loja especializada em brinquedos de qualidade, selecionados com carinho para oferecer diversão, aprendizado e momentos inesquecíveis para as crianças de todas as idades.<br>
+
+            Nossa missão é proporcionar um ambiente seguro e estimulante, com brinquedos que favorecem o desenvolvimento, a imaginação e a criatividade,além da segurança e cuidado para seu filho.<br>
+            </p>
+        </section>
+        <section>
+            <h3>Contato</h3>
+
+            <ul>
+                <li><img src="./imagens/icons8-whatsapp-512.png" class="iconeRedeSocial">Whatzapp:<br>
+                (21) 928234-6173</li>
+
+                <li><img src="./imagens/icons8-nova-mensagem-96.png" class="iconeRedeSocial">Email:<br>
+                BabyToys@gmail.com</li>
+
+                <li>Horário de atendimento ao cliente:<br>
+                07:00 às 18:00</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Siga nos</h3>
+            <ul>                
+                <li><a><img src="./imagens/icons8-instagram-512.png" class="iconeRedeSocial">Instagram<br></a></li>
+                <li><a><img src="./imagens/icons8-tiktok-500.png" class="iconeRedeSocial">TikTok<br></a></li>
+                <li><a><img src="./imagens/icons8-x-500.png" class="iconeRedeSocial">X/Twitter<br></a></li>
+                <li><a><img src="./imagens/icons8-facebook-500.png" class="iconeRedeSocial">Facebook<br></a></li>
+                <li><a><img src="./imagens/icons8-linkedin-500.png" class="iconeRedeSocial">LinkedIn<br></a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Informações</h3>
+
+            <ul>
+                <li>Sobre comliras</li>
+                <li>Atendimento ao cliente</li>
+                <li>Dúvidas frenquentes</li>
+            </ul>
+        </section>
+    </footer>
 </main>
 
     <script src="javascript/script.js"></script>

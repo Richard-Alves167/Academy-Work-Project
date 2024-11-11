@@ -7,10 +7,16 @@ if (armazenamentoSaudeItens != null) {
     arraySaude = JSON.parse(armazenamentoSaudeItens)
 }
 
+const arraySecaoSaude = arraySaude.filter((object) => 
+    object.tipoDeArtigo == "Saúde"
+)
+
+console.log(arraySecaoSaude)
+
 function rederizarSecaoSaude() {
     secaoSaude.innerHTML = ""
 
-    arraySaude.forEach(object => {
+    arraySecaoSaude.forEach(object => {
         let novoCard = document.createElement("li")
     
         novoCard.innerHTML = `

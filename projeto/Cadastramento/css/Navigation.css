@@ -39,6 +39,12 @@ header p {
     font-family: fraseinicial;
 }
 
+#marca a {
+    text-decoration: none;
+    font-family: fraseinicial;
+    color: black;
+}
+
 #logo_B {
     font-size: 40px;
     font-family: fraseinicial;
@@ -81,8 +87,8 @@ header p {
     align-content: center;
     justify-content: flex-end;
     padding-right: 30px;
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
 }
 
 ul #atual {
@@ -92,7 +98,6 @@ ul #atual {
 
 nav {
     display: flex;
-    align-items: center;
     justify-content: center;
     text-align: -webkit-center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
