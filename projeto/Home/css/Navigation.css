@@ -83,14 +83,13 @@ header p {
 }
 
 #navegador {
-    height: 50px;
-    background-color: #45afa8;
+    height: 46px;
+    background-color: #19dacd;
     display: flex;
     align-content: center;
     justify-content: flex-end;
     padding-right: 30px;
-    border-top: 1px black solid;
-    border-bottom: 1px black solid;
+    border-top: 1px rgb(0, 154, 146) solid;
 }
 
 ul #atual {
@@ -132,6 +131,23 @@ nav ul a{
 nav ul a:hover{
     color: #ff6c70;
     transform: scale(1.1);
+}
+
+#user_login {
+    display: flex;
+    gap: 40px;
+    margin-right: 50px;
+}
+
+#user_login img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px rgb(255, 255, 255) solid;
+}
+
+#user_login img:hover {
+    cursor: pointer;
 }
 
 #cadastros {

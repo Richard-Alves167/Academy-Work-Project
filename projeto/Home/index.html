@@ -18,8 +18,8 @@
             <p><a href="../Home/index.html"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</a></p>
         </div>
         <div id="user_login">
-            <p>Login</p>
-            <p>Carrinho</p>
+            <a><img src="./imagens/iconUser.png" class="iconeRedeSocial"></a>
+            <a href="./carrinhoDeCompras.html"><img src="./imagens/carrinhoCompras.png" class="iconeRedeSocial"></a>
         </div>
     </header>
 
@@ -81,55 +81,55 @@
         </div>
     </section>
 
-    <section class="secaoDisplay" id="itens_desconto">
+    <section class="secaoDisplay" id="secaoDesconto">
            <h1 class="secaoTexto">Descontos do Dia para você aproveitar</h1>
             <ul id="produtosDesconto" class="linhaDeItens">
             </ul>
     </section>
 
-    <section class="secaoDisplay" id="novidades">
+    <section class="secaoDisplay" id="secaoNovidades">
            <h1 class="secaoTexto">Novos produtos essa semana</h1>
-        <button class="buttomLeftSecao">&lt</button>
+        <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaNovidades()">&lt</button>
             <ul id="produtosNovidades" class="linhaDeItens">
             </ul>
-        <button class="buttomRightSecao">&gt</button>
+        <button class="buttomRightSecao" onclick="andarCarrosselDireitaNovidades()">&gt</button>
     </section>
 
-    <section class="secaoDisplay" id="itens_nacionais">
+    <section class="secaoDisplay" id="secaoNacionais">
         <h1 class="secaoTexto">Frete grátis</h1>
-        <button class="buttomLeftSecao">&lt</button>
+        <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaFreteGratis()">&lt</button>
             <ul id="produtosFreteGratis" class="linhaDeItens">
             </ul>
-        <button class="buttomRightSecao">&gt</button>
+        <button class="buttomRightSecao" onclick="andarCarrosselDireitaFreteGratis()">&gt</button>
     </section>
 
-    <section class="secaoDisplay" id="itens_saude">
+    <section class="secaoDisplay" id="secaoSaude">
         <h1 class="secaoTexto">Produtos para o cuidado de seu bebê</h1>
-        <button class="buttomLeftSecao">&lt</button>
+        <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaSaude()">&lt</button>
             <ul id="produtosSaude" class="linhaDeItens">
             </ul>
-        <button class="buttomRightSecao">&gt</button>
+        <button class="buttomRightSecao" onclick="andarCarrosselDireitaSaude()">&gt</button>
     </section>
 
-    <section class="secaoDisplay" id="itens_seguranca">
+    <section class="secaoDisplay" id="secaoSeguranca">
         <h1 class="secaoTexto">Produtos para a segurança de seu bebê</h1>
-        <button class="buttomLeftSecao">&lt</button>
+        <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaSeguranca()">&lt</button>
             <ul id="produtosSeguranca" class="linhaDeItens">
             </ul>
-        <button class="buttomRightSecao">&gt</button>
+        <button class="buttomRightSecao" onclick="andarCarrosselDireitaSeguranca()">&gt</button>
     </section>
 
-    <section class="secaoDisplay" id="itens_entretenimento">
+    <section class="secaoDisplay" id="secaoEntretenimento">
         <h1 class="secaoTexto">Produtos para a diversão de seu bebê</h1>
-        <button class="buttomLeftSecao">&lt</button>
+        <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaEntretenimento()">&lt</button>
             <ul id="produtosEntretenimento" class="linhaDeItens">
             </ul>
-        <button class="buttomRightSecao">&gt</button>
+        <button class="buttomRightSecao" onclick="andarCarrosselDireitaEntretenimento()">&gt</button>
     </section>
 
     <footer>
         <section>
-                <p id="marca"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</p>
+            <p id="marca"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</p>
 
             <p id="sobreNos">Somos uma loja especializada em brinquedos de qualidade, selecionados com carinho para oferecer diversão, aprendizado e momentos inesquecíveis para as crianças de todas as idades.<br>
 
@@ -140,39 +140,39 @@
             <h3>Contato</h3>
 
             <ul>
-                <li><img src="./imagens/icons8-whatsapp-512.png" class="iconeRedeSocial">Whatzapp:<br>
+                <li><img src="./imagens/whatsapp.png" class="iconeRedeSocial">Whatzapp:<br>
                 (21) 928234-6173</li>
 
-                <li><img src="./imagens/icons8-nova-mensagem-96.png" class="iconeRedeSocial">Email:<br>
+                <li><img src="./imagens/email.png" class="iconeRedeSocial">Email:<br>
                 BabyToys@gmail.com</li>
 
-                <li>Horário de atendimento ao cliente:<br>
+                <li>Horário de atendimento:<br>
                 07:00 às 18:00</li>
             </ul>
         </section>
         <section>
             <h3>Siga nos</h3>
             <ul>                
-                <li><a><img src="./imagens/icons8-instagram-512.png" class="iconeRedeSocial">Instagram<br></a></li>
-                <li><a><img src="./imagens/icons8-tiktok-500.png" class="iconeRedeSocial">TikTok<br></a></li>
-                <li><a><img src="./imagens/icons8-x-500.png" class="iconeRedeSocial">X/Twitter<br></a></li>
-                <li><a><img src="./imagens/icons8-facebook-500.png" class="iconeRedeSocial">Facebook<br></a></li>
-                <li><a><img src="./imagens/icons8-linkedin-500.png" class="iconeRedeSocial">LinkedIn<br></a></li>
+                <li><a><img src="./imagens/instagram.png" class="iconeRedeSocial">Instagram<br></a></li>
+                <li><a><img src="./imagens/tiktok.png" class="iconeRedeSocial">TikTok<br></a></li>
+                <li><a><img src="./imagens/x.png" class="iconeRedeSocial">X/Twitter<br></a></li>
+                <li><a><img src="./imagens/facebook.png" class="iconeRedeSocial">Facebook<br></a></li>
+                <li><a><img src="./imagens/linkedin.png" class="iconeRedeSocial">LinkedIn<br></a></li>
             </ul>
         </section>
         <section>
             <h3>Informações</h3>
 
             <ul>
-                <li>Sobre comliras</li>
-                <li>Atendimento ao cliente</li>
-                <li>Dúvidas frenquentes</li>
+                <li>-Sobre compras</li>
+                <li>-Atendimento ao cliente</li>
+                <li>-Dúvidas frenquentes</li>
             </ul>
         </section>
     </footer>
 </main>
 
-    <script src="javascript/script.js"></script>
+    <script src="javascript/secaoBotoes.js"></script>
     <script src="javascript/carrosselImagens.js"></script>
     <script src="javascript/itensDesconto.js"></script>
     <script src="javascript/itensDesconto.js"></script>

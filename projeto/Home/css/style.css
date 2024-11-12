@@ -48,6 +48,7 @@ body {
 .secaoDisplay {
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .secaoTexto {
@@ -62,6 +63,7 @@ body {
     list-style: none;
     overflow: hidden;
     margin-top: 85px;
+    transition: 0.7s;
 }
 
 .buttomLeftSecao {
@@ -84,13 +86,15 @@ body {
     cursor: pointer;
 }
 
-#itens_desconto {
+#secaoDesconto {
     margin-top: 80px;
     height: 500px;
-    width: 80%;
-    background-color: #a09b8c;
+    width: 70%;
+    background-color: rgba(141, 141, 141, 0.735);
+    border-radius: 50px;
     justify-self: center;
     place-content: center;
+    padding: 0;
 }
 
 #produtosDesconto {
@@ -110,43 +114,48 @@ body {
     flex-direction: column;
 }
 
-#novidades {
+#secaoNovidades {
     margin-top: 80px;
     height: 500px;
     width: 80%;
-    background-color: #a09b8c;
+    background-color: rgba(141, 141, 141, 0.735);
+    border-radius: 20px;
     justify-self: center;
 }
 
-#itens_nacionais {
+#secaoNacionais {
     margin-top: 80px;
     height: 500px;
     width: 80%;
-    background-color: #a09b8c;
+    background-color: rgba(141, 141, 141, 0.735);
+    border-radius: 20px;
     justify-self: center;
 }
 
-#itens_saude {
+#secaoSaude {
     margin-top: 80px;
     height: 500px;
     width: 80%;
-    background-color: #a09b8c;
+    background-color: rgba(141, 141, 141, 0.735);
+    border-radius: 20px;
     justify-self: center;
 }
 
-#itens_seguranca {
+#secaoSeguranca {
     margin-top: 80px;
     height: 500px;
     width: 80%;
-    background-color: #a09b8c;
+    background-color: rgba(141, 141, 141, 0.735);
+    border-radius: 20px;
     justify-self: center;
 }
 
-#itens_entretenimento {
+#secaoEntretenimento {
     margin-top: 80px;
     height: 500px;
     width: 80%;
-    background-color: #a09b8c;
+    background-color: rgba(141, 141, 141, 0.735);
+    border-radius: 20px;
     justify-self: center;
 }
 
@@ -162,6 +171,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 120px;
+    bottom: auto;
 }
 
 footer section {
@@ -188,6 +198,7 @@ footer section ul{
 
 footer section ul li{
     display: flex;
+    align-items: center;
     margin-top: 6px;
     gap: 10px;
 }
