@@ -34,10 +34,9 @@ function rederizarSecaoDesconto() {
 
     arraySecaoDescontos.forEach(object => {
         let novoCard = document.createElement("li")
+        novoCard.classList.add("card")
     
         novoCard.innerHTML = `
-        <li class="card">
-        <button class="botaoAdicionarCarrinho">+<img src="./imagens/carrinhoCompras.png"></button>
             <div class="itens_cadastrados">
                 <img class="iten_imagem" src="${object.imagem}">
                 <div class="iten_nome">${object.nome}</div>
@@ -47,7 +46,9 @@ function rederizarSecaoDesconto() {
                 </div>
                 </div>
             </div>
-        </li>
+            <button class="botaoAdicionarCarrinho" onclick="adicionarCarrinho(${arrayDesconto.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+            <div class="trianguloDesconto"></div>
+            <div class="textoDesconto">-20%</div>
         `
         secaoDesconto.appendChild(novoCard)
     });

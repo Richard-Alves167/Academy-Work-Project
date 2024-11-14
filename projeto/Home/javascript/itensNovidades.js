@@ -8,13 +8,13 @@ if (armazenamentoNovidadesItens != null) {
 }
 
 function produtosNovos(array) {
-    let arrayDeItens = []
+    let arrayDeItensNovos = []
     for (let i = 0; i < array.length - 1; i++) {
        if (i>array.length - 7) {
-         arrayDeItens.push(array[i])
+         arrayDeItensNovos.push(array[i])
        } 
     }
-    return arrayDeItens
+    return arrayDeItensNovos
 }
 const arraySecaoNovidades = produtosNovos(arrayNovidades)
 
@@ -25,18 +25,17 @@ function rederizarSecaoNovidades() {
 
     arraySecaoNovidades.forEach(object => {
         let novoCard = document.createElement("li")
-    
+        novoCard.classList.add("card")
+
         novoCard.innerHTML = `
-        <li class="card">
-        <button class="botaoAdicionarCarrinho">+<img src="./imagens/carrinhoCompras.png"></button>
-        <div class="itens_cadastrados">
-        <img class="iten_imagem" src="${object.imagem}">
-        <div class="iten_nome">${object.nome}</div>
-        <div class="iten_preco">
-        <span class="cifrao">R$</span>${object.preco}
-        </div>
-        </div>
-        </li>
+            <div class="itens_cadastrados">
+                <img class="iten_imagem" src="${object.imagem}">
+                <div class="iten_nome">${object.nome}</div>
+                <div class="iten_preco">
+                <span class="cifrao">R$</span>${object.preco}
+                </div>
+            </div>
+            <button class="botaoAdicionarCarrinho" onclick="adicionarCarrinho(${arrayNovidades.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
         `
         secaoNovidades.appendChild(novoCard)
     });

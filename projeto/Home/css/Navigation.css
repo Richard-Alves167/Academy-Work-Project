@@ -37,7 +37,7 @@ header p {
     justify-content: left;
     align-items: center;
     margin: auto;
-    margin-left: 40px;
+    margin-left: 10vw;
     font-family: fraseinicial;
 }
 
@@ -136,7 +136,7 @@ nav ul a:hover{
 #user_login {
     display: flex;
     gap: 40px;
-    margin-right: 50px;
+    margin-right: 10vw;
 }
 
 #user_login img {

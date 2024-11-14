@@ -101,6 +101,7 @@ body {
     display: flex;
     list-style: none;
     overflow: hidden;
+    padding: 0;
 }
 
 .desconto {
