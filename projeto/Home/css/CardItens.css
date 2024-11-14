@@ -73,3 +73,16 @@
     margin-right: 5px;
     text-decoration: none;
 }
+
+.botaoAdicionarCarrinho {
+    display: flex;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 180px;
+    background-color: rgb(255, 72, 103);
+    border-radius: 20px;
+}
+
+.botaoAdicionarCarrinho img {
+    width: 20px;
+}

@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/CardItens.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <link href="../Home/css/Navigation.css" rel="stylesheet">
     <link href="./css/carrinhoDeCompras.css" rel="stylesheet">
 
-    <title>Home</title>
+    <title>Carrinho de Compras</title>
     <link rel="shortcut icon" href="./imagens/lojaIcone.jpg" type="image/png">
 
 </head>
@@ -28,31 +29,120 @@
         </nav>
     </div>
 
-    <section id="compra">
-        <div>
-            <table id="compraTabela">
-                <thead>
-                    <th>
-                        <td>Nome</td>
-                        <td>Quantidade</td>
-                        <td>Preço</td>
-                        <td>Total</td>
-                    </th>
-                </thead>
-                <tbody>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>Total</td>
-                </tbody>
-                <tfoot>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>Total</td>
-                </tfoot>
-            </table>
+    <section>
+        <div id="compra">
+            <div id="carrinho">
+                <p>-.Carrinho.-</p>
+                <table id="compraTabela">
+                    <tbody id="produtosTabela">
+                        <tr>
+                            <td class="imagemTabela"><img src="./imagens/carrinhoCompras.png"></td>
+                            <td class="nomeTabela">Carrinho de brinquedo movido à fricção e bla bla bla<br>
+                            <button class="iconeTabela"><img src="./imagens/lixeira.jpg"></button></td>
+                            <td class="quantidadeTabela"><div class="mudarQuantidade"><button>-</button>12<button>+</button></div></td>
+                            <td class="precoTabela">R$ 1999.99</td>
+                            <td class="totalTabela">R$ 199999.99</td>
+                        </tr>
+                        <tr>
+                            <td class="imagemTabela"><img src="./imagens/carrinhoCompras.png"></td>
+                            <td class="nomeTabela">Carrinho de brinquedo movido à fricção e bla bla bla<br>
+                            <button class="iconeTabela"><img src="./imagens/lixeira.jpg"></button></td>
+                            <td class="quantidadeTabela"><div class="mudarQuantidade"><button>-</button>12<button>+</button></div></td>
+                            <td class="precoTabela">R$ 1999.99</td>
+                            <td class="totalTabela">R$ 199999.99</td>
+                        </tr>
+                        <tr>
+                            <td class="imagemTabela"><img src="./imagens/carrinhoCompras.png"></td>
+                            <td class="nomeTabela">Carrinho de brinquedo movido à fricção e bla bla bla<br>
+                            <button class="iconeTabela"><img src="./imagens/lixeira.jpg"></button></td>
+                            <td class="quantidadeTabela"><div class="mudarQuantidade"><button>-</button>12<button>+</button></div></td>
+                            <td class="precoTabela">R$ 1999.99</td>
+                            <td class="totalTabela">R$ 199999.99</td>
+                        </tr>
+                        <tr>
+                            <td class="imagemTabela"><img src="./imagens/carrinhoCompras.png"></td>
+                            <td class="nomeTabela">Carrinho de brinquedo movido à fricção e bla bla bla<br>
+                            <button class="iconeTabela"><img src="./imagens/lixeira.jpg"></button></td>
+                            <td class="quantidadeTabela"><div class="mudarQuantidade"><button>-</button>12<button>+</button></div></td>
+                            <td class="precoTabela">R$ 1999.99</td>
+                            <td class="totalTabela">R$ 199999.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="resultado">
+                <h3>Resumo da Compra</h3>
+                <hr>
+                <div>
+                    <span>Produtos</span>
+                    <span>R$300.00</span>
+                </div>
+                <div>
+                    Frete <span>calcular</span>
+                </div>
+                <div id="totalResultado">
+                    <span>Total dos Itens</span> <span>R$23425.00</span>
+                </div>
+                <button>Comprar</button>
+            </div>
         </div>
     </section>
+
+    <li class="card">
+        <div class="itens_cadastrados">
+            <img class="iten_imagem" src="${object.imagem}">
+            <div class="iten_nome">nome</div>
+            <div class="iten_preco"><div class="iten_preco_desconto">
+            <div class="desconto"><span class="cifrao">R$</span>preco</div>
+            <div><span class="cifrao">R$</span>object</div>
+            </div>
+            </div>
+            <button class="botaoAdicionarCarrinho">+<img src="./imagens/carrinhoCompras.png"></button>
+        </div>
+    </li>
+
+    <footer>
+        <section>
+            <p id="marca"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</p>
+
+            <p id="sobreNos">Somos uma loja especializada em brinquedos de qualidade, selecionados com carinho para oferecer diversão, aprendizado e momentos inesquecíveis para as crianças de todas as idades.<br>
+
+            Nossa missão é proporcionar um ambiente seguro e estimulante, com brinquedos que favorecem o desenvolvimento, a imaginação e a criatividade,além da segurança e cuidado para seu filho.<br>
+            </p>
+        </section>
+        <section>
+            <h3>Contato</h3>
+
+            <ul>
+                <li><img src="./imagens/whatsapp.png" class="iconeRedeSocial">Whatzapp:<br>
+                (21) 928234-6173</li>
+
+                <li><img src="./imagens/email.png" class="iconeRedeSocial">Email:<br>
+                BabyToys@gmail.com</li>
+
+                <li>Horário de atendimento:<br>
+                07:00 às 18:00</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Siga nos</h3>
+            <ul>                
+                <li><a><img src="./imagens/instagram.png" class="iconeRedeSocial">Instagram</a></li>
+                <li><a><img src="./imagens/tiktok.png" class="iconeRedeSocial">TikTok</a></li>
+                <li><a><img src="./imagens/x.png" class="iconeRedeSocial">X/Twitter</a></li>
+                <li><a><img src="./imagens/facebook.png" class="iconeRedeSocial">Facebook</a></li>
+                <li><a><img src="./imagens/linkedin.png" class="iconeRedeSocial">LinkedIn</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Informações</h3>
+
+            <ul>
+                <li>-Sobre compras</li>
+                <li>-Atendimento ao cliente</li>
+                <li>-Dúvidas frenquentes</li>
+            </ul>
+        </section>
+    </footer>
 </body>
 </html>

@@ -37,15 +37,16 @@ function rederizarSecaoDesconto() {
     
         novoCard.innerHTML = `
         <li class="card">
-        <div class="itens_cadastrados">
-        <img class="iten_imagem" src="${object.imagem}">
-        <div class="iten_nome">${object.nome}</div>
-        <div class="iten_preco"><div class="iten_preco_desconto">
-        <div class="desconto"><span class="cifrao">R$</span>${object.preco}</div>
-        <div><span class="cifrao">R$</span>${Math.floor(object.preco-object.preco*0.20)}</div>
-        </div>
-        </div>
-        </div>
+        <button class="botaoAdicionarCarrinho">+<img src="./imagens/carrinhoCompras.png"></button>
+            <div class="itens_cadastrados">
+                <img class="iten_imagem" src="${object.imagem}">
+                <div class="iten_nome">${object.nome}</div>
+                <div class="iten_preco"><div class="iten_preco_desconto">
+                <div class="desconto"><span class="cifrao">R$</span>${object.preco}</div>
+                <div><span class="cifrao">R$</span>${Math.floor(object.preco-object.preco*0.20)}</div>
+                </div>
+                </div>
+            </div>
         </li>
         `
         secaoDesconto.appendChild(novoCard)

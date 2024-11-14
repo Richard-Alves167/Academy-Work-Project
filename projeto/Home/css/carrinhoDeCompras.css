@@ -1,0 +1,152 @@
+button{
+    cursor: pointer;
+}
+
+#carrinho {
+    padding: 20px;
+    background-color: gray;
+    border-radius: 20px;
+}
+
+#carrinho p {
+    display: flex;
+    justify-self: center;
+    font-size: 30px;
+    color: aliceblue;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#compra {
+    display: flex;
+    justify-self: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+#compraTabela {
+    border-collapse: collapse;
+}
+
+#compraTabela tr {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 3px 5px black;
+}
+
+#produtosTabela {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.imagemTabela {
+    padding: 10px;
+}
+
+.imagemTabela img {
+    width: 80px;
+    height: 80px;
+}
+
+.nomeTabela {
+    width: 300px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.iconeTabela {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.iconeTabela img {
+    width: 30px;
+    height: 30px;
+}
+
+.quantidadeTabela {
+    width: 120px;
+    padding-left: 10px;
+}
+
+.mudarQuantidade {
+    border: 1px black solid;
+    height: 30px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.mudarQuantidade button {
+    background: none;
+    border: none;
+    color: rgb(255, 123, 145);
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+.precoTabela {
+    width: 130px;
+    padding-left: 10px;
+}
+
+.totalTabela {
+    width: 140px;
+}
+
+#resultado {
+    background-color: aquamarine;
+    border-radius: 10px;
+    width: 20vw;
+    height: 220px;
+    padding: 20px;
+}
+
+#resultado hr {
+    border: 1px solid gray;
+}
+
+#resultado div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+#totalResultado {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 1000;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#resultado button {
+    background-color: rgb(248, 248, 248);
+    border-radius: 50px;
+    font-size: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    user-select: none;
+}
+
+#resultado button:hover {
+    background-color: rgb(255, 123, 145);
+}
+
+footer {
+    margin-top: 400px;
+}
