@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/tabelaDeCadastrados.css" rel="stylesheet">
+    <link href="../Home/css/Navigation.css" rel="stylesheet">
+    <link href="./css/listaDePedidos.css" rel="stylesheet">
+    <link href="./css/rodape.css" rel="stylesheet">
+
+    <title>Carrinho de Compras</title>
+    <link rel="shortcut icon" href="./imagens/lojaIcone.jpg" type="image/png">
+
+</head>
+<body>   
+    <header>
+        <div id="marca">
+            <p><a href="../Home/index.html"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</a></p>
+        </div>
+        <div id="user_login">
+            <a><img src="./imagens/iconUser.png" class="iconeRedeSocial"></a>
+            <a href="./carrinhoDeCompras.html"><img src="./imagens/carrinhoCompras.png" class="iconeRedeSocial"></a>
+        </div>
+    </header>
+
+    <div id="navegador">
+        <nav>
+
+        </nav>
+    </div>
+
+    <section id="pedidosLista">  
+        <div id="inicioarticle">
+            <h1>-Pedidos Solicitados-</h1>
+        </div>
+
+        <div id="corpocadastrados">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Remover</td>
+                        <td>Comprador</td>
+                        <td>Total do Pedido</td>
+                        <td>Produtos Solicitados</td>
+                    </tr>
+                </thead>
+                <tbody id="tabelaPedidosCadastrados">
+                    <tr>
+                        <td><button class="tabelaBotao" onclick="removerProduto(arrayTabelaItensobject)">X</button></td>
+                        <td>Richard De Jesus Cabral Alves</td>
+                        <td>R$ 1999.99</td>
+                        <td>
+                            <button class="tabelaBotaoMostrarProdutos" onclick="removerProduto(arrayTabelaItensobject)"><img src="imagens/carrinhoCheio.png"></button>
+                            <div class="trianguloProdutosDoCarrinhoSolicitado"></div>
+                            <div class="produtosDoCarrinhoSolicitado">
+                                <p>Produtos</p>
+                                <hr>
+                                <table>
+                                    <tbody id="tabelaDoCarrinhoSolicitado">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>img</td>
+                                            <td>nome</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>img</td>
+                                            <td>nome</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>img</td>
+                                            <td>nome</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>img</td>
+                                            <td>nome</td>
+                                            <td>12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <section>
+            <p id="marca"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</p>
+
+            <p id="sobreNos">Somos uma loja especializada em brinquedos de qualidade, selecionados com carinho para oferecer diversão, aprendizado e momentos inesquecíveis para as crianças de todas as idades.<br>
+
+            Nossa missão é proporcionar um ambiente seguro e estimulante, com brinquedos que favorecem o desenvolvimento, a imaginação e a criatividade,além da segurança e cuidado para seu filho.<br>
+            </p>
+        </section>
+        <section>
+            <h3>Contato</h3>
+
+            <ul>
+                <li><img src="./imagens/whatsapp.png" class="iconeRedeSocial">Whatzapp:<br>
+                (21) 928234-6173</li>
+
+                <li><img src="./imagens/email.png" class="iconeRedeSocial">Email:<br>
+                BabyToys@gmail.com</li>
+
+                <li>Horário de atendimento:<br>
+                07:00 às 18:00</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Siga nos</h3>
+            <ul>                
+                <li><a><img src="./imagens/instagram.png" class="iconeRedeSocial">Instagram</a></li>
+                <li><a><img src="./imagens/tiktok.png" class="iconeRedeSocial">TikTok</a></li>
+                <li><a><img src="./imagens/x.png" class="iconeRedeSocial">X/Twitter</a></li>
+                <li><a><img src="./imagens/facebook.png" class="iconeRedeSocial">Facebook</a></li>
+                <li><a><img src="./imagens/linkedin.png" class="iconeRedeSocial">LinkedIn</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Informações</h3>
+
+            <ul>
+                <li>-Sobre compras</li>
+                <li>-Atendimento ao cliente</li>
+                <li>-Dúvidas frenquentes</li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="javascript/adicionarCarrinho.js"></script>
+</body>
+</html>

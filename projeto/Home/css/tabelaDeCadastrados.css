@@ -1,0 +1,140 @@
+@font-face {
+    font-family: titulo;
+    src: url(../fontes/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face {
+    font-family: textLigth;
+    src: url(../fontes/text_light.ttf);
+}
+
+@font-face {
+    font-family: textInput;
+    src: url(../fontes/EdgecuttingLiteMedium.ttf);
+}
+
+@font-face {
+    font-family: textItens;
+    src: url(../fontes/LiberationSans-Regular.ttf);
+}
+
+* {
+    font-family: textLigth;
+}
+
+main {
+    width: 80vw;
+    margin: auto;
+    background-color: blanchedalmond;
+}
+
+#inicioarticle {
+    margin-top: 50px;
+    background-color: rgb(73, 170, 170);
+    height: 110px;
+    border: black 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    font-family: texto;
+    padding: auto;
+}
+
+#corpoarticle {
+    margin: 0px;
+}
+
+#corpocadastrados {
+    margin: 30px;
+    padding-bottom: 30px;
+}
+
+table {
+    border: 1px black solid;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(249, 255, 255);
+}
+
+thead {
+    text-align: center;
+    background-color: aqua;
+}
+
+tr {
+    border: 1px black solid;
+}
+
+td {
+    border: 1px black solid;
+    margin-left: 10px;
+    height: 30px;
+    justify-content: center;
+    text-align-last: center;
+    align-items: center;
+}
+
+.tabelaBotao {
+    width: 40px;
+    height: 20px;
+    border-radius: 20%;
+    justify-self: center;
+    background-color: red;
+    color: white;
+    font-family: textItens;
+    text-align-last: center;
+    align-items: center;
+}
+
+.tabelaBotaoMostrarProdutos {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 62);
+    justify-self: center;
+    text-align-last: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.tabelaBotaoMostrarProdutos img{
+    display: flex;
+    width: 25px;
+    height: 25px;
+}
+
+.produtosDoCarrinhoSolicitado {
+    width: 240px;
+    height: 400px;
+    background-color: antiquewhite;
+    border: 1px black solid;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -65px;
+    flex-direction: column;
+    padding-inline: 20px;
+}
+
+.trianguloProdutosDoCarrinhoSolicitado {
+    width: 0; 
+    height: 0; 
+    display: flex;
+    position: absolute;
+    rotate: 135deg;
+    margin-left: 250px;
+    margin-top: -53px;
+    border-left: 50px solid transparent;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid antiquewhite;
+}
+
+.produtosDoCarrinhoSolicitado hr{
+    border: 1px solid gray;
+    width: 230px;
+}
+

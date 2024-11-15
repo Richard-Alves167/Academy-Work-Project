@@ -50,11 +50,12 @@ function renderizarCarrinho() {
 const PrecoTotalPedido = document.getElementById("precoTotalPedido")
 
 function calcularPrecoTotalPedido() {
-    let sum = carrinhoDeProdutos.reduce(function(acumulador,produto){
-    return acumulador + (Number(produto.preco))
+    let sum = carrinhoDeProdutos.reduce((acumulador,produto) => {
+        let resultado = acumulador + Number(produto.preco)
+    return resultado
     },0);
 
-    PrecoTotalPedido.innerText = sum
+    PrecoTotalPedido.innerText = sum.toFixed(2)
 }
 
 renderizarCarrinho()
