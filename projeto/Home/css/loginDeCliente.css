@@ -1,0 +1,94 @@
+#fundoLogin {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    border-top: black 5px solid;
+    border-bottom: black 5px solid;
+}
+
+#loginCliente {
+    background-color: aliceblue;
+    height: 500px;
+    width: 360px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px black;
+}
+
+#loginCliente #marca p{
+    place-self: center;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#loginCliente #logo_B, #loginCliente #logo_T{
+    font-size: 62px;
+}
+
+.inputLogin {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.inputLogin span{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 60px;
+    display: none;
+}
+
+.inputLogin label {
+    font-size: large;
+}
+
+.inputLogin input {
+    background-color: rgb(245, 219, 186);
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(46, 46, 46);
+    font-size: 20px;
+}
+
+button {
+    border-radius: 15px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    background-color: rgb(228, 209, 122);
+    width: 65%;
+    align-self: center;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6c70;
+    color: aliceblue;
+}
+
+hr {
+    width: 90%;
+    border: 1px solid black;
+}
+
+#novoCadastroLogin {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#novoCadastroLogin a {
+    font-size: 24px;
+    color: #ff6c70;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
