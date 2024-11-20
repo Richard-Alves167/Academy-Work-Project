@@ -56,6 +56,7 @@ function calcularPrecoTotalPedido() {
     },0);
 
     PrecoTotalPedido.innerText = sum.toFixed(2)
+    return sum.toFixed(2)
 }
 
 renderizarCarrinho()

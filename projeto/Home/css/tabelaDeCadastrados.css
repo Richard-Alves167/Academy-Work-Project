@@ -107,17 +107,21 @@ td {
 }
 
 .produtosDoCarrinhoSolicitado {
-    width: 240px;
-    height: 400px;
+    width: 15vw;
+    height: 450px;
     background-color: antiquewhite;
     border: 1px black solid;
     border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     display: flex;
     position: absolute;
-    margin-left: 250px;
+    margin-left: 13.5vw;
     margin-top: -65px;
     flex-direction: column;
     padding-inline: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .trianguloProdutosDoCarrinhoSolicitado {
@@ -126,15 +130,27 @@ td {
     display: flex;
     position: absolute;
     rotate: 135deg;
-    margin-left: 250px;
+    margin-left: 13.5vw;
     margin-top: -53px;
     border-left: 50px solid transparent;
     border-top: 50px solid transparent;
-    border-bottom: 50px solid antiquewhite;
+    border-bottom: 50px solid rgb(0, 0, 0);
 }
 
 .produtosDoCarrinhoSolicitado hr{
     border: 1px solid gray;
-    width: 230px;
+    width: 14vw;
 }
 
+.tabelaDoCarrinhoSolicitadoNumero {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.tabelaDoCarrinhoSolicitadoIcone {
+    padding: 5px;
+}
+.tabelaDoCarrinhoSolicitadoIcone img{
+    width: 50px;
+    height: 50px;
+}

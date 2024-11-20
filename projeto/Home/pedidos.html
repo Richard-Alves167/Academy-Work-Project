@@ -47,44 +47,64 @@
                 </thead>
                 <tbody id="tabelaPedidosCadastrados">
                     <tr>
-                        <td><button class="tabelaBotao" onclick="removerProduto(arrayTabelaItensobject)">X</button></td>
+                        <td><button class="tabelaBotao" onclick="removerProduto()">X</button></td>
                         <td>Richard De Jesus Cabral Alves</td>
                         <td>R$ 1999.99</td>
                         <td>
-                            <button class="tabelaBotaoMostrarProdutos" onclick="removerProduto(arrayTabelaItensobject)"><img src="imagens/carrinhoCheio.png"></button>
-                            <div class="trianguloProdutosDoCarrinhoSolicitado"></div>
+                            <button class="tabelaBotaoMostrarProdutos" onclick="removerProduto()"><img src="imagens/carrinhoCheio.png"></button>
+                            <!-- <div class="trianguloProdutosDoCarrinhoSolicitado"></div>
                             <div class="produtosDoCarrinhoSolicitado">
                                 <p>Produtos</p>
                                 <hr>
                                 <table>
-                                    <tbody id="tabelaDoCarrinhoSolicitado">
+                                    <thead>
                                         <tr>
-                                            <td>1</td>
+                                            <td></td>
                                             <td>img</td>
-                                            <td>nome</td>
+                                            <td>ID</td>
+                                            <td>Quant.</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tabelaDoCarrinhoSolicitado">
+                                        <tr>
+                                            <td class="tabelaDoCarrinhoSolicitadoNumero">1</td>
+                                            <td class="tabelaDoCarrinhoSolicitadoIcone"><img src="./imagens/carrinhoCheio.png"></td>
+                                            <td>001</td>
                                             <td>12</td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
-                                            <td>img</td>
-                                            <td>nome</td>
+                                            <td class="tabelaDoCarrinhoSolicitadoNumero">2</td>
+                                            <td class="tabelaDoCarrinhoSolicitadoIcone"><img src="./imagens/carrinhoCheio.png"></td>
+                                            <td>001</td>
                                             <td>12</td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
-                                            <td>img</td>
-                                            <td>nome</td>
+                                            <td class="tabelaDoCarrinhoSolicitadoNumero">3</td>
+                                            <td class="tabelaDoCarrinhoSolicitadoIcone"><img src="./imagens/carrinhoCheio.png"></td>
+                                            <td>001</td>
                                             <td>12</td>
                                         </tr>
                                         <tr>
-                                            <td>4</td>
-                                            <td>img</td>
-                                            <td>nome</td>
+                                            <td class="tabelaDoCarrinhoSolicitadoNumero">4</td>
+                                            <td class="tabelaDoCarrinhoSolicitadoIcone"><img src="./imagens/carrinhoCheio.png"></td>
+                                            <td>001</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tabelaDoCarrinhoSolicitadoNumero">4</td>
+                                            <td class="tabelaDoCarrinhoSolicitadoIcone"><img src="./imagens/carrinhoCheio.png"></td>
+                                            <td>001</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tabelaDoCarrinhoSolicitadoNumero">4</td>
+                                            <td class="tabelaDoCarrinhoSolicitadoIcone"><img src="./imagens/carrinhoCheio.png"></td>
+                                            <td>001</td>
                                             <td>12</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
+                            </div> -->
                         </td>
                     </tr>
                 </tbody>
@@ -137,5 +157,6 @@
     </footer>
 
     <script src="javascript/adicionarCarrinho.js"></script>
+    <script src="javascript/criarPedido.js"></script>
 </body>
 </html>
