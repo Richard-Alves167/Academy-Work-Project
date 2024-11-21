@@ -34,67 +34,32 @@
         <div id="cadastrar">
 
                 <label class="input_title">Nome do comprador</label><br>
-                    <input class="input_text" type="text" id="nome_comprador">
+                    <input class="input_text" type="text" id="nomeComprador">
                     <br><br>
 
                 <label class="input_title">E-mail</label><br>
-                    <input class="input_text" type="email" id="email_comprador">
+                    <input class="input_text" type="email" id="emailComprador">
                     <br><br>
 
                 <label class="input_title">Senha</label><br>
-                    <input class="input_text" type="password" id="senha_comprador">
+                    <input class="input_text" type="password" id="senhaComprador">
                     <br><br>
 
                 <label class="input_title">Telefone</label><br>
-                    <input class="input_text" type="text" id="telefone_comprador">
+                    <input class="input_text" type="text" id="telefoneComprador">
                     <br><br>
 
                 <label class="input_title">Endereço/CEP</label><br>
-                    <input class="input_text" type="text" id="endereco_comprador">
+                    <input class="input_text" type="text" id="enderecoComprador">
 
-   
-                <div>
-                    <p class="input_title">Preferência da classe puericultura</p>
-                    
-                    <input type="checkbox" value="puericultura_classe_1" name="pueri_classe" />
-                    <label>Classe I</label>
-                    
-                    <input type="checkbox" value="puericultura_classe_2" name="pueri_classe" />
-                    <label>Classe II</label>
+                <br><br>
 
-                    <input type="checkbox" value="puericultura_classe_3" name="pueri_classe" />
-                    <label>Classe III</label>
-
-                </div>
-
+                <input id="button" type="button" value="Cadastrar" onclick="cadastrarComprador()">
                 <br>
 
-                <input id="button" type="button" value="Cadastrar" onclick="cadastrar()">
-
         </div>
-
-        <div id="campo_cadastrados">
-            <table>
-                <thead>
-                    <tr>
-                        <td>Nome</td>
-                        <td>Email</td>
-                        <td>Senha</td>
-                        <td>Telefone</td>
-                        <td>Endereço</td>
-                        <td>Preferencia de Classe Puericultura</td>
-                    </tr>
-                </thead>
-
-                <tbody id="colocar_cadastro">
-                </tbody>
-
-            </table>
-        </div>
-
     </main>
 
     <script src="./javascript/pegar_comprador.js"></script>
-    <script src="./javascript/adicionar_compradores.js"></script>
 </body>
 </html>

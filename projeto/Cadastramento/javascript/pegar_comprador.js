@@ -1,32 +1,71 @@
-let novatag = document.createElement("li")
+let clientes = []
 
-function cadastrar() {
-    const nome_comprador = document.getElementById("nome_comprador").value
-    const email_comprador = document.getElementById("email_comprador").value
-    const senha_comprador = document.getElementById("senha_comprador").value
-    const telefone_comprador = document.getElementById("telefone_comprador").value
-    const endereco_comprador = document.getElementById("endereco_comprador").value
+const armazenamentoClientes = localStorage.getItem("clienteLocal")
 
-    if (nome_comprador != "" || email_comprador != "" ||senha_comprador != "" || telefone_comprador != "" || endereco_comprador != "") {
-    let lista = document.getElementById("colocar_cadastro")
+if (armazenamentoClientes !== null) {
+    clientes = JSON.parse(armazenamentoClientes)
+}
 
-    let novotr = document.createElement("tr")
+console.log(clientes)
+function cadastrarComprador() {
+    class Cliente {
+        constructor(nome, email, senha, telefone, endereco) {
+          this.nome = nome;
+          this.email = email;
+          this.senha = senha;
+          this.telefone = telefone;
+          this.endereco = endereco;
+        }
+    }
 
-    novotr.innerHTML = `
-    <td>${nome_comprador}</td>
-    <td>${email_comprador}</td>
-    <td>${senha_comprador}</td>
-    <td>${telefone_comprador}</td>
-    <td>${endereco_comprador}</td>
-    `
-    
-    lista.appendChild(novotr)
+    const nomeComprador = document.getElementById("nomeComprador").value
+    const emailComprador = document.getElementById("emailComprador").value
+    const senhaComprador = document.getElementById("senhaComprador").value
+    const telefoneComprador = document.getElementById("telefoneComprador").value
+    const enderecoComprador = document.getElementById("enderecoComprador").value
 
-    document.getElementById("nome_comprador").value = null
-    document.getElementById("email_comprador").value = null
-    document.getElementById("senha_comprador").value = null
-    document.getElementById("telefone_comprador").value = null
-    document.getElementById("endereco_comprador").value = null
+    if (nomeComprador != "" || emailComprador != "" ||senhaComprador != "" || telefoneComprador != "" || enderecoComprador != "") {
+
+    const cliente = new Cliente(nomeComprador, emailComprador, senhaComprador, telefoneComprador, enderecoComprador)
+
+    clientes.push(cliente)
+
+    localStorage.setItem("clienteLocal",JSON.stringify(clientes))
+
+    document.getElementById("nomeComprador").value = null
+    document.getElementById("emailComprador").value = null
+    document.getElementById("senhaComprador").value = null
+    document.getElementById("telefoneComprador").value = null
+    document.getElementById("enderecoComprador").value = null
 
     }
 }
+
+const tabela = document.getElementById("tabelaCompradoresCadastrados")
+
+function renderizarTabela() {
+    tabela.innerHTML = ""
+
+    clientes.forEach(object => {
+        let novotr = document.createElement("tr")
+
+        novotr.innerHTML =`
+        <td><button class="tabelaBotao" onclick="removerProduto(${clientes.indexOf(object)})">X</button></td>
+        <td>${object.nome}</td>
+        <td>${object.email}</td>
+        <td>${object.telefone}</td>
+        <td>${object.endereco}</td>
+        `
+        tabela.appendChild(novotr)
+    }); 
+}
+
+function removerProduto(index) {
+    clientes.splice(index,1)
+
+    localStorage.setItem("clienteLocal", JSON.stringify(clientes))
+
+    renderizarTabela()
+}
+
+renderizarTabela()
