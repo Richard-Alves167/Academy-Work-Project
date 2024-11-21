@@ -21,7 +21,7 @@
         </div>
         <div id="user_login">
             <a href="./loginDeCliente.html"><img src="./imagens/iconUser.png" class="iconeRedeSocial"></a>
-            <a href="./carrinhoDeCompras.html"><img src="./imagens/carrinhoCompras.png" class="iconeRedeSocial"></a>
+            <a href="./carrinhoDeCompras.html"><img src="./imagens/carrinhoCompras.png" class="iconeRedeSocial"><span id="quantidadeCarrinho"></span></a>
         </div>
     </header>
 
@@ -41,19 +41,19 @@
 
             <div id="botoesSelecionar">
                 <div class="divSelecionarProdutoBotao">
-                    <button></button><span>Todos os produtos</span><br>
+                    <button onclick="rederizarProdutos()"></button><span>Todos os produtos</span><br>
                 </div>
                 <div class="divSelecionarProdutoBotao">
-                    <button></button><span>Produtos: Segurança</span><br>
+                    <button onclick="rederizarSecaoSeguranca()"></button><span>Produtos: Segurança</span><br>
                 </div>
                 <div class="divSelecionarProdutoBotao">
-                    <button></button><span>Produtos: Entretenimento</span><br>
+                    <button onclick="rederizarSecaoEntretenimento()"></button><span>Produtos: Entretenimento</span><br>
                 </div>
                 <div class="divSelecionarProdutoBotao">
-                    <button></button><span>Produtos: Nacionais</span><br>
+                    <button onclick="rederizarSecaoFreteGratis()"></button><span>Produtos: Nacionais</span><br>
                 </div>
                 <div class="divSelecionarProdutoBotao">
-                    <button></button><span>Produtos: Cuidado/Saúde</span>
+                    <button onclick="rederizarSecaoSaude()"></button><span>Produtos: Cuidado/Saúde</span>
                 </div>
             </div>
         </section>
@@ -112,6 +112,6 @@
 </main>
 
     <script src="javascript/adicionarCarrinho.js"></script>
-    <script src="../Cadastramento/javascript/pegar_itens.js"></script>
+    <script src="./javascript/selecionarCategoriaProduto.js"></script>
 </body>
 </html>

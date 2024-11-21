@@ -151,6 +151,19 @@ nav ul a:hover{
     cursor: pointer;
 }
 
+#quantidadeCarrinho {
+    background-color: #ff6c70;
+    width: 23px;
+    height: 23px;
+    border-radius: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7px;
+    margin-left: 26px;
+}
+
 #verProdutos {
     background-color: #ff6c70;
     color: #98dfee;

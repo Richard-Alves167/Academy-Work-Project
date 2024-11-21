@@ -4,6 +4,8 @@ button{
 
 #carrinho {
     width: 865px;
+    max-height: 650px;
+    overflow-x: auto;
     padding: 20px;
     background-color: gray;
     border-radius: 20px;
@@ -38,7 +40,7 @@ button{
 #produtosTabela {
     display: flex;
     flex-flow: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .imagemTabela {

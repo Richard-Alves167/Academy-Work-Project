@@ -33,3 +33,5 @@ function rederizarSecaoEntretenimento() {
 }
 
 rederizarSecaoEntretenimento()
+
+//44letras max -> 41letras e + ...

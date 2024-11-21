@@ -43,13 +43,12 @@ function adicionarPedido() {
     }
 }
 
-// function removerPedidoCarrinho(index) {
-//     pedidos.splice(index,1)
+function removerPedidoCarrinho(index) {
+    pedidos.splice(index,1)
 
-//     localStorage.setItem("pedidos",JSON.stringify(pedidos))
-//     renderizarCarrinho()
-//     calcularPrecoTotalPedido()
-// }
+    localStorage.setItem("pedidosLocal",JSON.stringify(pedidos))
+    renderizarPedidos()
+}
 
 const tabelaDePedidos = document.getElementById("tabelaPedidosCadastrados")
 
@@ -60,7 +59,7 @@ function renderizarPedidos() {
         let pedido = document.createElement("tr")
 
         pedido.innerHTML = `
-            <td><button class="tabelaBotao" onclick="removerProduto()">X</button></td>
+            <td><button class="tabelaBotao" onclick="removerPedidoCarrinho(${array.indexOf(array)})">X</button></td>
             <td>${array[0].cliente}</td>
             <td>R$ ${array[0].precoDoPedido}</td>
             <td><button class="tabelaBotaoMostrarProdutos" onclick="removerProduto()"><img src="imagens/carrinhoCheio.png"></button>                   

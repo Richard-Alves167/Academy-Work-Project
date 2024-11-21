@@ -16,13 +16,17 @@ function adicionarCarrinho(index) {
     carrinhoDeProdutos.push(armazenamentoDeProdutos[index])
 
     localStorage.setItem("carrinhoDeProdutosLocal",JSON.stringify(carrinhoDeProdutos))
+
+    quantidadeProdutosCarrinho()
 }
 
 function removerCarrinho(index) {
     carrinhoDeProdutos.splice(index,1)
 
     localStorage.setItem("carrinhoDeProdutosLocal",JSON.stringify(carrinhoDeProdutos))
+    
     renderizarCarrinho()
+    quantidadeProdutosCarrinho()
     calcularPrecoTotalPedido()
 }
 
@@ -59,5 +63,17 @@ function calcularPrecoTotalPedido() {
     return sum.toFixed(2)
 }
 
+const numeroCarrinho = document.getElementById("quantidadeCarrinho")
+
+function quantidadeProdutosCarrinho() {
+    if(carrinhoDeProdutos.length == 0) {
+        numeroCarrinho.style.display = "none"
+    } else {
+        numeroCarrinho.style.display = "flex"
+    numeroCarrinho.textContent = carrinhoDeProdutos.length
+    }
+}
+
+quantidadeProdutosCarrinho()
 renderizarCarrinho()
 calcularPrecoTotalPedido()
