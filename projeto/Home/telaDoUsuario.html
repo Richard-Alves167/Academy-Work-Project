@@ -5,60 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/style.css" rel="stylesheet">
     <link href="../Home/css/Navigation.css" rel="stylesheet">
-    <link href="./css/carrinhoDeCompras.css" rel="stylesheet">
     <link href="./css/rodape.css" rel="stylesheet">
+    <link href="./css/loginDeCliente.css" rel="stylesheet">
+    <link href="./css/paginaCliente.css" rel="stylesheet">
 
     <title>Carrinho de Compras</title>
     <link rel="shortcut icon" href="./imagens/lojaIcone.jpg" type="image/png">
 
 </head>
-<body>   
-    <header>
+<body style="padding-top: 0px;">   
+    <header style="position: static;">
         <div id="marca">
             <p><a href="../Home/index.html"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</a></p>
         </div>
-        <div id="barraDePesquisa">
-            <input type="text" id="pesquisar"></input type="text">
-            <button id="lupa"><img src="./imagens/lupa.png"></button>
-        </div>
-        <div id="user_login">
-            <a><img src="./imagens/iconUser.png" class="iconeRedeSocial"></a>
-            <a href="./carrinhoDeCompras.html"><img src="./imagens/carrinhoCompras.png" class="iconeRedeSocial"><span id="quantidadeCarrinho"></span></a>
-        </div>
     </header>
 
-    <div id="navegador">
+    <div id="navegador" style="position: static;">
         <nav>
 
         </nav>
     </div>
 
-    <section>
-        <div id="compra">
-            <div id="carrinho">
-                <p>-.Carrinho.-</p>
-                <table id="compraTabela">
-                    <tbody id="produtosTabela">
-                    </tbody>
-                </table>
+<div id="fundoLogin">
+    <section id="TelaUsuario">
+        <div id="topoUsuario">
+            <img src="imagens/iconUser.png"><h3>Richard De Jesus Cabral Alves</h3>
+        </div>
+        <div id="meioUsuario">
+            <hr>
+            <div>
+            <p>Email</p>
+            <span>richard@gmail.com</span>
             </div>
-            <div id="resultado">
-                <h3>Resumo da Compra</h3>
-                <hr>
-                <div>
-                    <span>Produtos</span>
-                    <span>R$<div class="PrecoTotalPedido"></div></span>
-                </div>
-                <div>
-                    Frete <span>calcular</span>
-                </div>
-                <div id="totalResultado">
-                    <span>Total dos Itens</span> <span>R$<div id="precoTotalPedido"></div></span>
-                </div>
-                <button onclick="adicionarPedido()">Comprar</button>
+            <hr>
+            <div>
+            <p>Endereço</p>
+            <span>235217668</span>
             </div>
+            <hr>
+            <div>
+            <p>Telefone</p>
+            <span>(21)99822-8014</span>
+            </div>
+            <hr>
+        </div>
+
+        <div id="baixoUsuario">
+            <p>Remover Conta</p>
         </div>
     </section>
+</div>
 
     <footer>
         <section>
@@ -104,7 +100,6 @@
         </section>
     </footer>
 
-    <script src="javascript/adicionarCarrinho.js"></script>
-    <script src="javascript/criarPedido.js"></script>
+    <script src="./javascript/logarComprador.js"></script>
 </body>
 </html>

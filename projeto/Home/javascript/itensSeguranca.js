@@ -33,5 +33,3 @@ function rederizarSecaoSeguranca() {
         secaoSeguranca.appendChild(novoCard)
     });
 }
-
-rederizarSecaoSeguranca()

@@ -6,7 +6,6 @@ if (armazenamentoClientes !== null) {
     clientes = JSON.parse(armazenamentoClientes)
 }
 
-console.log(clientes)
 function cadastrarComprador() {
     class Cliente {
         constructor(nome, email, senha, telefone, endereco) {
@@ -38,6 +37,7 @@ function cadastrarComprador() {
     document.getElementById("telefoneComprador").value = null
     document.getElementById("enderecoComprador").value = null
 
+    window.location = "../Home/loginDeCliente.html"
     }
 }
 

@@ -1,6 +1,8 @@
 let pedidos = []
 let carrinhoDeProdutosParaPedido = []
+let usuarioLogado = []
 
+const clienteLogado = localStorage.getItem("clienteLogadoLocal")
 const armazenamentoDeCarrinhoDeProdutos = localStorage.getItem("carrinhoDeProdutosLocal")
 const armazenamentoDePedidos = localStorage.getItem("pedidosLocal")
 
@@ -10,6 +12,10 @@ if (armazenamentoDeCarrinhoDeProdutos !== null) {
 
 if (armazenamentoDePedidos !== null) {
     pedidos = JSON.parse(armazenamentoDePedidos)
+}
+
+if (clienteLogado !== null) {
+    usuarioLogado = JSON.parse(clienteLogado)
 }
 
 function calcularPrecoTotalPedido() {
@@ -28,9 +34,9 @@ const totalDoPedido = calcularPrecoTotalPedido()
 const carrinhoEspaco = document.getElementById("produtosTabela")
 
 function adicionarPedido() {
-    if (armazenamentoDeCarrinhoDeProdutos !== null) {
+    if (armazenamentoDeCarrinhoDeProdutos !== null && clienteLogado !== null) {
         let novoCliente = {
-            cliente: "Richard De Jesus Cabral Alves",
+            cliente: usuarioLogado[0].nome,
             precoDoPedido: totalDoPedido,
         }
         carrinhoDeProdutosParaPedido.unshift(novoCliente)

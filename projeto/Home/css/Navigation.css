@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    height: 70px;
+    height: 85px;
     background-color: #98dfee;
     align-items: center;
     display: flex;
@@ -44,19 +44,52 @@ header p {
 #marca p{
     font-family: fraseinicial;
     color: black;
-    font-size: 26px;
+    font-size: 38px;
 }
 
 #logo_B {
-    font-size: 40px;
+    font-size: 62px;
     font-family: fraseinicial;
     color: rgb(228, 209, 122);
 }
 
 #logo_T {
-    font-size: 40px;
+    font-size: 62px;
     font-family: fraseinicial;
     color: #ff6c70;
+}
+
+#barraDePesquisa {
+    background-color: aliceblue;
+    border-radius: 20px;
+    width: 47vw;
+    display: flex;
+}
+
+#pesquisar {
+    width: 93%;
+    height: 30px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+#lupa {
+    width: 7%;
+    height: auto;
+    background-color: #21798a;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+}
+
+#lupa img {
+    display: flex;
+    width: 20px;
+    height: 20px;
 }
 
 #inicio {
@@ -141,8 +174,8 @@ nav ul a:hover{
 }
 
 #user_login img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     border: 1px rgb(255, 255, 255) solid;
 }
@@ -160,8 +193,8 @@ nav ul a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 7px;
-    margin-left: 26px;
+    top: 10px;
+    margin-left: 30px;
 }
 
 #verProdutos {

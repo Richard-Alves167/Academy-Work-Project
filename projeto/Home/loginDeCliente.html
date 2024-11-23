@@ -12,14 +12,14 @@
     <link rel="shortcut icon" href="./imagens/lojaIcone.jpg" type="image/png">
 
 </head>
-<body>   
-    <header>
+<body style="padding-top: 0px;">   
+    <header style="position: static;">
         <div id="marca">
             <p><a href="../Home/index.html"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</a></p>
         </div>
     </header>
 
-    <div id="navegador">
+    <div id="navegador" style="position: static;">
         <nav>
 
         </nav>
@@ -33,18 +33,18 @@
         </div>
 
         <div class="inputLogin">
-        <label>Username</label>
-        <input type="text">
+        <label for="loginUsername">Username</label>
+        <input type="text" id="loginUsername">
         <span>Nome de usuário não encontrado</span>
         </div>
 
         <div class="inputLogin">
-        <label>Password</label>
-        <input type="password">
+        <label for="loginSenha">Password</label>
+        <input type="password" id="loginSenha">
         <span>Senha Incorreta</span>
         </div>
 
-        <button>Entrar</button>
+        <button onclick="logarUsuario()">Entrar</button>
         <hr>
 
         <div id="novoCadastroLogin">
@@ -99,5 +99,7 @@
             </ul>
         </section>
     </footer>
+
+    <script src="./javascript/logarComprador.js"></script>
 </body>
 </html>

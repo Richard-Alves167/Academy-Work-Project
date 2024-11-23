@@ -2,8 +2,8 @@
     margin: auto;
     margin-top: 30px;
     padding: 0;
-    height: 28vw;
-    width: 80%;
+    height: 22vw;
+    width: 70%;
     background-color: #a09b8c;
     overflow: hidden;
     border-radius: 100px;
@@ -29,15 +29,16 @@
 
 .imagemCarrossel img {
     width: 100%;
-    height: 28vw;
+    height: 22vw;
 }
 
 .manualCarrossel, .autoCarrossel {
     position: absolute;
     width: 80%;
-    margin-top: 35%;
+    margin-top: 30%;
     display: flex;
     justify-content: center;
+    margin-left: -5vw;
 }
 
 .manualCarrossel .manualBotao, .autoCarrossel div {
@@ -87,11 +88,11 @@
 }
 
 #radio3:checked ~ .carrosselImagem1 {
- margin-left: -50%;
+    margin-left: -50%;
 }
 
 #radio4:checked ~ .carrosselImagem1 {
- margin-left: -75%;
+    margin-left: -75%;
 }
 
 /* #topo_promocoes button {
