@@ -34,5 +34,7 @@ function logarUsuario() {
 
 if (clienteLogadoSite !== null) {
     const ancora = document.getElementById("linkagemPaginaUsuario")
+    const imagem = document.getElementById("user_login_Imagem")
     ancora.setAttribute("href","../Home/telaDoUsuario.html")
+    imagem.setAttribute("src",usuarioLogadoSite[0].imagem)
 }

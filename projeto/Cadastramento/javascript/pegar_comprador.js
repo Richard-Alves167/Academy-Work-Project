@@ -14,6 +14,7 @@ function cadastrarComprador() {
           this.senha = senha;
           this.telefone = telefone;
           this.endereco = endereco;
+          this.imagem = "./imagens/iconUser.png"
         }
     }
 

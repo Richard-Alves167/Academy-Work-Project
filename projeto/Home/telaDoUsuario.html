@@ -29,30 +29,31 @@
 <div id="fundoLogin">
     <section id="TelaUsuario">
         <div id="topoUsuario">
-            <img src="imagens/iconUser.png"><h3>Richard De Jesus Cabral Alves</h3>
+            <img src="imagens/iconUser.png" id="imagemUsario"><h3 id="nomeUsuario">Richard De Jesus Cabral Alves</h3>
         </div>
-        <div id="meioUsuario">
+        <span id="sairConta" onclick="sairConta()">Sair Da Conta</span>
+        <div id="informacoesUsuario">
             <hr>
             <div>
-            <p>Email</p>
-            <span>richard@gmail.com</span>
+                <p>Email</p>
+                <span id="emailUsario"></span>
             </div>
             <hr>
             <div>
-            <p>Endereço</p>
-            <span>235217668</span>
+                <p>Endereço</p>
+                <span id="enderecoUsario"></span>
             </div>
             <hr>
             <div>
-            <p>Telefone</p>
-            <span>(21)99822-8014</span>
+                <p>Telefone</p>
+                <span id="telefoneUsario"></span>
             </div>
             <hr>
         </div>
 
-        <div id="baixoUsuario">
+        <button id="removerConta" onclick="removerConta()">
             <p>Remover Conta</p>
-        </div>
+        </button>
     </section>
 </div>
 
@@ -101,5 +102,6 @@
     </footer>
 
     <script src="./javascript/logarComprador.js"></script>
+    <script src="./javascript/informacoesUsuario.js"></script>
 </body>
 </html>
