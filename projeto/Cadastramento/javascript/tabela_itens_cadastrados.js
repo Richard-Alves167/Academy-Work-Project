@@ -35,17 +35,3 @@ function removerProduto(index) {
 
 
 renderizarTabela()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
