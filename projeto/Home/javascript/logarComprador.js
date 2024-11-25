@@ -16,8 +16,6 @@ if (clienteLogadoSite !== null) {
 function logarUsuario() {
     const usernameColocada = document.getElementById("loginUsername").value
     const senhaColocada = document.getElementById("loginSenha").value
-    console.log(usernameColocada)
-    console.log(senhaColocada)
     const verificar = clientes.filter((element) => {
         if(usernameColocada == element.nome && senhaColocada == element.senha) {
             return element
@@ -35,6 +33,8 @@ function logarUsuario() {
 if (clienteLogadoSite !== null) {
     const ancora = document.getElementById("linkagemPaginaUsuario")
     const imagem = document.getElementById("user_login_Imagem")
+    const nomePerfilUsuario = document.getElementById("nomePerfilUsuario")
+    nomePerfilUsuario.textContent = "Bem Vindo " + usuarioLogadoSite[0].nome.split(" ")[0]
     ancora.setAttribute("href","../Home/telaDoUsuario.html")
     imagem.setAttribute("src",usuarioLogadoSite[0].imagem)
 }
