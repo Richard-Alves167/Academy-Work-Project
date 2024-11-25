@@ -1,5 +1,5 @@
 function renderizarInformacoesUsuario() {
-    const imagemUsuario = document.getElementById("imagemUsario")
+    const imagemUsuario = document.getElementById("imagemUsuario")
     imagemUsuario.setAttribute("src",usuarioLogadoSite[0].imagem)
     const nomeUsuario = document.getElementById("nomeUsuario")
     nomeUsuario.textContent = usuarioLogadoSite[0].nome
@@ -26,4 +26,14 @@ function removerConta() {
     clientes.splice(contaRetirada.indexOf(true),1)
     localStorage.setItem("clienteLocal",JSON.stringify(clientes))
     sairConta()
+}
+
+function mudarIcone() {
+    const mudarIcone = document.getElementById("iconeEscolhidoUsuario")
+    if (mudarIcone.value !== "") {
+        usuarioLogadoSite[0].imagem = mudarIcone.value
+       localStorage.setItem("clienteLogadoLocal",JSON.stringify(usuarioLogadoSite))
+     //   localStorage.setItem("clienteLocal",JSON.stringify(logarUsuarioAoLocalStorage))
+       renderizarInformacoesUsuario()
+    }
 }

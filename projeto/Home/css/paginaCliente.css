@@ -29,14 +29,86 @@
 }
 
 #topoUsuario h3 {
-    margin: 0px;
     text-align: -webkit-center;
 }
 
-#topoUsuario img {
+#imagemUsuario {
     width: 190px;
     height: 190px;
     border-radius: 100px;
+    cursor: pointer;
+}
+
+#cameraIcone {
+    display: none;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -145px;
+    cursor: pointer;
+}
+
+#icone {
+    border-radius: 100px;
+    width: 190px;
+    height: 190px;
+    border: 5px black solid;
+}
+
+#icone:hover {
+    background-color:rgba(48, 48, 48, 0.445);
+    background-position: center;
+    background-size: cover;
+}
+
+#icone:hover #cameraIcone {
+    display: flex;
+}
+
+#trianguloIcone {
+        width: 0; 
+        height: 0; 
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 25px solid #5386E4;
+        position: absolute;
+        margin-left: 68px;
+        margin-top: -30px;
+}
+
+#divMudarIcone {
+    width: 300px;
+    height: 20px;
+    background-color: #5386E4;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    display: none;
+}
+
+#divMudarIcone button {
+    width: 50px;
+    height: 20px;
+    margin: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#divMudarIcone input {
+    width: 80%;
+}
+
+#icone:hover #divMudarIcone{
+    display: flex;
+}
+
+#nomeUsuario {
+    margin-left: 10px;
 }
 
 #informacoesUsuario {

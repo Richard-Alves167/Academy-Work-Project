@@ -29,23 +29,31 @@
 <div id="fundoLogin">
     <section id="TelaUsuario">
         <div id="topoUsuario">
-            <img src="imagens/iconUser.png" id="imagemUsario"><h3 id="nomeUsuario">Richard De Jesus Cabral Alves</h3>
+            <div id="icone" onclick="mudarIcone()">
+                <img src="imagens/iconUser.png" id="imagemUsuario">
+                <img src="imagens/camera.png" id="cameraIcone">
+                <div id="divMudarIcone">
+                    <div id="trianguloIcone"></div>
+                    <input type="text" id="iconeEscolhidoUsuario" placeholder="http:"><button>+</button>
+                </div>
+            </div>
+            <h3 id="nomeUsuario">Richard De Jesus Cabral Alves</h3>
         </div>
         <span id="sairConta" onclick="sairConta()">Sair Da Conta</span>
         <div id="informacoesUsuario">
             <hr>
             <div>
-                <p>Email</p>
+                <p>Email:</p>
                 <span id="emailUsario"></span>
             </div>
             <hr>
             <div>
-                <p>Endereço</p>
+                <p>Endereço:</p>
                 <span id="enderecoUsario"></span>
             </div>
             <hr>
             <div>
-                <p>Telefone</p>
+                <p>Telefone:</p>
                 <span id="telefoneUsario"></span>
             </div>
             <hr>

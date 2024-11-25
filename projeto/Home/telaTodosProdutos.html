@@ -24,16 +24,30 @@
             <button id="lupa"><img src="./imagens/lupa.png"></button>
         </div>
         <div id="user_login">
-            <a href="./loginDeCliente.html"><img src="./imagens/iconUser.png" class="iconeRedeSocial"></a>
-            <a href="./carrinhoDeCompras.html"><img src="./imagens/carrinhoCompras.png" class="iconeRedeSocial"><span id="quantidadeCarrinho"></span></a>
+            <a href="./loginDeCliente.html" id="linkagemPaginaUsuario" >
+                <img src="./imagens/iconUser.png" id="user_login_Imagem" class="iconeRedeSocial">
+                <span id="nomePerfilUsuario"></span>
+            </a>
+            <a href="./carrinhoDeCompras.html">
+                <img src="./imagens/carrinhoCompras.png" class="iconeRedeSocial"><span id="quantidadeCarrinho"></span>
+            </a>
         </div>
     </header>
 
     <div id="navegador">
         <nav>
+            <div id="verProdutos"><a href="./telaTodosProdutos.html">Ver Nossos Produtos</a></div>
+            <ul>
+                <li id="cadastros">Cadastros
+                    <div id="clickCadastro">
+                <a href="../Cadastramento/Cadastro_comprador.html">Comprador</a>
+                <a href="../Cadastramento/Cadastro_itens.html">Ítens</a>
+                <a href="./pedidos.html">Pedidos</a>
+                    </div>
+                </li>
+            </ul>
         </nav>
     </div>
-
 
 <main>
 
@@ -117,5 +131,6 @@
 
     <script src="javascript/adicionarCarrinho.js"></script>
     <script src="./javascript/selecionarCategoriaProduto.js"></script>
+    <script src="javascript/logarComprador.js"></script>
 </body>
 </html>
