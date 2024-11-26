@@ -31,6 +31,14 @@
     font-size: 62px;
 }
 
+.iconeLogin {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 3px;
+}
+
 .inputLogin {
     display: flex;
     flex-direction: column;
@@ -56,6 +64,8 @@
     border: none;
     border-bottom: 2px solid rgb(46, 46, 46);
     font-size: 20px;
+    padding-left: 35px;
+    box-shadow: 2px 2px 2px rgb(117, 57, 57);
 }
 
 button {
@@ -66,6 +76,7 @@ button {
     width: 65%;
     align-self: center;
     cursor: pointer;
+    box-shadow: 2px 2px 2px rgb(117, 57, 57);
 }
 
 button:hover {
