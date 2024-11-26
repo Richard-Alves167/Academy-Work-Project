@@ -87,3 +87,12 @@ td {
     text-align-last: center;
     align-items: center;
 }
+
+.iconeUsuario {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 2px solid black;
+    display: flex;
+    place-self: center; 
+}

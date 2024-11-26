@@ -42,6 +42,12 @@ header p {
     font-family: fraseinicial;
 }
 
+#marca a {
+    text-decoration: none;
+    font-family: fraseinicial;
+    color: black;
+}
+
 #marca p{
     font-family: fraseinicial;
     color: black;
@@ -162,6 +168,7 @@ nav ul a{
     text-decoration: none;
     list-style: none;
     transition: 1s;
+    color: rgb(255, 255, 255);
 }
 
 nav ul a:hover{
@@ -242,7 +249,7 @@ nav ul a:hover{
 }
 
 #cadastros {
-    display: flex;
+    display: none;
     flex-direction: column;
     color: #ff6c70;
     position: absolute;
@@ -259,6 +266,7 @@ nav ul a:hover{
 
 #clickCadastro a {
     font-size: 25px;
+    color: rgb(247, 113, 113)
 }
 
 #cadastros:hover #clickCadastro{

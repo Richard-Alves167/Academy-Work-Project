@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/Cadastro_comprador.css" rel="stylesheet">
-    <link href="./css/Navigation.css" rel="stylesheet">
+    <link href="../Home/css/Navigation.css" rel="stylesheet">
+    <link href="./css/cadastroComprador.css" rel="stylesheet">
+    <link href="../Home/css/rodape.css" rel="stylesheet">
 
     <title>Cadastro de compradores</title>
     <link rel="shortcut icon" href="./imagens/lojaIcone.jpg" type="image/png">
@@ -25,38 +27,96 @@
 
     <main>
 
-        <div id="inicio">
-            <p>Cadastrar-se</p>
-        </div>
+        <div id="fundoCadastro">
 
-        <div id="cadastrar">
+            <section id="cadastroCliente">
+                        
+                    <div id="inicioCadastro">
+                        <img src="./imagens/iconUser.png" class="iconeCadastrar">
+                        <p>Cadastrar</p>
+                    </div>
 
-                <label class="input_title">Nome do comprador</label><br>
-                    <input class="input_text" type="text" id="nomeComprador">
-                    <br><br>
+                        <hr>
 
-                <label class="input_title">E-mail</label><br>
-                    <input class="input_text" type="email" id="emailComprador">
-                    <br><br>
+                        <div class="inputCadastro">
+                            <label for="nomeComprador">Nome do comprador</label>
+                            <input type="text" id="nomeComprador" placeholder="Username">
+                            <span class="preencherCampo" id="preencherCampoCadastroNome">Todos os campos devem ser preenchidos.</span>
+                        </div>       
 
-                <label class="input_title">Senha</label><br>
-                    <input class="input_text" type="password" id="senhaComprador">
-                    <br><br>
+                        <div class="inputCadastro">
+                            <label for="emailComprador">E-mail</label>
+                            <input type="email" id="emailComprador" placeholder="Email">
+                            <span class="preencherCampo" id="preencherCampoCadastroEmail">Todos os campos devem ser preenchidos.</span>
+                        </div> 
 
-                <label class="input_title">Telefone</label><br>
-                    <input class="input_text" type="text" id="telefoneComprador">
-                    <br><br>
+                        <div class="inputCadastro">
+                            <label for="senhaComprador">Senha</label>
+                            <input type="password" id="senhaComprador" placeholder="Password">
+                            <span class="preencherCampo" id="preencherCampoCadastroSenha">Todos os campos devem ser preenchidos.</span>
+                        </div> 
 
-                <label class="input_title">Endereço/CEP</label><br>
-                    <input class="input_text" type="text" id="enderecoComprador">
+                        <div class="inputCadastro">
+                            <label for="telefoneComprador">Telefone</label>
+                            <input type="text" id="telefoneComprador" maxlength="11" data-format="(+99) 9999-9999" placeholder="(+99) 9999-9999">
+                            <span class="preencherCampo" id="preencherCampoCadastroTelefone">Todos os campos devem ser preenchidos.</span>
+                        </div> 
 
-                <br><br>
+                        <div class="inputCadastro">
+                            <label for="enderecoComprador">Endereço/CEP</label>
+                            <input type="text" id="enderecoComprador" maxlength="8" data-format="99999-999" placeholder="99999-999">
+                            <span class="preencherCampo" id="preencherCampoCadastroEndereco">Todos os campos devem ser preenchidos.</span>
+                        </div> 
 
-                <input id="button" type="button" value="Cadastrar" onclick="cadastrarComprador()">
-                <br>
+                            <input id="button" type="button" value="Cadastrar" onclick="cadastrarComprador()">
 
+            </section>
         </div>
     </main>
+
+    <footer>
+        <section>
+            <p id="marca"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</p>
+
+            <p id="sobreNos">Somos uma loja especializada em brinquedos de qualidade, selecionados com carinho para oferecer diversão, aprendizado e momentos inesquecíveis para as crianças de todas as idades.<br>
+
+            Nossa missão é proporcionar um ambiente seguro e estimulante, com brinquedos que favorecem o desenvolvimento, a imaginação e a criatividade,além da segurança e cuidado para seu filho.<br>
+            </p>
+        </section>
+        <section>
+            <h3>Contato</h3>
+
+            <ul>
+                <li><img src="../Home/imagens/whatsapp.png" class="iconeRedeSocial">Whatzapp:<br>
+                (21) 928234-6173</li>
+
+                <li><img src="../Home/imagens/email.png" class="iconeRedeSocial">Email:<br>
+                BabyToys@gmail.com</li>
+
+                <li>Horário de atendimento:<br>
+                07:00 às 18:00</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Siga nos</h3>
+            <ul>                
+                <li><a><img src="../Home/imagens/instagram.png" class="iconeRedeSocial">Instagram</a></li>
+                <li><a><img src="../Home/imagens/tiktok.png" class="iconeRedeSocial">TikTok</a></li>
+                <li><a><img src="../Home/imagens/x.png" class="iconeRedeSocial">X/Twitter</a></li>
+                <li><a><img src="../Home/imagens/facebook.png" class="iconeRedeSocial">Facebook</a></li>
+                <li><a><img src="../Home/imagens/linkedin.png" class="iconeRedeSocial">LinkedIn</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Informações</h3>
+
+            <ul>
+                <li>-Sobre compras</li>
+                <li>-Atendimento ao cliente</li>
+                <li>-Dúvidas frenquentes</li>
+            </ul>
+        </section>
+    </footer>
 
     <script src="./javascript/pegar_comprador.js"></script>
 </body>
