@@ -2,11 +2,21 @@ let clientes = []
 let logarUsuarioAoLocalStorage = []
 let usuarioLogadoSite = []
 
+let Admin = {
+    nome: "Zoe Admin",
+    senha: 2018,
+    imagem: "https://i.pinimg.com/736x/b2/51/1d/b2511d14b09210441c2fc4ea5e4eace0.jpg",
+    telefone: "/-------/",
+    endereco: "/-------/",
+    email: "/-------/",
+}
+
 const clienteLogadoSite = localStorage.getItem("clienteLogadoLocal")
 const armazenamentoClientes = localStorage.getItem("clienteLocal")
 
 if (armazenamentoClientes !== null) {
     clientes = JSON.parse(armazenamentoClientes)
+    clientes.push(Admin)
 }
 
 if (clienteLogadoSite !== null) {
@@ -37,4 +47,9 @@ if (clienteLogadoSite !== null) {
     nomePerfilUsuario.textContent = "Bem Vindo " + usuarioLogadoSite[0].nome.split(" ")[0]
     ancora.setAttribute("href","../Home/telaDoUsuario.html")
     imagem.setAttribute("src",usuarioLogadoSite[0].imagem)
+}
+
+if (JSON.parse(clienteLogadoSite)[0].nome !== Admin.nome) {
+    let cadastrar = document.getElementById("cadastros")
+    cadastrar.style.display = "none"
 }

@@ -33,7 +33,16 @@ function mudarIcone() {
     if (mudarIcone.value !== "") {
         usuarioLogadoSite[0].imagem = mudarIcone.value
        localStorage.setItem("clienteLogadoLocal",JSON.stringify(usuarioLogadoSite))
-     //   localStorage.setItem("clienteLocal",JSON.stringify(logarUsuarioAoLocalStorage))
-       renderizarInformacoesUsuario()
+
+     const contaLogada = usuarioLogadoSite
+     const contaColocarIcone = clientes.map((element) => {
+        return element.nome == contaLogada[0].nome
+    })
+
+    clientes[contaColocarIcone.indexOf(true)] = contaLogada[0]
+
+    localStorage.setItem("clienteLocal",JSON.stringify(clientes))
+    
+    renderizarInformacoesUsuario()
     }
 }
