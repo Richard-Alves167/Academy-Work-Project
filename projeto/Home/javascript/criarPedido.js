@@ -24,7 +24,7 @@ if (armazenamentoCarrinhoDeProdutosSolicitados !== null) {
     carrinhoDeProdutosPedidosFeitosLocal = JSON.parse(armazenamentoCarrinhoDeProdutosSolicitados)
 }
 
-function calcularPrecoTotalPedido() {
+function calcularPrecoTotalPedidoTabela() {
     if (armazenamentoDeCarrinhoDeProdutos !== null) {
     let soma = carrinhoDeProdutosParaPedido.reduce((acumulador,produto) => {
         let resultado = acumulador + Number(produto.preco)
@@ -35,7 +35,7 @@ function calcularPrecoTotalPedido() {
     }
 }
 
-const totalDoPedido = calcularPrecoTotalPedido()
+const totalDoPedido = calcularPrecoTotalPedidoTabela()
 
 const carrinhoEspaco = document.getElementById("produtosTabela")
 

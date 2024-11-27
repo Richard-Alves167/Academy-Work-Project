@@ -36,7 +36,8 @@ function cadastrar() {
     tipoDeArtigo: document.getElementById("seletor_tipo_artigo").children[document.getElementById("seletor_tipo_artigo").selectedIndex].textContent,
     nivelPuericultura: document.querySelector('input[name="nivel"]:checked').value,
     localidade: document.getElementById("seletor_nacionalidade").children[document.getElementById("seletor_nacionalidade").selectedIndex].textContent,
-    }
+    quantidade: 1,
+}
 
     produtos.push(iten)
 

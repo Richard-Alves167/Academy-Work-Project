@@ -32,7 +32,7 @@ function logarUsuario() {
     const usernameColocada = document.getElementById("loginUsername")
     const senhaColocada = document.getElementById("loginSenha")
     const verificar = clientes.filter((element) => {
-        if(usernameColocada == element.nome && senhaColocada == element.senha) {
+        if(usernameColocada.value == element.nome && senhaColocada.value == element.senha) {
             return element
         }
         

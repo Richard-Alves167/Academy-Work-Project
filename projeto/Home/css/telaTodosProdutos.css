@@ -49,3 +49,18 @@
     margin-right: 20px;
     position: relative;
 }
+
+.imagemNotFound {
+    width: 300px;
+    height: 300px;
+    margin-top: 210px;
+    filter: opacity(50%)
+}
+
+.textoNotFound {
+    font-size: 30px;
+    position: absolute;
+    margin-top: 530px;
+    color: red;
+    text-decoration: overline;
+}
