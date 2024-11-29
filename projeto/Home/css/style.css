@@ -1,7 +1,6 @@
 html {
     width: 100%;
     height: 100%;
-    background-color: #a09b8c;
 }
 
 body {
@@ -21,6 +20,11 @@ body {
 @font-face {
     font-family: texto_navigation;
     src: url(../fontes/text_bold.ttf);
+}
+
+@font-face {
+    font-family: cabecalho;
+    src: url(../fontes/BadComic-Italic.ttf);
 }
 
 *{
@@ -54,43 +58,60 @@ body {
 .secaoTexto {
     position: absolute;
     align-self: baseline;
-    margin-left: 30px;
-    font-size: 26px;
+    margin-left: 100px;
+    font-size: 30px;
+    font-family: cabecalho;
 }
 
 .linhaDeItens {
     display: flex;
     list-style: none;
     overflow: hidden;
-    margin-top: 85px;
     transition: 0.7s;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
 .buttomLeftSecao {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 118px;
     border: black 2px solid;
-    border-radius: 100%;
+    border-radius: 10px;
     position: absolute;
     margin-left: 10px;
     cursor: pointer;
+    display: none;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.buttomLeftSecao:hover {
+    opacity: 1;
 }
 
 .buttomRightSecao {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 118px;
     border: black 2px solid;
-    border-radius: 100%;
+    border-radius: 10px;
     position: absolute;
     right: 10.5%;
     cursor: pointer;
+    display: none;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.buttomRightSecao:hover{
+    opacity: 1;
 }
 
 #secaoDesconto {
     margin-top: 80px;
     height: 500px;
-    width: 70%;
-    background-color: rgba(141, 141, 141, 0.735);
+    width: auto;
     border-radius: 50px;
     justify-self: center;
     place-content: center;
@@ -101,7 +122,7 @@ body {
     display: flex;
     list-style: none;
     overflow: hidden;
-    padding: 0;
+    padding: 10px;
 }
 
 .desconto {
@@ -119,43 +140,261 @@ body {
     margin-top: 80px;
     height: 500px;
     width: 80%;
-    background-color: rgba(141, 141, 141, 0.735);
-    border-radius: 20px;
+    border-radius: 80px;
     justify-self: center;
+}
+
+#secaoNovidades:hover .buttomLeftSecao {
+    cursor: pointer;
+    display: block;
+}
+
+#secaoNovidades:hover .buttomRightSecao {
+    transform: 1s;
+    display: block;
 }
 
 #secaoNacionais {
     margin-top: 80px;
     height: 500px;
     width: 80%;
-    background-color: rgba(141, 141, 141, 0.735);
-    border-radius: 20px;
+    border-radius: 80px;
     justify-self: center;
+}
+
+#secaoNacionais:hover .buttomLeftSecao {
+    cursor: pointer;
+    display: block;
+}
+
+#secaoNacionais:hover .buttomRightSecao {
+    transform: 1s;
+    display: block;
+}
+
+#secaoBannerSite1 {
+    width: 80vw;
+    height: 180px;
+    border-radius: 20px;
+    place-self: center;
+    margin-top: 80px;
+    display: flex;
+    box-shadow: 1px 1px 10px;
+}
+
+#secaoBannerSite1Div {
+    width: 40%;
+    height: 100%;
+    background-color: rgba(255,239,195,255);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-image: linear-gradient(to right, #2fc9e8, #2fc9e8, rgba(255,0,0,0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    contain: content;
+}
+
+#secaoBannerSite1Div a {
+    text-decoration: none;
+    font-family: fraseinicial;
+    color: black;
+}
+
+#secaoBannerSite1Div p{
+    font-family: fraseinicial;
+    color: black;
+    font-size: 34px;
+}
+
+#secaoBannerSite1Div a #logo_B {
+    font-size: 60px;
+    font-family: fraseinicial;
+    color: rgb(228, 209, 122);
+}
+
+#secaoBannerSite1Div a #logo_T {
+    font-size: 70px;
+    margin-left: -80px;
+    font-family: fraseinicial;
+    color: #ff6c70;
+}
+
+#secaoBannerSite1Img {
+    width: 60%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    contain:content;
+}
+
+/* banner 2 */
+
+#secaoBannerSite2 {
+    width: 80vw;
+    height: 180px;
+    border-radius: 20px;
+    place-self: center;
+    margin-top: 80px;
+    display: flex;
+    box-shadow: 1px 1px 10px;
+}
+
+#secaoBannerSite2Div {
+    width: 40%;
+    height: 100%;
+    margin-left: -1px;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #2fc9e8, #2fc9e8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    contain: content;
+}
+
+#secaoBannerSite2Div a {
+    text-decoration: none;
+    font-family: fraseinicial;
+    color: black;
+}
+
+#secaoBannerSite2Div p{
+    font-family: fraseinicial;
+    color: black;
+    font-size: 34px;
+}
+
+#secaoBannerSite2Div a #logo_B {
+    font-size: 60px;
+    font-family: fraseinicial;
+    color: rgb(228, 209, 122);
+}
+
+#secaoBannerSite2Div a #logo_T {
+    font-size: 70px;
+    margin-left: -80px;
+    font-family: fraseinicial;
+    color: #ff6c70;
+}
+
+#secaoBannerSite2Img {
+    width: 60%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    contain:content;
+}
+
+/* banner 3 */
+
+#secaoBannerSite3 {
+    width: 80vw;
+    height: 180px;
+    border-radius: 20px;
+    place-self: center;
+    margin-top: 80px;
+    display: flex;
+    box-shadow: 1px 1px 10px;
+}
+
+#secaoBannerSite3Div {
+    width: 40%;
+    height: 100%;
+    background-color: rgba(255,239,213,255);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-image: linear-gradient(to right, #2fc9e8, #2fc9e8, rgba(255,0,0,0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    contain: content;
+}
+
+#secaoBannerSite3Div a {
+    text-decoration: none;
+    font-family: fraseinicial;
+    color: black;
+}
+
+#secaoBannerSite3Div p{
+    font-family: fraseinicial;
+    color: black;
+    font-size: 34px;
+}
+
+#secaoBannerSite3Div a #logo_B {
+    font-size: 60px;
+    font-family: fraseinicial;
+    color: rgb(228, 209, 122);
+}
+
+#secaoBannerSite3Div a #logo_T {
+    font-size: 70px;
+    margin-left: -80px;
+    font-family: fraseinicial;
+    color: #ff6c70;
+}
+
+#secaoBannerSite3Img {
+    width: 60%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    contain:content;
 }
 
 #secaoSaude {
     margin-top: 80px;
-    height: 500px;
+    height: 380px;
     width: 80%;
-    background-color: rgba(141, 141, 141, 0.735);
-    border-radius: 20px;
+    border-radius: 80px;
     justify-self: center;
+}
+
+#secaoSaude:hover .buttomLeftSecao {
+    cursor: pointer;
+    display: block;
+}
+
+#secaoSaude:hover .buttomRightSecao {
+    transform: 1s;
+    display: block;
 }
 
 #secaoSeguranca {
     margin-top: 80px;
-    height: 500px;
+    height: 380px;
     width: 80%;
-    background-color: rgba(141, 141, 141, 0.735);
-    border-radius: 20px;
+    border-radius: 80px;
     justify-self: center;
+}
+
+#secaoSeguranca:hover .buttomLeftSecao {
+    cursor: pointer;
+    display: block;
+}
+
+#secaoSeguranca:hover .buttomRightSecao {
+    transform: 1s;
+    display: block;
 }
 
 #secaoEntretenimento {
     margin-top: 80px;
-    height: 500px;
+    height: 380px;
     width: 80%;
-    background-color: rgba(141, 141, 141, 0.735);
-    border-radius: 20px;
+    border-radius: 80px;
     justify-self: center;
+}
+
+#secaoEntretenimento:hover .buttomLeftSecao {
+    cursor: pointer;
+    display: block;
+}
+
+#secaoEntretenimento:hover .buttomRightSecao {
+    transform: 1s;
+    display: block;
 }

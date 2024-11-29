@@ -25,17 +25,25 @@
     word-break: normal;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0px;
 }
 
 .card {
     height: 320px;
     width: 210px;
-    background-color: rgb(252, 199, 199);
-    border-radius: 30px;
-    padding-top: 5px;
-    padding-inline: 15px;
-    margin-inline: 25.3px;
-    margin-bottom: 30px;
+    background-color: rgb(254, 201, 201);
+    border-radius: 15px;
+    margin-left: 54.5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    box-shadow: 1px 1px 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    border: 2px solid rgb(255, 72, 103);
+    transform: scale(1.05);
+    transition: 0.75s;
 }
 
 .iten_imagem {
@@ -43,9 +51,10 @@
     width: 210px;
     display: flex;
     align-self: center;
-    margin-top: 10px;
     background-color: rgb(86, 83, 83);
-    border-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid rgb(82, 82, 82);
 }
 
 .iten_nome {
@@ -54,8 +63,9 @@
     margin-inline: 5px;
     font-size: 17px;
     font-weight: 400;
-    color: rgb(97, 97, 97);
+    color: rgb(0, 0, 0);
     font-family: textItens;
+    padding-inline: 15px;
 }
 
 .iten_preco {
@@ -66,6 +76,7 @@
     font-weight: 1000;
     color: rgb(0, 0, 0);
     display: flex;
+    padding-inline: 15px;
 }
 
 .cifrao {
@@ -75,15 +86,42 @@
     text-decoration: none;
 }
 
-.botaoAdicionarCarrinho {
+/* .botaoAdicionarCarrinho {
     display: flex;
     position: relative;
     cursor: pointer;
-    left: 165px;
+    left: 155px;
     top: -38px;
     background-color: rgb(255, 72, 103);
     border-radius: 20px;
+} */
+
+.botaoAdicionarCarrinho {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    width: 213px;
+    margin-left: -1px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 0;
+    margin-top: 14px;
+    z-index: 1;
+    background-color: rgb(255, 72, 103);
+    padding-left: 20px;
 }
+
+#itens_cadastrados .botaoAdicionarCarrinho {
+    margin-top: 0px;
+}
+
+.card:hover .botaoAdicionarCarrinho{
+    display: flex;
+}
+
+/* .botaoAdicionarCarrinho:hover {
+    background-color: #46e5db;
+} */
 
 .botaoAdicionarCarrinho img {
     width: 20px;
@@ -94,12 +132,16 @@
     height: 0; 
     display: flex;
     position: relative;
-    top: -390px;
-    left: 75px;
+    top: -350px;
+    left: 60px;
     rotate: -90deg;
     border-left: 100px solid transparent;
     border-top: 100px solid transparent;
     border-bottom: 100px solid #ff0000;
+}
+
+.card:hover .trianguloDesconto {
+    top: -375px;
 }
 
 .textoDesconto {
@@ -107,7 +149,17 @@
     font-size: 20px;
     display: flex;
     position: relative;
-    top: -535px;
-    left: 162px;
+    top: -490px;
+    left: 152px;
     z-index: 1;
+}
+
+.card:hover .textoDesconto {
+    top: -515px;
+}
+
+#itens .card{
+    border-radius: 30px;
+    margin-inline: 10px;
+    margin-bottom: 30px;
 }

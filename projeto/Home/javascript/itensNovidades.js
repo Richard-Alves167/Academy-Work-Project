@@ -9,8 +9,8 @@ if (armazenamentoNovidadesItens != null) {
 
 function produtosNovos(array) {
     let arrayDeItensNovos = []
-    for (let i = 0; i < array.length - 1; i++) {
-       if (i>array.length - 7) {
+    for (let i = 0; i < array.length; i++) {
+       if (i>array.length - 5) {
          arrayDeItensNovos.push(array[i])
        } 
     }
@@ -28,14 +28,14 @@ function rederizarSecaoNovidades() {
         novoCard.classList.add("card")
 
         novoCard.innerHTML = `
-            <div class="itens_cadastrados">
+            <div class="itens_cadastrados" onclick="adicionarCarrinho(${arrayNovidades.indexOf(object)})">
                 <img class="iten_imagem" src="${object.imagem}">
                 <div class="iten_nome">${object.nome}</div>
                 <div class="iten_preco">
                 <span class="cifrao">R$</span>${object.preco}
                 </div>
             </div>
-            <button class="botaoAdicionarCarrinho" onclick="adicionarCarrinho(${arrayNovidades.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+            <button class="botaoAdicionarCarrinho"">+<img src="./imagens/carrinhoCompras.png">Adicionar ao Carrinho</button>
         `
         secaoNovidades.appendChild(novoCard)
     });

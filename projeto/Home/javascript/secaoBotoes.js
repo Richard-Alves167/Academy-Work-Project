@@ -18,7 +18,7 @@ function andarCarrosselEsquerdaNovidades() {
     if(andarSecaoNovidades>0) {
         andarSecaoNovidades = 0
     }
-    secaoProdutosNovidades.style.marginLeft = 5*andarSecaoNovidades + "00px"
+    secaoProdutosNovidades.style.marginLeft = 3*andarSecaoNovidades + "00px"
 }
 
 function andarCarrosselDireitaNovidades() {
@@ -26,7 +26,7 @@ function andarCarrosselDireitaNovidades() {
     if(andarSecaoNovidades>0) {
         andarSecaoNovidades = 0
     }
-    secaoProdutosNovidades.style.marginLeft = 5*andarSecaoNovidades + "00px"
+    secaoProdutosNovidades.style.marginLeft = 3*andarSecaoNovidades + "00px"
 }
 
 function andarCarrosselEsquerdaFreteGratis() {
@@ -34,7 +34,7 @@ function andarCarrosselEsquerdaFreteGratis() {
     if(andarSecaoFretegratis>0) {
         andarSecaoFretegratis = 0
     }
-    secaoProdutosFreteGratis.style.marginLeft = 5*andarSecaoFretegratis + "00px"
+    secaoProdutosFreteGratis.style.marginLeft = 3*andarSecaoFretegratis + "00px"
 }
 
 function andarCarrosselDireitaFreteGratis() {
@@ -42,7 +42,7 @@ function andarCarrosselDireitaFreteGratis() {
     if(andarSecaoFretegratis>0) {
         andarSecaoFretegratis = 0
     }
-    secaoProdutosFreteGratis.style.marginLeft = 5*andarSecaoFretegratis + "00px"
+    secaoProdutosFreteGratis.style.marginLeft = 3*andarSecaoFretegratis + "00px"
 }
 
 function andarCarrosselEsquerdaSaude() {
@@ -50,7 +50,7 @@ function andarCarrosselEsquerdaSaude() {
     if(andarSecaoSaude>0) {
         andarSecaoSaude = 0
     }
-    secaoProdutosSaude.style.marginLeft = 5*andarSecaoSaude + "00px"
+    secaoProdutosSaude.style.marginLeft = 3*andarSecaoSaude + "00px"
 }
 
 function andarCarrosselDireitaSaude() {
@@ -58,7 +58,7 @@ function andarCarrosselDireitaSaude() {
     if(andarSecaoSaude>0) {
         andarSecaoSaude = 0
     }
-    secaoProdutosSaude.style.marginLeft = 5*andarSecaoSaude + "00px"
+    secaoProdutosSaude.style.marginLeft = 3*andarSecaoSaude + "00px"
 }
 
 function andarCarrosselEsquerdaSeguranca() {
@@ -66,7 +66,7 @@ function andarCarrosselEsquerdaSeguranca() {
     if(andarSecaoSeguranca>0) {
         andarSecaoSeguranca = 0
     }
-    secaoProdutosSeguranca.style.marginLeft = 5*andarSecaoSeguranca + "00px"
+    secaoProdutosSeguranca.style.marginLeft = 3*andarSecaoSeguranca + "00px"
 }
 
 function andarCarrosselDireitaSeguranca() {
@@ -74,7 +74,7 @@ function andarCarrosselDireitaSeguranca() {
     if(andarSecaoSeguranca>0) {
         andarSecaoSeguranca = 0
     }
-    secaoProdutosSeguranca.style.marginLeft = 5*andarSecaoSeguranca + "00px"
+    secaoProdutosSeguranca.style.marginLeft = 3*andarSecaoSeguranca + "00px"
 }
 
 function andarCarrosselEsquerdaEntretenimento() {
@@ -82,7 +82,7 @@ function andarCarrosselEsquerdaEntretenimento() {
     if(andarSecaoEntretenimento>0) {
         andarSecaoEntretenimento = 0
     }
-    secaoProdutosEntretenimento.style.marginLeft = 5*andarSecaoEntretenimento + "00px"
+    secaoProdutosEntretenimento.style.marginLeft = 3*andarSecaoEntretenimento + "00px"
 }
 
 function andarCarrosselDireitaEntretenimento() {
@@ -90,5 +90,5 @@ function andarCarrosselDireitaEntretenimento() {
     if(andarSecaoEntretenimento>0) {
         andarSecaoEntretenimento = 0
     }
-    secaoProdutosEntretenimento.style.marginLeft = 5*andarSecaoEntretenimento + "00px"
+    secaoProdutosEntretenimento.style.marginLeft = 3*andarSecaoEntretenimento + "00px"
 }

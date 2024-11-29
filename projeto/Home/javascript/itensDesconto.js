@@ -37,7 +37,7 @@ function rederizarSecaoDesconto() {
         novoCard.classList.add("card")
     
         novoCard.innerHTML = `
-            <div class="itens_cadastrados">
+            <div class="itens_cadastrados" onclick="adicionarCarrinho(${arrayDesconto.indexOf(object)})">
                 <img class="iten_imagem" src="${object.imagem}">
                 <div class="iten_nome">${object.nome}</div>
                 <div class="iten_preco"><div class="iten_preco_desconto">
@@ -46,7 +46,7 @@ function rederizarSecaoDesconto() {
                 </div>
                 </div>
             </div>
-            <button class="botaoAdicionarCarrinho" onclick="adicionarCarrinho(${arrayDesconto.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+            <button class="botaoAdicionarCarrinho">+<img src="./imagens/carrinhoCompras.png">Adicionar ao Carrinho</button>
             <div class="trianguloDesconto"></div>
             <div class="textoDesconto">-20%</div>
         `

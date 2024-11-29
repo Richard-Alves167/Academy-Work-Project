@@ -3,7 +3,7 @@
     margin: auto;
     background-color: rgb(136, 162, 162);
     width: 80vw;
-    height: 500px;
+    min-height: 500px;
 }
 
 .divCarrinhoSolicitado {

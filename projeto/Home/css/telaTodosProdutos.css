@@ -9,7 +9,7 @@
 #selecionarOpcaoCaracteristica {
     background-color: aliceblue;
     border-radius: 10px;
-    height: 300px;
+    height: fit-content;
     width: 18vw;
     box-shadow: 10px 5px 30px black;
     padding: 20px;
@@ -42,12 +42,22 @@
 }
 
 #botoesSelecionar button{
-    height: 20px;
-    width: 20px;
-    border-radius: 100px;
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
     background-color: #ff6c70;
     margin-right: 20px;
     position: relative;
+    cursor: pointer;
+}
+
+#botoesSelecionar button:hover{
+    background-color: aquamarine;
+}
+
+.divSelecionarProdutoBotao{
+    display: flex;
+    align-items: center;
 }
 
 .imagemNotFound {

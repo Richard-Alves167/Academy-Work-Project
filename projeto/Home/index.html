@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/CardItens.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/CardItens.css" rel="stylesheet">
     <link href="../Home/css/Navigation.css" rel="stylesheet">
     <link href="./css/carrosselPromocoes.css" rel="stylesheet">
     <link href="./css/rodape.css" rel="stylesheet">
 
-    <title>Home</title>
+    <title>BabyToys</title>
     <link rel="shortcut icon" href="./imagens/lojaIcone.jpg" type="image/png">
 
 </head>
@@ -21,7 +21,7 @@
         </div>
         <div id="barraDePesquisa">
             <input type="text" id="pesquisar"></input type="text">
-            <button id="lupa" onclick="pesquisarProduto()"><img src="./imagens/lupa.png"></button>
+            <button id="lupa" onclick="pesquisarProdutoPorOutraPagina()"><img src="./imagens/lupa.png"></button>
         </div>
         <div id="user_login">
             <a href="./loginDeCliente.html" id="linkagemPaginaUsuario" >
@@ -36,7 +36,6 @@
 
     <div id="navegador">
         <nav>
-            <div id="verProdutos"><a href="./telaTodosProdutos.html">Ver Nossos Produtos</a></div>
             <ul>
                 <li id="cadastros">Cadastros
                     <div id="clickCadastro">
@@ -109,31 +108,49 @@
     </section>
 
     <section class="secaoDisplay" id="secaoNacionais">
-        <h1 class="secaoTexto">Frete grátis</h1>
+        <h1 class="secaoTexto">Produtos Nacionais</h1>
         <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaFreteGratis()">&lt</button>
             <ul id="produtosFreteGratis" class="linhaDeItens">
             </ul>
         <button class="buttomRightSecao" onclick="andarCarrosselDireitaFreteGratis()">&gt</button>
     </section>
 
+    <section id="secaoBannerSite1">
+        <div id="secaoBannerSite1Div">
+            <p><a href="../Home/index.html"><span id="logo_B">P</span>rodutos <br><span id="logo_T">C</span>uidado</a></p>
+        </div>
+        <img id="secaoBannerSite1Img" src="./imagens/sectionBannerSaude.jpg">
+    </section>
+
     <section class="secaoDisplay" id="secaoSaude">
-        <h1 class="secaoTexto">Produtos para o cuidado de seu bebê</h1>
         <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaSaude()">&lt</button>
             <ul id="produtosSaude" class="linhaDeItens">
             </ul>
         <button class="buttomRightSecao" onclick="andarCarrosselDireitaSaude()">&gt</button>
     </section>
 
+    <section id="secaoBannerSite2">
+        <img id="secaoBannerSite2Img" src="./imagens/sectionBannerSeguranca.jpg">
+        <div id="secaoBannerSite2Div">
+            <p><a href="../Home/index.html"><span id="logo_B">P</span>rodutos <br><span id="logo_T">S</span>egurança</a></p>
+        </div>
+    </section>
+
     <section class="secaoDisplay" id="secaoSeguranca">
-        <h1 class="secaoTexto">Produtos para a segurança de seu bebê</h1>
         <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaSeguranca()">&lt</button>
             <ul id="produtosSeguranca" class="linhaDeItens">
             </ul>
         <button class="buttomRightSecao" onclick="andarCarrosselDireitaSeguranca()">&gt</button>
     </section>
 
+    <section id="secaoBannerSite3">
+        <div id="secaoBannerSite3Div">
+            <p><a href="../Home/index.html"><span id="logo_B">P</span>rodutos <br><span id="logo_T">E</span>ntretenimento</a></p>
+        </div>
+        <img id="secaoBannerSite3Img" src="./imagens/sectionBanner1.jpg">
+    </section>
+
     <section class="secaoDisplay" id="secaoEntretenimento">
-        <h1 class="secaoTexto">Produtos para a diversão de seu bebê</h1>
         <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaEntretenimento()">&lt</button>
             <ul id="produtosEntretenimento" class="linhaDeItens">
             </ul>

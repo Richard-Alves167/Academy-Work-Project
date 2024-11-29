@@ -4,6 +4,7 @@ button{
 
 #carrinho {
     width: 865px;
+    min-height: 350px;
     max-height: 650px;
     overflow-x: auto;
     padding: 20px;

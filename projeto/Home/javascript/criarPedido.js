@@ -27,7 +27,7 @@ if (armazenamentoCarrinhoDeProdutosSolicitados !== null) {
 function calcularPrecoTotalPedidoTabela() {
     if (armazenamentoDeCarrinhoDeProdutos !== null) {
     let soma = carrinhoDeProdutosParaPedido.reduce((acumulador,produto) => {
-        let resultado = acumulador + Number(produto.preco)
+        let resultado = acumulador + Number(produto.preco*produto.quantidade)
     return resultado
     },0);
 
@@ -40,6 +40,11 @@ const totalDoPedido = calcularPrecoTotalPedidoTabela()
 const carrinhoEspaco = document.getElementById("produtosTabela")
 
 function adicionarPedido() {
+    const armazenamentoDeCarrinhoDeProdutos = localStorage.getItem("carrinhoDeProdutosLocal")
+    if (armazenamentoDeCarrinhoDeProdutos !== null) {
+        carrinhoDeProdutosParaPedido = JSON.parse(armazenamentoDeCarrinhoDeProdutos)
+    }
+    
     if (armazenamentoDeCarrinhoDeProdutos !== null && clienteLogado !== null) {
         carrinhoDeProdutosPedidosFeitosLocal.push(carrinhoDeProdutosParaPedido)
         localStorage.setItem("carrinhoPedidosFeitosLocal",JSON.stringify(carrinhoDeProdutosPedidosFeitosLocal))
@@ -109,7 +114,7 @@ function renderizarPedidos() {
             pedidoCarrinhoSolicitado.innerHTML = `
             <td class="tabelaDoCarrinhoSolicitadoIcone"><img src="${element.imagem}"></td>
             <td class="tabelaDoCarrinhoSolicitadoNome">${element.nome}</td>
-            <td>1</td>
+            <td>${element.quantidade}</td>
             `
             tdCarrinhoSolicitado.appendChild(pedidoCarrinhoSolicitado)
         })

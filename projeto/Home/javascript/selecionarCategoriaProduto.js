@@ -15,14 +15,14 @@ function rederizarProdutos() {
         novoCard.classList.add("card")
         
         novoCard.innerHTML = `
-            <div class="itens_cadastrados">
+            <div class="itens_cadastrados" onclick="adicionarCarrinho(${produtos.indexOf(object)})">
             <img class="iten_imagem" src="${object.imagem}">
             <div class="iten_nome">${object.nome}</div>
             <div class="iten_preco">
             <span class="cifrao">R$</span>${object.preco}
             </div>
         </div>
-        <button class="botaoAdicionarCarrinho" onclick="adicionarCarrinho(${produtos.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+        <button class="botaoAdicionarCarrinho">+<img src="./imagens/carrinhoCompras.png">Adicionar ao Carrinho</button>
         `
         lista.appendChild(novoCard)
     });

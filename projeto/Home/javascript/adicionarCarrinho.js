@@ -33,11 +33,11 @@ function adicionarCarrinho(index) {
 function retirarCarrinho(index) {
     if (carrinhoDeProdutos[index].quantidade > 1) {
         carrinhoDeProdutos[index].quantidade -= 1
+        localStorage.setItem("carrinhoDeProdutosLocal",JSON.stringify(carrinhoDeProdutos))
     } else {
         carrinhoDeProdutos.splice(index,1)
+        localStorage.setItem("carrinhoDeProdutosLocal",JSON.stringify(carrinhoDeProdutos))
     }
-
-    localStorage.setItem("carrinhoDeProdutosLocal",JSON.stringify(carrinhoDeProdutos))
     
     renderizarCarrinho()
     quantidadeProdutosCarrinho()
@@ -69,7 +69,7 @@ function renderizarCarrinho() {
                 <button class="iconeTabela" onclick="removerCarrinho(${carrinhoDeProdutos.indexOf(object)})"><img src="./imagens/lixeira.jpg"></button></td>
                 <td class="quantidadeTabela"><div class="mudarQuantidade"><button onclick="retirarCarrinho(${carrinhoDeProdutos.indexOf(object)})">-</button>${object.quantidade}<button onclick="adicionarCarrinho(${carrinhoDeProdutos.indexOf(object)})">+</button></div></td>
                 <td class="precoTabela">R$ ${object.preco}</td>
-                <td class="totalTabela">R$ ${Math.floor(object.preco * object.quantidade)}</td>
+                <td class="totalTabela">R$ ${(object.preco * object.quantidade).toFixed(2)}</td>
             `
             carrinho.appendChild(carrinhoProduto)
         });

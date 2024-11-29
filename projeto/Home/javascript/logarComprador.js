@@ -33,30 +33,38 @@ function logarUsuario() {
     const senhaColocada = document.getElementById("loginSenha")
     const verificar = clientes.filter((element) => {
         if(usernameColocada.value == element.nome && senhaColocada.value == element.senha) {
-            return element
-        }
-        
-        if (!(usernameColocada.value != element.nome && senhaColocada.value == element.senha)) {
             const nomeSpan = document.getElementById("preencherLoginNome")
-            nomeSpan.style.display = "block"
-            usernameColocada.style.border = "1px red solid"
-            } else {
+            nomeSpan.style.display = "none"
+            usernameColocada.style.border = "none"
+            usernameColocada.style.borderBottom = "1px solid black"
+            const senhaSpan = document.getElementById("preencherLoginSenha")
+            senhaSpan.style.display = "none"
+            senhaColocada.style.border = "none"
+            senhaColocada.style.borderBottom = "1px solid black"
+            return element
+        } else {
+            if (!(usernameColocada.value != element.nome && senhaColocada.value == element.senha)) {
                 const nomeSpan = document.getElementById("preencherLoginNome")
-                nomeSpan.style.display = "none"
-                usernameColocada.style.border = "none"
-                usernameColocada.style.borderBottom = "1px solid black"
-            }
-    
-        if (!(usernameColocada == element.nome && senhaColocada != element.senha)) {
-                const senhaSpan = document.getElementById("preencherLoginSenha")
-                senhaSpan.style.display = "block"
-                senhaColocada.style.border = "1px red solid"
-            }else {
-                const senhaSpan = document.getElementById("preencherLoginSenha")
-                senhaSpan.style.display = "none"
-                senhaColocada.style.border = "none"
-                senhaColocada.style.borderBottom = "1px solid black"
-            }
+                nomeSpan.style.display = "block"
+                usernameColocada.style.border = "1px red solid"
+                } else {
+                    const nomeSpan = document.getElementById("preencherLoginNome")
+                    nomeSpan.style.display = "none"
+                    usernameColocada.style.border = "none"
+                    usernameColocada.style.borderBottom = "1px solid black"
+                }
+        
+            if (!(usernameColocada == element.nome && senhaColocada != element.senha)) {
+                    const senhaSpan = document.getElementById("preencherLoginSenha")
+                    senhaSpan.style.display = "block"
+                    senhaColocada.style.border = "1px red solid"
+                }else {
+                    const senhaSpan = document.getElementById("preencherLoginSenha")
+                    senhaSpan.style.display = "none"
+                    senhaColocada.style.border = "none"
+                    senhaColocada.style.borderBottom = "1px solid black"
+                }
+        }
     })
 
     if (verificar[0] != null) {
