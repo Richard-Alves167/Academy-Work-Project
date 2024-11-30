@@ -21,6 +21,7 @@ function rederizarSecaoFreteGratis() {
         novoCard.classList.add("card")
 
         novoCard.innerHTML = `
+        <a href="./telaDoProduto.html?mostrarProduto=${object.nome}">
             <div class="itens_cadastrados" onclick="adicionarCarrinho(${arrayFreteGratis.indexOf(object)})">
                 <img class="iten_imagem" src="${object.imagem}">
                 <div class="iten_nome">${object.nome}</div>
@@ -28,7 +29,8 @@ function rederizarSecaoFreteGratis() {
                 <span class="cifrao">R$</span>${object.preco}
                 </div>
             </div>
-            <button class="botaoAdicionarCarrinho">+<img src="./imagens/carrinhoCompras.png">Adicionar ao Carrinho</button>
+            <button class="verProduto">Ver Produto</button>
+        </a>
         `
         secaoFreteGratis.appendChild(novoCard)
     });

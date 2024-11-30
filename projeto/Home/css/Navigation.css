@@ -1,7 +1,7 @@
 html {
     width: 100%;
     height: 100%;
-    /* background-image: url(https://www.eucolo.com.br/wp-content/uploads/2017/07/papel-de-parede-adesivo-infantil-elementos-cinza-2.jpg); */
+    background-image: url(https://www.eucolo.com.br/wp-content/uploads/2017/07/papel-de-parede-adesivo-infantil-elementos-cinza-2.jpg);
     background-size: cover;
     
 }
@@ -9,7 +9,7 @@ html {
 body {
     margin: 0px;
     overflow-x: hidden;
-    background-image: linear-gradient(to bottom, #ffee00, rgba(167, 167, 167, 0.176), #ffee00);
+    background-image: linear-gradient(to right, #98dfee, rgba(167, 167, 167, 0.176), #98dfee);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -89,6 +89,7 @@ header p {
 
 #lupa {
     width: 50px;
+    height: 36px;
     height: auto;
     background-color: #21798a;
     border-top-right-radius: 20px;
@@ -96,6 +97,7 @@ header p {
     align-items: center;
     justify-content: center;
     place-items: center;
+    margin-bottom: 0px;
 }
 
 #lupa img {
@@ -225,7 +227,7 @@ nav ul a:hover{
     margin-left: 30px;
 }
 
-#verProdutos {
+/* #verProdutos {
     background-color: #ff6c70;
     color: #98dfee;
     border-radius: 10px;
@@ -250,6 +252,16 @@ nav ul a:hover{
 #verProdutos:hover a {
     transition: 1s;
     color: rgb(228, 209, 122);
+} */
+
+#fundoLogin {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: black 5px solid;
+    border-bottom: black 5px solid;
+    background-image: linear-gradient(to right, #ff6c70, rgba(87, 87, 87, 0.698), #ff6c70);
 }
 
 #cadastros {

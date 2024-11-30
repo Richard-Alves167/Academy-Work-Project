@@ -40,6 +40,10 @@
     cursor: pointer;
 }
 
+.card a {
+    text-decoration: none;
+}
+
 .card:hover {
     border: 2px solid rgb(255, 72, 103);
     transform: scale(1.05);
@@ -86,7 +90,7 @@
     text-decoration: none;
 }
 
-/* .botaoAdicionarCarrinho {
+/* .verProduto {
     display: flex;
     position: relative;
     cursor: pointer;
@@ -96,7 +100,7 @@
     border-radius: 20px;
 } */
 
-.botaoAdicionarCarrinho {
+.verProduto {
     display: none;
     position: relative;
     cursor: pointer;
@@ -111,19 +115,19 @@
     padding-left: 20px;
 }
 
-#itens_cadastrados .botaoAdicionarCarrinho {
+#itens_cadastrados .verProduto {
     margin-top: 0px;
 }
 
-.card:hover .botaoAdicionarCarrinho{
+.card:hover .verProduto{
     display: flex;
 }
 
-/* .botaoAdicionarCarrinho:hover {
+.verProduto:hover {
     background-color: #46e5db;
-} */
+}
 
-.botaoAdicionarCarrinho img {
+.verProduto img {
     width: 20px;
 }
 

@@ -79,7 +79,7 @@ function filtrarProdutos(nomeProduto) {
             <span class="cifrao">R$</span>${object.preco}
             </div>
         </div>
-        <button class="botaoAdicionarCarrinho" onclick="adicionarCarrinho(${arrayPesquisado.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+        <button class="verProduto" onclick="adicionarCarrinho(${arrayPesquisado.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
         `
         listaPesquisada.appendChild(novoCard)
     });

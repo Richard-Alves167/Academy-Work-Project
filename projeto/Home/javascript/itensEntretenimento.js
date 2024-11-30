@@ -19,14 +19,16 @@ function rederizarSecaoEntretenimento() {
         novoCard.classList.add("card")
     
         novoCard.innerHTML = `
-            <div class="itens_cadastrados" onclick="adicionarCarrinho(${arrayEntretenimento.indexOf(object)})">
-                <img class="iten_imagem" src="${object.imagem}">
-                <div class="iten_nome">${object.nome}</div>
-                <div class="iten_preco">
-                <span class="cifrao">R$</span>${object.preco}
+            <a href="./telaDoProduto.html?mostrarProduto=${object.nome}">
+                <div class="itens_cadastrados" onclick="adicionarCarrinho(${arrayEntretenimento.indexOf(object)})">
+                    <img class="iten_imagem" src="${object.imagem}">
+                    <div class="iten_nome">${object.nome}</div>
+                    <div class="iten_preco">
+                    <span class="cifrao">R$</span>${object.preco}
+                    </div>
                 </div>
-            </div>
-            <button class="botaoAdicionarCarrinho">+<img src="./imagens/carrinhoCompras.png">Adicionar ao Carrinho</button>
+                <button class="verProduto">Ver Produto</button>
+            </a>
         `
         secaoEntretenimento.appendChild(novoCard)
     });

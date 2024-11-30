@@ -15,6 +15,7 @@ function rederizarProdutos() {
         novoCard.classList.add("card")
         
         novoCard.innerHTML = `
+        <a href="./telaDoProduto.html?mostrarProduto=${object.nome}">
             <div class="itens_cadastrados" onclick="adicionarCarrinho(${produtos.indexOf(object)})">
             <img class="iten_imagem" src="${object.imagem}">
             <div class="iten_nome">${object.nome}</div>
@@ -22,7 +23,8 @@ function rederizarProdutos() {
             <span class="cifrao">R$</span>${object.preco}
             </div>
         </div>
-        <button class="botaoAdicionarCarrinho">+<img src="./imagens/carrinhoCompras.png">Adicionar ao Carrinho</button>
+        <button class="verProduto">+<img src="./imagens/carrinhoCompras.png">Adicionar ao Carrinho</button>
+        </a>
         `
         lista.appendChild(novoCard)
     });
@@ -53,6 +55,7 @@ function rederizarSecaoEntretenimento() {
         novoCard.classList.add("card")
     
         novoCard.innerHTML = `
+        <a href="./telaDoProduto.html?mostrarProduto=${object.nome}">
             <div class="itens_cadastrados">
                 <img class="iten_imagem" src="${object.imagem}">
                 <div class="iten_nome">${object.nome}</div>
@@ -60,7 +63,8 @@ function rederizarSecaoEntretenimento() {
                 <span class="cifrao">R$</span>${object.preco}
                 </div>
             </div>
-            <button class="botaoAdicionarCarrinho" onclick="adicionarCarrinho(${arrayEntretenimento.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+            <button class="verProduto" onclick="adicionarCarrinho(${arrayEntretenimento.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+        </a>
         `
         lista.appendChild(novoCard)
     });
@@ -91,6 +95,7 @@ function rederizarSecaoFreteGratis() {
         novoCard.classList.add("card")
 
         novoCard.innerHTML = `
+        <a href="./telaDoProduto.html?mostrarProduto=${object.nome}">
             <div class="itens_cadastrados">
                 <img class="iten_imagem" src="${object.imagem}">
                 <div class="iten_nome">${object.nome}</div>
@@ -98,7 +103,8 @@ function rederizarSecaoFreteGratis() {
                 <span class="cifrao">R$</span>${object.preco}
                 </div>
             </div>
-            <button class="botaoAdicionarCarrinho" onclick="adicionarCarrinho(${arrayFreteGratis.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+            <button class="verProduto" onclick="adicionarCarrinho(${arrayFreteGratis.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+        </a>
         `
         lista.appendChild(novoCard)
     });
@@ -129,6 +135,7 @@ function rederizarSecaoSaude() {
         novoCard.classList.add("card")
 
         novoCard.innerHTML = `
+        <a href="./telaDoProduto.html?mostrarProduto=${object.nome}">
             <div class="itens_cadastrados">
                 <img class="iten_imagem" src="${object.imagem}">
                 <div class="iten_nome">${object.nome}</div>
@@ -136,7 +143,8 @@ function rederizarSecaoSaude() {
                 <span class="cifrao">R$</span>${object.preco}
                 </div>
             </div>
-            <button class="botaoAdicionarCarrinho" onclick="adicionarCarrinho(${arraySaude.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+            <button class="verProduto" onclick="adicionarCarrinho(${arraySaude.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+        </a>
         `
         lista.appendChild(novoCard)
     });
@@ -167,6 +175,7 @@ function rederizarSecaoSeguranca() {
         novoCard.classList.add("card")
 
         novoCard.innerHTML = `
+        <a href="./telaDoProduto.html?mostrarProduto=${object.nome}">
             <div class="itens_cadastrados">
                 <img class="iten_imagem" src="${object.imagem}">
                 <div class="iten_nome">${object.nome}</div>
@@ -174,7 +183,8 @@ function rederizarSecaoSeguranca() {
                 <span class="cifrao">R$</span>${object.preco}
                 </div>
             </div>
-            <button class="botaoAdicionarCarrinho" onclick="adicionarCarrinho(${arraySeguranca.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+            <button class="verProduto">Ver Produto</button>
+        </a>
         `
         lista.appendChild(novoCard)
     });

@@ -85,6 +85,10 @@ if (clienteLogadoSite !== null) {
 }
 
 if (JSON.parse(clienteLogadoSite)[0].nome == Admin.nome) {
+    try {
     let cadastrar = document.getElementById("cadastros")
     cadastrar.style.display = "flex"
+    } catch (error) {
+        
+    }
 }

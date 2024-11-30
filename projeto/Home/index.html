@@ -51,60 +51,62 @@
 
 <main>
 
-    <section id="topo_promocoes">
-        <div class="conteudoCarrossel">
-            <input type="radio" name="botaoRadioCarrossel" id="radio1">
-            <input type="radio" name="botaoRadioCarrossel" id="radio2">
-            <input type="radio" name="botaoRadioCarrossel" id="radio3">
-            <input type="radio" name="botaoRadioCarrossel" id="radio4">
+    <div id="fundoLogin">
+        <section id="topo_promocoes">
+            <div class="conteudoCarrossel">
+                <input type="radio" name="botaoRadioCarrossel" id="radio1">
+                <input type="radio" name="botaoRadioCarrossel" id="radio2">
+                <input type="radio" name="botaoRadioCarrossel" id="radio3">
+                <input type="radio" name="botaoRadioCarrossel" id="radio4">
 
-            <!-- <button id="buttomLeft">&lt;</button> -->
-            <div class="imagemCarrossel carrosselImagem1" primeiroCarrossel>
-                <img src="./imagens/blackFriday.jpg" alt="slide 1">
+                <!-- <button id="buttomLeft">&lt;</button> -->
+                <div class="imagemCarrossel carrosselImagem1" primeiroCarrossel>
+                    <img src="./imagens/blackFriday.jpg" alt="slide 1">
+                </div>
+
+                <div class="imagemCarrossel">
+                    <img src="./imagens/child-2916844_1920.jpg" alt="slide 2">
+                </div>
+
+                <div class="imagemCarrossel">
+                    <img src="./imagens/baby-84552_1920.jpg" alt="slide 3">
+                </div>
+                
+                <div class="imagemCarrossel">
+                <img src="./imagens/adult-1807500_1920.jpg" alt="slide 4">
+                </div>
+                <!-- <button id="buttomRight">&gt;</button> -->
+
+                <div class="autoCarrossel">
+                    <div class="autoRadio1"></div>
+                    <div class="autoRadio2"></div>
+                    <div class="autoRadio3"></div>
+                    <div class="autoRadio4"></div>
+                </div>
+
+                <div class="manualCarrossel">
+                    <label for="radio1" class="manualBotao"></label>
+                    <label for="radio2" class="manualBotao"></label>
+                    <label for="radio3" class="manualBotao"></label>
+                    <label for="radio4" class="manualBotao"></label>
+                </div>
+
             </div>
+        </section>
+    </div>
 
-            <div class="imagemCarrossel">
-                <img src="./imagens/child-2916844_1920.jpg" alt="slide 2">
-            </div>
-
-            <div class="imagemCarrossel">
-                <img src="./imagens/baby-84552_1920.jpg" alt="slide 3">
-            </div>
-            
-            <div class="imagemCarrossel">
-            <img src="./imagens/adult-1807500_1920.jpg" alt="slide 4">
-            </div>
-            <!-- <button id="buttomRight">&gt;</button> -->
-
-            <div class="autoCarrossel">
-                <div class="autoRadio1"></div>
-                <div class="autoRadio2"></div>
-                <div class="autoRadio3"></div>
-                <div class="autoRadio4"></div>
-            </div>
-
-            <div class="manualCarrossel">
-                <label for="radio1" class="manualBotao"></label>
-                <label for="radio2" class="manualBotao"></label>
-                <label for="radio3" class="manualBotao"></label>
-                <label for="radio4" class="manualBotao"></label>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="secaoDisplay" id="secaoDesconto">
+    <!-- <section class="secaoDisplay" id="secaoDesconto">
            <h1 class="secaoTexto">Descontos do Dia para você aproveitar</h1>
             <ul id="produtosDesconto" class="linhaDeItens">
             </ul>
-    </section>
+    </section> -->
 
     <section class="secaoDisplay" id="secaoNovidades">
            <h1 class="secaoTexto">Novos produtos essa semana</h1>
-        <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaNovidades()">&lt</button>
+        <!-- <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaNovidades()">&lt</button> -->
             <ul id="produtosNovidades" class="linhaDeItens">
             </ul>
-        <button class="buttomRightSecao" onclick="andarCarrosselDireitaNovidades()">&gt</button>
+        <!-- <button class="buttomRightSecao" onclick="andarCarrosselDireitaNovidades()">&gt</button> -->
     </section>
 
     <section class="secaoDisplay" id="secaoNacionais">

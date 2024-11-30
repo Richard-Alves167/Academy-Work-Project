@@ -96,7 +96,6 @@ function calcularPrecoTotalPedido() {
 }
 
 const numeroCarrinho = document.getElementById("quantidadeCarrinho")
-
 function quantidadeProdutosCarrinho() {
     if(carrinhoDeProdutos.length == 0) {
         numeroCarrinho.style.display = "none"
