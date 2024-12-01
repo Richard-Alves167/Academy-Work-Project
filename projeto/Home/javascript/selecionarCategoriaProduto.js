@@ -16,7 +16,7 @@ function rederizarProdutos() {
         
         novoCard.innerHTML = `
         <a href="./telaDoProduto.html?mostrarProduto=${object.nome}">
-            <div class="itens_cadastrados" onclick="adicionarCarrinho(${produtos.indexOf(object)})">
+            <div class="itens_cadastrados">
             <img class="iten_imagem" src="${object.imagem}">
             <div class="iten_nome">${object.nome}</div>
             <div class="iten_preco">

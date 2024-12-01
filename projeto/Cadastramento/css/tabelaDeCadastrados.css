@@ -25,19 +25,25 @@
 main {
     width: 80vw;
     margin: auto;
-    background-color: blanchedalmond;
+    margin-top: 20px;
+    background-color: aliceblue;
+    background-image: linear-gradient(to bottom, rgb(102, 102, 102), rgba(102, 102, 102, 0.356),rgb(102, 102, 102));
+    padding: 10px;
+    border-radius: 40px;
 }
 
 #inicioarticle {
-    margin-top: 50px;
-    background-color: rgb(73, 170, 170);
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 70px;
     height: 110px;
     border: black 2px solid;
     display: flex;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: texto;
     padding: auto;
 }
@@ -60,7 +66,8 @@ table {
 
 thead {
     text-align: center;
-    background-color: aqua;
+    background-color: rgb(84, 131, 158);
+    color: aliceblue;
 }
 
 tr {
@@ -82,6 +89,7 @@ td {
     border-radius: 20%;
     justify-self: center;
     background-color: red;
+    cursor: pointer;
     color: white;
     font-family: textItens;
     text-align-last: center;
@@ -91,6 +99,8 @@ td {
 .iconeUsuario {
     width: 40px;
     height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 100px;
     border: 2px solid black;
     display: flex;

@@ -86,9 +86,23 @@ if (clienteLogadoSite !== null) {
 
 if (JSON.parse(clienteLogadoSite)[0].nome == Admin.nome) {
     try {
-    let cadastrar = document.getElementById("cadastros")
+    let cadastrar = document.getElementById("botaoListaCadastrados")
     cadastrar.style.display = "flex"
     } catch (error) {
         
     }
 }
+
+const botaoCadastros = document.getElementById("botaoListaCadastrados")
+const listaCadastrados = document.getElementById("listaCadastrados")
+const trianguloCadastros = document.getElementById("trianguloListaCadastros")
+const textoCadastros = document.getElementById("textoListaCadastros")
+
+botaoCadastros.addEventListener("click",() => {
+    listaCadastrados.classList.toggle("desaparecer")
+    listaCadastrados.classList.toggle("aparecer")
+    trianguloCadastros.classList.toggle("desaparecer")
+    trianguloCadastros.classList.toggle("aparecer")
+    textoCadastros.classList.toggle("desaparecer")
+})
+

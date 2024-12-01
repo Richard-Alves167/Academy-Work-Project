@@ -3,7 +3,6 @@ html {
     height: 100%;
     background-image: url(https://www.eucolo.com.br/wp-content/uploads/2017/07/papel-de-parede-adesivo-infantil-elementos-cinza-2.jpg);
     background-size: cover;
-    
 }
 
 body {
@@ -193,6 +192,7 @@ nav ul a:hover{
     height: 50px;
     border-radius: 100%;
     border: 1px rgb(255, 255, 255) solid;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 200, 250, 0.356),rgb(255, 255, 255));
 }
 
 #user_login img:hover {
@@ -264,33 +264,70 @@ nav ul a:hover{
     background-image: linear-gradient(to right, #ff6c70, rgba(87, 87, 87, 0.698), #ff6c70);
 }
 
-#cadastros {
-    display: none;
+#listaCadastrados {
     flex-direction: column;
-    color: #ff6c70;
+    list-style: none;
     position: absolute;
-    right: 30px;
+    right: 7.5vw;
+    top: 70px;
+    border-radius: 15px;
     z-index: 1;
-    cursor: pointer;
-    user-select: none;
+    color: #ff6c70;
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 10px;
+    transition: 1s;
 }
 
-#clickCadastro {
+#listaCadastrados li {
     color: #ff6c70;
+    width: 94px;
+    display: flex;
+    justify-content: center;
+}
+
+#listaCadastrados hr {
+    width: 100%;
+}
+
+#listaCadastrados a {
+    text-decoration: none;
+}
+
+#listaCadastrados a:hover li {
+    background-color: #ff6c70;
+    color: aliceblue;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#textoListaCadastros {
+    position: absolute;
+    right: 9.75vw;
+    top: 70px;
+    font-family: texto;
+    font-size: 12px;
+}
+
+#trianguloListaCadastros {
+    position: absolute;
+    right: 10vw;
+    top: 70px;
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #ffffff;
+}
+
+#botaoListaCadastrados {
     display: none;
 }
 
-#clickCadastro a {
-    font-size: 25px;
-    color: rgb(247, 113, 113)
+.desaparecer {
+    display: none;
 }
 
-#cadastros:hover #clickCadastro{
-    display: block;
+.aparecer {
     display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    background-color: rgb(255, 255, 255);
 }
-
-
