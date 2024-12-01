@@ -30,59 +30,86 @@
 
     <main>
 
-        <div id="inicio">
-            <p>Cadastro dos ítens da loja</p>
-        </div>
+        <div id="fundoCadastro">
 
-        <div id="cadastrar">
+            <section id="cadastroCliente">
+                        
+                    <div id="inicioCadastro">
+                        <img src="./imagens/iconeProduto.png" class="iconeCadastrar">
+                        <p>Cadastrar Produtos</p>
+                    </div>
 
-            <label class="input_title">Nome</label> <br>
-            <input class="input_text" type="text" id="nome_itens"  placeholder="Nome">
+                        <hr>
 
-            <br><br>
+                        <div class="inputCadastro">
+                            <label class="input_title" for="nome_itens">Nome</label>
+                            <img src="./imagens/iconeProduto.png" class="iconeCadastro">
+                            <input class="input_text" type="text" id="nome_itens"  placeholder="Nome">
+                        <span class="preencherCampo" id="preencherCampoCadastroNome">Todos os campos devem ser preenchidos.</span>
+                        </div>       
 
-            <label class="input_title">Preço</label> <br>
-            <input class="input_text" type="number" id="preco_itens" placeholder="R$">
+                        <div class="inputCadastro">
+                            <label class="input_title" for="preco_itens">Preço</label>
+                            <img src="./imagens/iconeDinheiro.png" class="iconeCadastro">
+                            <input class="input_text" type="number" id="preco_itens" placeholder="R$">
+                        <span class="preencherCampo" id="preencherCampoCadastroPreco">Todos os campos devem ser preenchidos.</span>
+                        </div> 
 
-            <br><br>
+                        <div class="inputCadastro">
+                            <label class="input_title" for="imagem_itens">Imagem</label>
+                            <img src="./imagens/iconeImage.png" class="iconeCadastro">
+                            <input class="input_text" class="input_imagem" type="text" id="imagem_itens" placeholder="http:">
+                        <span class="preencherCampo" id="preencherCampoCadastroImagem">Todos os campos devem ser preenchidos.</span>
+                        </div> 
 
-            <label class="input_title">Imagem</label> <br>
-            <input class="input_text" class="input_imagem" type="text" id="imagem_itens" placeholder="http:">
+                        <div class="inputCadastro">
+                            <div>
+                            <p class="input_title">Tipo de artigo</p>
 
-            <div>
+                            <select class="select_style" id="seletor_tipo_artigo">
+                                <option name="tipo_artigo" value="Saúde">Saúde</option>
+                                <option name="tipo_artigo" value="Segurança">Segurança</option>
+                                <option name="tipo_artigo" value="Entretenimento">Entretenimento</option>
+                            </select>
 
-                <p class="input_title">Tipo de artigo</p>
+                            </div>
+                        </div> 
 
-                <select class="select_style" id="seletor_tipo_artigo">
-                    <option name="tipo_artigo" value="Saúde">Saúde</option>
-                    <option name="tipo_artigo" value="Segurança">Segurança</option>
-                    <option name="tipo_artigo" value="Entretenimento">Entretenimento</option>
-                </select>
+                        <div id="cadastroCheckRadios">
+                            <div>
+                                <p class="input_title">Nível de puericultura</p>
+                                <label class="radio_title_style">Nível I</label>
+                                <img src="./imagens/iconeBebe.png" class="iconeCadastro">
+                                <input class="radio_style" type="radio" name="nivel" value="puericultura_nivel_1">
+                                <label class="radio_title_style">Nível II</label>
+                                <img src="./imagens/iconeCrianca.png" class="iconeCadastro">
+                                <input class="radio_style" type="radio" name="nivel" value="puericultura_nivel_2">
+                                <label class="radio_title_style">Nível III</label>
+                                <img src="./imagens/iconeAdolescente.png" class="iconeCadastro">
+                                <input class="radio_style" type="radio" name="nivel" value="puericultura_nivel_3">
+                            </div>
+                        </div> 
 
-            </div>
+                        <div class="inputCadastro">
+                            <div>
+                                <p class="input_title">Nacional/internacional</p>
+                                <select class="select_style" id="seletor_nacionalidade">
+                                    <option name="nacionalidade" value="Nacional">Nacional</option>
+                                    <option name="nacionalidade" value="Internacional">Internacional</option>
+                                </select>
+                            </div>
+                        </div>
 
-            <div>
-                <p class="input_title">Nível de puericultura</p>
-                <label class="radio_title_style">Nível I</label>
-                <input class="radio_style" type="radio" name="nivel" value="puericultura_nivel_1">
-                <label class="radio_title_style">Nível II</label>
-                <input class="radio_style" type="radio" name="nivel" value="puericultura_nivel_2">
-                <label class="radio_title_style">Nível III</label>
-                <input class="radio_style" type="radio" name="nivel" value="puericultura_nivel_3">
-            </div>
+                            <input id="button" type="button" value="Cadastrar" onclick="cadastrar()">
 
-            <div>
-                <p class="input_title">Nacional/internacional</p>
-                <select class="select_style" id="seletor_nacionalidade">
-                    <option name="nacionalidade" value="Nacional">Nacional</option>
-                    <option name="nacionalidade" value="Internacional">Internacional</option>
-                </select>
-            </div>
+            </section>
 
-            <br>
-
-            <input id="button" type="button" value="Cadastrar" onclick="cadastrar()">
-
+            <section id="descricaoProduto">
+                <label class="input_title" for="descricao_iten">Descrição do Produto</label>
+                <img src="./imagens/iconeTextoDescricao.png" class="iconeCadastro">
+                <textarea id="descricao_iten"></textarea>
+                <span class="preencherCampo" id="preencherCampoCadastroDescricao">*Todos os campos devem ser preenchidos.</span>
+            </section>
         </div>
 
         <section id="itens">

@@ -59,6 +59,10 @@
     max-height: 170px;
     margin: 0px;
     overflow: auto;
+    background-image: linear-gradient(to top, rgb(207, 207, 207), rgba(207, 207, 207, 0.233),rgb(207, 207, 207));
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 20px;
 }
 
 #precoProduto {

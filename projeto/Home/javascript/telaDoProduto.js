@@ -29,13 +29,13 @@ function mostrarProduto(produto) {
     precoParagrafo.textContent = "R$ " + produto.preco
     nacionalidadeParagrafo.textContent = "* " + produto.localidade
 
-    if (produto.nivelPuericultura == "") {
+    if (produto.nivelPuericultura == "puericultura_nivel_1") {
         puericulturaNivelParagrafo.textContent = "* Recomendado para crianças de 1 à 5 anos"
     }
-    if (produto.nivelPuericultura == "") {
+    if (produto.nivelPuericultura == "puericultura_nivel_2") {
         puericulturaNivelParagrafo.textContent = "* Recomendado para crianças acima de 5 anos"
     }
-    if (produto.nivelPuericultura == "") {
+    if (produto.nivelPuericultura == "puericultura_nivel_3") {
         puericulturaNivelParagrafo.textContent = "* Recomendado para crianças acima de 12 anos"
     }
 }
