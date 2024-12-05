@@ -56,4 +56,4 @@ function rederizarSecaoDesconto() {
     });
 }
 
-rederizarSecaoDesconto()
+if(secaoDesconto !=undefined){rederizarSecaoDesconto()};

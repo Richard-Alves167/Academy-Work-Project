@@ -302,6 +302,7 @@ nav ul a:hover{
 }
 
 #textoListaCadastros {
+    display: none;
     position: absolute;
     right: 9.75vw;
     top: 70px;
