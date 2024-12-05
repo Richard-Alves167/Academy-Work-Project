@@ -1,3 +1,12 @@
+@font-face {
+    font-family: textLigth;
+    src: url(../projeto/Home/fontes/text_light.ttf);
+}
+
+* {
+    font-family: textLigth;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -13,6 +22,7 @@ header {
     background-color: rgb(255, 255, 255);
     align-content: center;
     border: 2px black solid;
+    border-radius: 20px;
 }
 
 nav {
@@ -48,7 +58,8 @@ nav ul a{
     transition: 1s;
 }
 
-nav ul a:hover{
+header:hover a{
+    transition: 1s;
     color: #ff0008;
     transform: scale(1.2);
 }
@@ -56,7 +67,10 @@ nav ul a:hover{
 main {
     width: 1000px;
     margin: auto;
-    background-color: blanchedalmond;
+    background-color: rgb(208, 208, 208);
+    padding: 10px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
 }
 
 #apresentacao {
@@ -77,6 +91,7 @@ main {
 
 #foto img {
     border-radius: 100%;
+    box-shadow: 2px 0px 47px rgb(219, 0, 219);
 }
 
 #perfil {
@@ -88,8 +103,16 @@ main {
 }
 
 #apresentacao_texto {
-    width: 50%;
     font-size: 20px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: blueviolet;
 }
 
 #contato div {
@@ -106,8 +129,9 @@ main {
 #inicioarticle {
     margin-top: 50px;
     height: 100px;
-    background-color: rgb(73, 170, 170);
+    background-color: rgb(67, 131, 221);
     border: black 2px solid;
+    border-radius: 30px;
     display: flex;
     align-content: center;
     justify-content: center;
