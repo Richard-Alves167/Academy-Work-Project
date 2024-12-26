@@ -27,8 +27,6 @@ function desconto(array) {
 
 const arraySecaoDescontos = desconto(arrayDesconto)
 
-console.log(arrayDesconto)
-
 function rederizarSecaoDesconto() {
     secaoDesconto.innerHTML = ""
 

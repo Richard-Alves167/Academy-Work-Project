@@ -11,8 +11,6 @@ const arraySecaoFreteGratis = arrayFreteGratis.filter((object) =>
     object.localidade == "Nacional"
 )
 
-console.log(arraySecaoFreteGratis)
-
 function rederizarSecaoFreteGratis() {
     secaoFreteGratis.innerHTML = ""
 

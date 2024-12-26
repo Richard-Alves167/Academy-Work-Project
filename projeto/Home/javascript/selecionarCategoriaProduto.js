@@ -17,13 +17,13 @@ function rederizarProdutos() {
         novoCard.innerHTML = `
         <a href="./telaDoProduto.html?mostrarProduto=${object.nome}">
             <div class="itens_cadastrados">
-            <img class="iten_imagem" src="${object.imagem}">
-            <div class="iten_nome">${object.nome}</div>
-            <div class="iten_preco">
-            <span class="cifrao">R$</span>${object.preco}
+                <img class="iten_imagem" src="${object.imagem}">
+                <div class="iten_nome">${object.nome}</div>
+                <div class="iten_preco">
+                <span class="cifrao">R$</span>${object.preco}
+                </div>
             </div>
-        </div>
-        <button class="verProduto">+<img src="./imagens/carrinhoCompras.png">Adicionar ao Carrinho</button>
+            <button class="verProduto">Ver Produto</button>
         </a>
         `
         lista.appendChild(novoCard)
@@ -63,7 +63,7 @@ function rederizarSecaoEntretenimento() {
                 <span class="cifrao">R$</span>${object.preco}
                 </div>
             </div>
-            <button class="verProduto" onclick="adicionarCarrinho(${arrayEntretenimento.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+            <button class="verProduto">Ver Produto</button>
         </a>
         `
         lista.appendChild(novoCard)
@@ -103,7 +103,7 @@ function rederizarSecaoFreteGratis() {
                 <span class="cifrao">R$</span>${object.preco}
                 </div>
             </div>
-            <button class="verProduto" onclick="adicionarCarrinho(${arrayFreteGratis.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+            <button class="verProduto">Ver Produto</button>
         </a>
         `
         lista.appendChild(novoCard)
@@ -143,7 +143,7 @@ function rederizarSecaoSaude() {
                 <span class="cifrao">R$</span>${object.preco}
                 </div>
             </div>
-            <button class="verProduto" onclick="adicionarCarrinho(${arraySaude.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+            <button class="verProduto">Ver Produto</button>
         </a>
         `
         lista.appendChild(novoCard)

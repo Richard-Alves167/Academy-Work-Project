@@ -72,14 +72,16 @@ function filtrarProdutos(nomeProduto) {
         novoCard.classList.add("card")
         
         novoCard.innerHTML = `
+        <a href="./telaDoProduto.html?mostrarProduto=${object.nome}">
             <div class="itens_cadastrados">
-            <img class="iten_imagem" src="${object.imagem}">
-            <div class="iten_nome">${object.nome}</div>
-            <div class="iten_preco">
-            <span class="cifrao">R$</span>${object.preco}
+                <img class="iten_imagem" src="${object.imagem}">
+                <div class="iten_nome">${object.nome}</div>
+                <div class="iten_preco">
+                <span class="cifrao">R$</span>${object.preco}
+                </div>
             </div>
-        </div>
-        <button class="verProduto" onclick="adicionarCarrinho(${arrayPesquisado.indexOf(object)})">+<img src="./imagens/carrinhoCompras.png"></button>
+            <button class="verProduto">Ver Produto</button>
+        </a>
         `
         listaPesquisada.appendChild(novoCard)
     });

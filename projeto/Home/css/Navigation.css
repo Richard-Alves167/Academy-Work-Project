@@ -227,43 +227,6 @@ nav ul a:hover{
     margin-left: 30px;
 }
 
-/* #verProdutos {
-    background-color: #ff6c70;
-    color: #98dfee;
-    border-radius: 10px;
-    display: flex;
-    position: relative;
-    cursor: pointer;
-    font-size: 20px;
-    user-select: none;
-    padding: 5px;
-    transition: 1s;
-}
-
-#verProdutos a {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-#verProdutos:hover {
-    transform: scale(1.1);
-}
-
-#verProdutos:hover a {
-    transition: 1s;
-    color: rgb(228, 209, 122);
-} */
-
-#fundoLogin {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.315);
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-top: black 5px solid;
-    border-bottom: black 5px solid;
-    background-image: linear-gradient(to right, #ff6c70, rgba(87, 87, 87, 0.698), #ff6c70);
-}
-
 #listaCadastrados {
     flex-direction: column;
     list-style: none;

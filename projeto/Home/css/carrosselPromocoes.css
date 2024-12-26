@@ -1,3 +1,13 @@
+#fundoLogin {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: #676565 2px solid;
+    border-bottom: #676565 2px solid;
+    background-image: linear-gradient(to right, #ff6c70, rgba(87, 87, 87, 0.698), #ff6c70);
+}
+
 #topo_promocoes {
     margin: auto;
     padding: 0;

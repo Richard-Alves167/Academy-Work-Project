@@ -22,16 +22,6 @@
     font-family: textLigth;
 }
 
-main {
-    width: 80vw;
-    margin: auto;
-    margin-top: 20px;
-    background-color: aliceblue;
-    background-image: linear-gradient(to bottom, rgb(102, 102, 102), rgba(102, 102, 102, 0.356),rgb(102, 102, 102));
-    padding: 10px;
-    border-radius: 40px;
-}
-
 #inicioarticle {
     margin-top: 20px;
     background-color: rgb(255, 255, 255);
@@ -54,7 +44,6 @@ main {
 
 #corpocadastrados {
     margin: 30px;
-    padding-bottom: 30px;
 }
 
 table {
@@ -95,6 +84,29 @@ td {
     text-align-last: center;
     align-items: center;
 }
+
+#itensLista {
+    min-height: 500px;
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+    background-color: aliceblue;
+    background-image: linear-gradient(to bottom, rgb(102, 102, 102), rgba(102, 102, 102, 0.356),rgb(102, 102, 102));
+    padding: 10px;
+    border-radius: 40px;
+}
+
+#compradoresLista {
+    min-height: 500px;
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+    background-color: aliceblue;
+    background-image: linear-gradient(to bottom, rgb(102, 102, 102), rgba(102, 102, 102, 0.356),rgb(102, 102, 102));
+    padding: 10px;
+    border-radius: 40px;
+}
+
 
 .iconeUsuario {
     width: 40px;

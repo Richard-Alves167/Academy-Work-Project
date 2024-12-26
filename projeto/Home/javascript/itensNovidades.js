@@ -18,8 +18,6 @@ function produtosNovos(array) {
 }
 const arraySecaoNovidades = produtosNovos(arrayNovidades)
 
-console.log(arraySecaoNovidades)
-
 function rederizarSecaoNovidades() {
     secaoNovidades.innerHTML = ""
 

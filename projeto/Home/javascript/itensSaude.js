@@ -11,8 +11,6 @@ const arraySecaoSaude = arraySaude.filter((object) =>
     object.tipoDeArtigo == "Saúde"
 )
 
-console.log(arraySecaoSaude)
-
 function rederizarSecaoSaude() {
     secaoSaude.innerHTML = ""
 
