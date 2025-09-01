@@ -1,0 +1,101 @@
+@font-face {
+    font-family: titulo;
+    src: url(../assets/fonts/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face {
+    font-family: textLigth;
+    src: url(../assets/fonts/text_light.ttf);
+}
+
+@font-face {
+    font-family: textInput;
+    src: url(../assets/fonts/EdgecuttingLiteMedium.ttf);
+}
+
+@font-face {
+    font-family: textItens;
+    src: url(../assets/fonts/LiberationSans-Regular.ttf);
+}
+
+#itens_cadastrados {
+    display: flex;
+    list-style: none;
+    margin-inline: 50px;
+    word-break: normal;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+}
+
+.card {
+    height: 320px;
+    width: 210px;
+    background-color: rgb(254, 201, 201);
+    border-radius: 15px;
+    margin-left: 54.5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    box-shadow: 1px 1px 10px;
+    cursor: pointer;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:hover {
+    border: 2px solid rgb(255, 72, 103);
+    transform: scale(1.05);
+    transition: 0.75s;
+}
+
+.iten_imagem {
+    height: 210px;
+    width: 210px;
+    display: flex;
+    margin-inline: auto;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgb(86, 83, 83);
+    border-radius: 20px;
+}
+
+.iten_nome {
+    margin-top: 8px;
+    margin-inline: 25px;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(97, 97, 97);
+    font-family: textItens;
+}
+
+.iten_preco {
+    margin-inline: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    display: flex;
+    bottom: 0px;
+}
+
+.cifrao {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-right: 5px;
+}
+
+
+.botaoAdicionarCarrinho {
+    display: flex;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 180px;
+    background-color: brown;
+    border-radius: 20px;
+}
+
+.botaoAdicionarCarrinho img {
+    width: 20px;
+}

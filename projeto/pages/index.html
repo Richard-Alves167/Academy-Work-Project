@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/CardItens.css" rel="stylesheet">
+    <link href="../css/Navigation.css" rel="stylesheet">
+    <link href="../css/carrosselPromocoes.css" rel="stylesheet">
+    <link href="../css/rodape.css" rel="stylesheet">
+
+    <title>BabyToys</title>
+    <link rel="shortcut icon" href="../assets/images/lojaIcone.jpg" type="image/png">
+
+</head>
+<body>   
+
+    <header>
+        <div id="marca">
+            <p><a href="../pages/index.html"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</a></p>
+        </div>
+        <div id="barraDePesquisa">
+            <input type="text" id="pesquisar"></input type="text">
+            <button id="lupa" onclick="pesquisarProdutoPorOutraPagina()"><img src="../assets/images/lupa.png"></button>
+        </div>
+        <div id="user_login">
+            <a href="../pages/loginDeCliente.html" id="linkagemPaginaUsuario" >
+                <img src="../assets/images/iconUser.png" id="user_login_Imagem" class="iconeRedeSocial">
+                <span id="nomePerfilUsuario"></span>
+            </a>
+            <a href="../pages/carrinhoDeCompras.html">
+                <img src="../assets/images/carrinhoCompras.png" class="iconeRedeSocial"><span id="quantidadeCarrinho"></span>
+            </a>
+            <div id="botaoListaCadastrados">
+                <img src="../assets/images/iconeFormularioCadastro.png" class="iconeRedeSocial" id="cadastros">
+            </div>
+        </div>
+        <p id="textoListaCadastros">Cadastros</p>
+        <div id="trianguloListaCadastros" class="desaparecer"></div>
+        <ul id="listaCadastrados" class="desaparecer">
+            <a href="../pages/Cadastro_itens.html"><li>Ítens</li></a>
+            <hr>
+            <a href="../pages/Compradores_cadastrados.html"><li>Comprador</li></a>
+            <hr>
+            <a href="../pages/pedidos.html"><li>Pedidos</li></a>
+        </ul>
+    </header>
+
+    <div id="navegador">
+        <nav>
+        </nav>
+    </div>
+
+
+<main>
+
+    <div id="fundoLogin">
+        <section id="topo_promocoes">
+            <div class="conteudoCarrossel">
+                <input type="radio" name="botaoRadioCarrossel" id="radio1">
+                <input type="radio" name="botaoRadioCarrossel" id="radio2">
+                <input type="radio" name="botaoRadioCarrossel" id="radio3">
+                <input type="radio" name="botaoRadioCarrossel" id="radio4">
+
+                <!-- <button id="buttomLeft">&lt;</button> -->
+                <div class="imagemCarrossel carrosselImagem1" primeiroCarrossel>
+                    <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/7351368-ilustracao-de-brinquedos-banner-isolados-em-fundo-branco-para-acostumar-a-limpeza-vetor.jpg" alt="slide 1">
+                </div>
+
+                <div class="imagemCarrossel">
+                    <img src="../assets/images/adult-1807500_1920.jpg" alt="slide 2">
+                </div>
+
+                <div class="imagemCarrossel">
+                    <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/6846569-colecao-de-icones-de-loja-de-brinquedos-vetor.jpg" alt="slide 3">
+                </div>
+                
+                <div class="imagemCarrossel">
+                <img src="../assets/images/child-2916844_1920.jpg" alt="slide 4">
+                </div>
+                <!-- <button id="buttomRight">&gt;</button> -->
+
+                <div class="autoCarrossel">
+                    <div class="autoRadio1"></div>
+                    <div class="autoRadio2"></div>
+                    <div class="autoRadio3"></div>
+                    <div class="autoRadio4"></div>
+                </div>
+
+                <div class="manualCarrossel">
+                    <label for="radio1" class="manualBotao"></label>
+                    <label for="radio2" class="manualBotao"></label>
+                    <label for="radio3" class="manualBotao"></label>
+                    <label for="radio4" class="manualBotao"></label>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- <section class="secaoDisplay" id="secaoDesconto">
+           <h1 class="secaoTexto">Descontos do Dia para você aproveitar</h1>
+            <ul id="produtosDesconto" class="linhaDeItens">
+            </ul>
+    </section> -->
+
+    <section class="secaoDisplay" id="secaoNovidades">
+           <h1 class="secaoTexto">Novos produtos essa semana</h1>
+        <!-- <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaNovidades()">&lt</button> -->
+            <ul id="produtosNovidades" class="linhaDeItens">
+            </ul>
+        <!-- <button class="buttomRightSecao" onclick="andarCarrosselDireitaNovidades()">&gt</button> -->
+    </section>
+
+    <section class="secaoDisplay" id="secaoNacionais">
+        <h1 class="secaoTexto">Produtos Nacionais</h1>
+        <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaFreteGratis()">&lt</button>
+            <ul id="produtosFreteGratis" class="linhaDeItens">
+            </ul>
+        <button class="buttomRightSecao" onclick="andarCarrosselDireitaFreteGratis()">&gt</button>
+    </section>
+
+    <section id="secaoBannerSite1">
+        <div id="secaoBannerSite1Div">
+            <p><a href="../pages/index.html"><span id="logo_B">P</span>rodutos <br><span id="logo_T">C</span>uidado</a></p>
+        </div>
+        <img id="secaoBannerSite1Img" src="../assets/images/sectionBannerSaude.jpg">
+    </section>
+
+    <section class="secaoDisplay" id="secaoSaude">
+        <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaSaude()">&lt</button>
+            <ul id="produtosSaude" class="linhaDeItens">
+            </ul>
+        <button class="buttomRightSecao" onclick="andarCarrosselDireitaSaude()">&gt</button>
+    </section>
+
+    <section id="secaoBannerSite2">
+        <img id="secaoBannerSite2Img" src="../assets/images/sectionBannerSeguranca.jpg">
+        <div id="secaoBannerSite2Div">
+            <p><a href="../pages/index.html"><span id="logo_B">P</span>rodutos <br><span id="logo_T">S</span>egurança</a></p>
+        </div>
+    </section>
+
+    <section class="secaoDisplay" id="secaoSeguranca">
+        <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaSeguranca()">&lt</button>
+            <ul id="produtosSeguranca" class="linhaDeItens">
+            </ul>
+        <button class="buttomRightSecao" onclick="andarCarrosselDireitaSeguranca()">&gt</button>
+    </section>
+
+    <section id="secaoBannerSite3">
+        <div id="secaoBannerSite3Div">
+            <p><a href="../pages/index.html"><span id="logo_B">P</span>rodutos <br><span id="logo_T">E</span>ntretenimento</a></p>
+        </div>
+        <img id="secaoBannerSite3Img" src="../assets/images/sectionBanner1.jpg">
+    </section>
+
+    <section class="secaoDisplay" id="secaoEntretenimento">
+        <button class="buttomLeftSecao" onclick="andarCarrosselEsquerdaEntretenimento()">&lt</button>
+            <ul id="produtosEntretenimento" class="linhaDeItens">
+            </ul>
+        <button class="buttomRightSecao" onclick="andarCarrosselDireitaEntretenimento()">&gt</button>
+    </section>
+
+    <footer>
+        <section>
+            <p id="marca"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</p>
+
+            <p id="sobreNos">Somos uma loja especializada em brinquedos de qualidade, selecionados com carinho para oferecer diversão, aprendizado e momentos inesquecíveis para as crianças de todas as idades.<br>
+
+            Nossa missão é proporcionar um ambiente seguro e estimulante, com brinquedos que favorecem o desenvolvimento, a imaginação e a criatividade,além da segurança e cuidado para seu filho.<br>
+            </p>
+        </section>
+        <section>
+            <h3>Contato</h3>
+
+            <ul>
+                <li><img src="../assets/images/whatsapp.png" class="iconeRedeSocial">Whatzapp:<br>
+                (21) 928234-6173</li>
+
+                <li><img src="../assets/images/email.png" class="iconeRedeSocial">Email:<br>
+                BabyToys@gmail.com</li>
+
+                <li>Horário de atendimento:<br>
+                07:00 às 18:00</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Siga nos</h3>
+            <ul>                
+                <li><a><img src="../assets/images/instagram.png" class="iconeRedeSocial">Instagram</a></li>
+                <li><a><img src="../assets/images/tiktok.png" class="iconeRedeSocial">TikTok</a></li>
+                <li><a><img src="../assets/images/x.png" class="iconeRedeSocial">X/Twitter</a></li>
+                <li><a><img src="../assets/images/facebook.png" class="iconeRedeSocial">Facebook</a></li>
+                <li><a><img src="../assets/images/linkedin.png" class="iconeRedeSocial">LinkedIn</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Informações</h3>
+
+            <ul>
+                <li>-Sobre compras</li>
+                <li>-Atendimento ao cliente</li>
+                <li>-Dúvidas frenquentes</li>
+            </ul>
+        </section>
+    </footer>
+</main>
+
+    <script src="../js/secaoBotoes.js"></script>
+    <script src="../js/carrosselImagens.js"></script>
+    <script src="../js/itensDesconto.js"></script>
+    <script src="../js/itensNovidades.js"></script>
+    <script src="../js/itensFreteGratis.js"></script>
+    <script src="../js/itensSaude.js"></script>
+    <script src="../js/itensSeguranca.js"></script>
+    <script src="../js/itensEntretenimento.js"></script>
+    <script src="../js/adicionarCarrinho.js"></script>
+    <script src="../js/logarComprador.js"></script>
+    <script src="../js/barraDePesquisa.js"></script>
+    <script src="../js/LocalStorageProdutos.js"></script>
+</body>
+</html>

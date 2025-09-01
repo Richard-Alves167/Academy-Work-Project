@@ -1,0 +1,297 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.eucolo.com.br/wp-content/uploads/2017/07/papel-de-parede-adesivo-infantil-elementos-cinza-2.jpg);
+    background-size: cover;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, #98dfee, rgba(167, 167, 167, 0.176), #98dfee);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@font-face {
+    font-family: fraseinicial;
+    src: url(../assets/fonts/babytitle.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../assets/fonts/text_light.ttf);
+}
+
+@font-face {
+    font-family: texto_navigation;
+    src: url(../assets/fonts/text_bold.ttf);
+}
+
+header {
+    height: 85px;
+    background-color: #98dfee;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header p {
+    font-size: 25px;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    margin-left: 10vw;
+    font-family: fraseinicial;
+}
+
+#marca a {
+    text-decoration: none;
+    font-family: fraseinicial;
+    color: black;
+}
+
+#marca p{
+    font-family: fraseinicial;
+    color: black;
+    font-size: 38px;
+}
+
+#logo_B {
+    font-size: 62px;
+    font-family: fraseinicial;
+    color: rgb(228, 209, 122);
+}
+
+#logo_T {
+    font-size: 62px;
+    font-family: fraseinicial;
+    color: #ff6c70;
+}
+
+#barraDePesquisa {
+    background-color: aliceblue;
+    border-radius: 20px;
+    width: 47vw;
+    display: flex;
+    margin-inline: 20px;
+}
+
+#pesquisar {
+    width: 93%;
+    height: 30px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+#lupa {
+    width: 50px;
+    height: 36px;
+    height: auto;
+    background-color: #21798a;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 0px;
+}
+
+#lupa img {
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+#inicio {
+    width: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    height: 80px;
+    background-color: #45afa8;
+    color: black;
+    border: black 2px solid;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+#inicio p {
+    margin: auto;
+    font-family: titulo;
+    font-size: 35px;
+}
+
+#navegador {
+    height: 46px;
+    background-color: #30b3ce;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-right: 30px;
+    border-top: 1px rgb(0, 154, 146) solid;
+}
+
+ul #atual {
+    background-color: rgba(121, 121, 121, 0.493);
+    border-radius: 10px;
+    right: 230px;
+    position: absolute;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: -webkit-center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 30px;
+    margin: auto;
+    height: 100%;
+    padding: 0px;
+}
+
+nav ul li {
+    align-content: center;
+    padding-inline: 10px;
+}
+
+nav ul a{
+    font-size: 30px;
+    text-decoration: none;
+    list-style: none;
+    transition: 1s;
+    color: rgb(255, 255, 255);
+}
+
+nav ul a:hover{
+    color: #ff6c70;
+    transform: scale(1.1);
+}
+
+#user_login {
+    display: flex;
+    gap: 20px;
+    margin-right: 10vw;
+}
+
+#user_login img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px rgb(255, 255, 255) solid;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 200, 250, 0.356),rgb(255, 255, 255));
+}
+
+#user_login img:hover {
+    cursor: pointer;
+}
+
+#linkagemPaginaUsuario {
+    display: flex;
+    margin-left: 20px;
+    width: 145px;
+    text-decoration: none;
+}
+
+#nomePerfilUsuario {
+    text-decoration: none;
+    color: #ff6c70;
+    display: inline-flex;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#quantidadeCarrinho {
+    background-color: #ff6c70;
+    width: 23px;
+    height: 23px;
+    border-radius: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    margin-left: 30px;
+}
+
+#listaCadastrados {
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    right: 7.5vw;
+    top: 70px;
+    border-radius: 15px;
+    z-index: 1;
+    color: #ff6c70;
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 10px;
+    transition: 1s;
+}
+
+#listaCadastrados li {
+    color: #ff6c70;
+    width: 94px;
+    display: flex;
+    justify-content: center;
+}
+
+#listaCadastrados hr {
+    width: 100%;
+}
+
+#listaCadastrados a {
+    text-decoration: none;
+}
+
+#listaCadastrados a:hover li {
+    background-color: #ff6c70;
+    color: aliceblue;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#textoListaCadastros {
+    display: none;
+    position: absolute;
+    right: 9.75vw;
+    top: 70px;
+    font-family: texto;
+    font-size: 12px;
+}
+
+#trianguloListaCadastros {
+    position: absolute;
+    right: 10vw;
+    top: 70px;
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #ffffff;
+}
+
+#botaoListaCadastrados {
+    display: none;
+}
+
+.desaparecer {
+    display: none;
+}
+
+.aparecer {
+    display: flex;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/CardItens.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/Navigation.css" rel="stylesheet">
+    <link href="../css/carrosselPromocoes.css" rel="stylesheet">
+    <link href="../css/rodape.css" rel="stylesheet">
+    <link href="../css/telaTodosProdutos.css" rel="stylesheet">
+
+    <title>Home</title>
+    <link rel="shortcut icon" href="./imagens/lojaIcone.jpg" type="image/png">
+
+</head>
+<body>   
+    <header>
+        <div id="marca">
+            <p><a href="../pages/index.html"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</a></p>
+        </div>
+        <div id="barraDePesquisa">
+            <input type="text" id="pesquisar"></input type="text">
+            <button id="lupa" onclick="pesquisarProduto()"><img src="../assets/images/lupa.png"></button>
+        </div>
+        <div id="user_login">
+            <a href="../pages/loginDeCliente.html" id="linkagemPaginaUsuario" >
+                <img src="../assets/images/iconUser.png" id="user_login_Imagem" class="iconeRedeSocial">
+                <span id="nomePerfilUsuario"></span>
+            </a>
+            <a href="../pages/carrinhoDeCompras.html">
+                <img src="../assets/images/carrinhoCompras.png" class="iconeRedeSocial"><span id="quantidadeCarrinho"></span>
+            </a>
+        </div>
+    </header>
+
+    <div id="navegador">
+        <nav>
+        </nav>
+    </div>
+
+<main>
+
+    <div id="secaoBotoesEProdutos">
+        <section id="selecionarOpcaoCaracteristica">
+            <p>Filtrar Produtos</p>
+
+            <hr>
+
+            <div id="botoesSelecionar">
+                <div class="divSelecionarProdutoBotao">
+                    <button onclick="rederizarProdutos()"></button><span>Todos os produtos</span><br>
+                </div>
+                <div class="divSelecionarProdutoBotao">
+                    <button onclick="rederizarSecaoSeguranca()"></button><span>Produtos: Segurança</span><br>
+                </div>
+                <div class="divSelecionarProdutoBotao">
+                    <button onclick="rederizarSecaoEntretenimento()"></button><span>Produtos: Entretenimento</span><br>
+                </div>
+                <div class="divSelecionarProdutoBotao">
+                    <button onclick="rederizarSecaoFreteGratis()"></button><span>Produtos: Nacionais</span><br>
+                </div>
+                <div class="divSelecionarProdutoBotao">
+                    <button onclick="rederizarSecaoSaude()"></button><span>Produtos: Cuidado/Saúde</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="todosProdutosLoja">
+            <section id="itens">
+                <ul id="itens_cadastrados">
+                </ul>
+            </section>        
+        </section>
+    </div>
+
+    <footer>
+        <section>
+            <p id="marca"><span id="logo_B">B</span>aby<span id="logo_T">T</span>oys</p>
+
+            <p id="sobreNos">Somos uma loja especializada em brinquedos de qualidade, selecionados com carinho para oferecer diversão, aprendizado e momentos inesquecíveis para as crianças de todas as idades.<br>
+
+            Nossa missão é proporcionar um ambiente seguro e estimulante, com brinquedos que favorecem o desenvolvimento, a imaginação e a criatividade,além da segurança e cuidado para seu filho.<br>
+            </p>
+        </section>
+        <section>
+            <h3>Contato</h3>
+
+            <ul>
+                <li><img src="../assets/images/whatsapp.png" class="iconeRedeSocial">Whatzapp:<br>
+                (21) 928234-6173</li>
+
+                <li><img src="../assets/images/email.png" class="iconeRedeSocial">Email:<br>
+                BabyToys@gmail.com</li>
+
+                <li>Horário de atendimento:<br>
+                07:00 às 18:00</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Siga nos</h3>
+            <ul>                
+                <li><a><img src="../assets/images/instagram.png" class="iconeRedeSocial">Instagram</a></li>
+                <li><a><img src="../assets/images/tiktok.png" class="iconeRedeSocial">TikTok</a></li>
+                <li><a><img src="../assets/images/x.png" class="iconeRedeSocial">X/Twitter</a></li>
+                <li><a><img src="../assets/images/facebook.png" class="iconeRedeSocial">Facebook</a></li>
+                <li><a><img src="../assets/images/linkedin.png" class="iconeRedeSocial">LinkedIn</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Informações</h3>
+
+            <ul>
+                <li>-Sobre compras</li>
+                <li>-Atendimento ao cliente</li>
+                <li>-Dúvidas frenquentes</li>
+            </ul>
+        </section>
+    </footer>
+</main>
+
+    <script src="../js/adicionarCarrinho.js"></script>
+    <script src="../js/selecionarCategoriaProduto.js"></script>
+    <script src="../js/logarComprador.js"></script>
+    <script src="../js/barraDePesquisa.js"></script>
+</body>
+</html>
